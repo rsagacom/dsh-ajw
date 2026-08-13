@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>dsh 安家网 · DeepSeek Harness 插件开源工具超市</title>
+  <meta name="description" content="dsh 安家网 (dsh.ajw.cn) — 每日聚合 GitHub 上 DeepSeek Harness / DSH 插件相关的开源项目：插件、主题皮肤、工具、Skill 与 Awesome 列表，一站式逛超市。">
+  <meta name="theme-color" content="#0b1220">
+  <meta property="og:title" content="dsh 安家网 · DeepSeek Harness 插件开源工具超市">
+  <meta property="og:description" content="每日聚合 GitHub 上 DeepSeek Harness / DSH 插件开源项目，数据每日自动更新。">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%234d6bfe'/%3E%3Ctext x='16' y='22' font-size='16' font-weight='700' text-anchor='middle' fill='white' font-family='monospace'%3ED%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到主要内容</a>
+
+  <svg class="icon-defs" aria-hidden="true" focusable="false">
+    <defs>
+      <symbol id="i-github" viewBox="0 0 24 24"><path d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2.17c-3.2.7-3.87-1.36-3.87-1.36-.53-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.78 0c2.2-1.49 3.16-1.18 3.16-1.18.63 1.59.24 2.76.12 3.05.74.81 1.19 1.83 1.19 3.09 0 4.42-2.69 5.39-5.25 5.67.41.35.78 1.05.78 2.12v3.14c0 .31.2.67.8.56A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5Z"/></symbol>
+      <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 2.5l2.95 5.98 6.6.96-4.78 4.66 1.13 6.58L12 17.57l-5.9 3.1 1.13-6.57L2.45 9.44l6.6-.96L12 2.5Z"/></symbol>
+      <symbol id="i-fork" viewBox="0 0 24 24"><path d="M6 3a3 3 0 1 1 3 3c-.65 0-1.26-.2-1.75-.55L9.5 7a3 3 0 0 0 3 3h2a4 4 0 0 1 4 4v1.55A3 3 0 1 1 16.5 17V14a2 2 0 0 0-2-2h-2a5 5 0 0 1-5-5V5.45A3 3 0 0 1 6 3Z"/></symbol>
+      <symbol id="i-ext" viewBox="0 0 24 24"><path d="M14 4h6v6h-2V7.41l-8.3 8.3 1.42 1.42-8.3 8.3H7v2H1v-6h2v3.59l8.3-8.3-1.42-1.42 8.3-8.3H14V4Z"/></symbol>
+      <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></symbol>
+      <symbol id="i-cal" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4M16 3v4M3 10h18"/></symbol>
+      <symbol id="i-refresh" viewBox="0 0 24 24"><path d="M21 12a9 9 0 1 1-2.64-6.36M21 3v6h-6"/></symbol>
+      <symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 2l1.8 5.7L19.5 9.5l-5.7 1.8L12 17l-1.8-5.7L4.5 9.5l5.7-1.8L12 2ZM19 15l.9 2.6 2.6.9-2.6.9L19 22l-.9-2.6-2.6-.9 2.6-.9L19 15Z"/></symbol>
+      <symbol id="i-puzzle" viewBox="0 0 24 24"><path d="M9 3a3 3 0 0 1 3 3h4a2 2 0 0 1 2 2v3a3 3 0 1 0 0 6v3a2 2 0 0 1-2 2h-3a3 3 0 1 1-6 0H5a2 2 0 0 1-2-2v-3a3 3 0 1 0 0-6V9a2 2 0 0 1 2-2h1a3 3 0 0 1 3-4Z"/></symbol>
+      <symbol id="i-palette" viewBox="0 0 24 24"><path d="M12 3a9 9 0 1 0 0 18h1.5a1.5 1.5 0 0 0 0-3H12a1.5 1.5 0 0 1 0-3h1.5a3 3 0 0 0 0-6H12Zm-4.5 6a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Zm3 4.5a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Zm6-4.5a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Z"/></symbol>
+      <symbol id="i-wrench" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76Z"/></symbol>
+      <symbol id="i-box" viewBox="0 0 24 24"><path d="M21 8l-9-5-9 5v8l9 5 9-5V8ZM3 8.5l9 5 9-5M12 13.5V21M7.5 5.8L16.5 11"/></symbol>
+      <symbol id="i-list" viewBox="0 0 24 24"><path d="M8 6h13M8 12h13M8 18h13M3.5 6h.01M3.5 12h.01M3.5 18h.01"/></symbol>
+      <symbol id="i-badge" viewBox="0 0 24 24"><path d="M12 1l2.4 1.8 3-.2 1.2 2.7 2.9.7-.1 3 2 2.3-1.5 2.6.6 3-2.8 1.1-.8 2.9-2.9-.8-2.4 1.8L12 23l-2.4-1.8-3 .2-1.2-2.7-2.9-.7.1-3-2-2.3L2 10l-.6-3 2.8-1.1.8-2.9 2.9.8L9.6 2 12 1Z"/><path d="m8.5 12 2.5 2.5 5-5"/></symbol>
+      <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 21s-7.5-4.9-10-9.3C.5 8.4 2.4 4.5 6.2 4.5c2 0 3.6 1 4.6 2.6L12 9l1.2-1.9c1-1.6 2.6-2.6 4.6-2.6 3.8 0 5.7 3.9 4.2 7.2C19.5 16.1 12 21 12 21Z"/></symbol>
+      <symbol id="i-new" viewBox="0 0 24 24"><path d="M5 4h14a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1Z"/><path d="M12 8v8M8 12h8"/></symbol>
+    </defs>
+  </svg>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="dsh 安家网 首页">
+        <span class="brand-mark" aria-hidden="true">DSH</span>
+        <span class="brand-text">
+          <strong>dsh 安家网</strong>
+          <em>dsh.ajw.cn</em>
+        </span>
+      </a>
+      <nav class="site-nav" aria-label="主导航">
+        <a href="#top">首页</a>
+        <a href="#ranking">星标榜</a>
+        <a href="#all">全部项目</a>
+        <a href="#about">关于</a>
+      </nav>
+      <a class="btn btn-ghost header-gh" href="https://github.com/search?q=deepseek-harness&type=repositories" target="_blank" rel="noopener">
+        <svg class="icon" aria-hidden="true"><use href="#i-github"/></svg>
+        <span class="hide-sm">GitHub</span>
+      </a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="container">
+        <p class="hero-eyebrow">
+          <svg class="icon" aria-hidden="true"><use href="#i-refresh"/></svg>
+          每日自动更新 · GitHub 聚合
+        </p>
+        <h1 class="hero-title">DeepSeek Harness 插件<br><span class="accent-glow">开源工具超市</span></h1>
+        <p class="hero-sub">一站式逛遍 GitHub 上 DeepSeek Harness / DSH 生态的插件、主题皮肤、工具、Skill 与 Awesome 列表 —— 货架每天补货，发现即所得。</p>
+
+        <div class="hero-search" role="search">
+          <svg class="icon search-ico" aria-hidden="true"><use href="#i-search"/></svg>
+          <input id="search" type="search" placeholder="搜索项目名、描述、标签… 例如：vision、TUI、皮肤" autocomplete="off" aria-label="搜索项目">
+        </div>
+
+        <dl class="hero-stats" id="heroStats">
+          <div class="stat"><dt>收录项目</dt><dd id="statProjects">—</dd></div>
+          <div class="stat"><dt>社区总星数</dt><dd id="statStars">—</dd></div>
+          <div class="stat"><dt>分类货架</dt><dd id="statCats">—</dd></div>
+          <div class="stat"><dt>数据日期</dt><dd id="statDate" class="stat-date">—</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="ranking" id="ranking" aria-labelledby="ranking-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="ranking-title"><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg> 星标榜 Top 10</h2>
+          <span class="section-note">按 GitHub Star 排序</span>
+        </div>
+        <div class="rank-strip" id="rankStrip" role="list" aria-label="星标榜项目列表"></div>
+      </div>
+    </section>
+
+    <section class="catalog" id="all" aria-labelledby="all-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="all-title"><svg class="icon" aria-hidden="true"><use href="#i-box"/></svg> 全部项目</h2>
+          <span class="section-note" id="resultCount"></span>
+        </div>
+
+        <div class="toolbar">
+          <div class="cat-chips" id="catChips" role="group" aria-label="分类筛选"></div>
+          <div class="toolbar-right">
+            <label class="select-wrap" for="langFilter">
+              <span class="visually-hidden">按语言筛选</span>
+              <select id="langFilter"><option value="">全部语言</option></select>
+            </label>
+            <label class="select-wrap" for="sortBy">
+              <span class="visually-hidden">排序方式</span>
+              <select id="sortBy">
+                <option value="stars">星数最多</option>
+                <option value="pushed">最近更新</option>
+                <option value="created">最新收录</option>
+              </select>
+            </label>
+          </div>
+        </div>
+
+        <div class="grid" id="grid" role="list"></div>
+        <div class="empty" id="empty" hidden>
+          <p>没有找到匹配的项目</p>
+          <button class="btn" id="resetFilters" type="button">清除筛选条件</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="about-title"><svg class="icon" aria-hidden="true"><use href="#i-heart"/></svg> 关于 dsh 安家网</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-card">
+            <h3>数据从哪里来</h3>
+            <p>每天通过 GitHub 官方搜索接口，围绕 <code>deepseek-harness</code>、<code>topic:dsh-plugin</code>、<code>dsh plugin</code>、<code>deepseek skill</code> 等关键词聚合仓库，并融合 <a href="https://github.com/0xsline/awesome-deepseek-harness" target="_blank" rel="noopener">awesome-deepseek-harness</a> 等精选列表，按相关度评分、去重后上架。</p>
+          </div>
+          <div class="about-card">
+            <h3>货架分类</h3>
+            <p><b>官方核心</b>：DeepSeek 官方与官方插件中心；<b>插件</b>：扩展 Harness 能力的插件；<b>主题皮肤</b>：Web UI 美化与换肤；<b>工具</b>：桌面端、TUI、CLI 周边；<b>Skill</b> 与 <b>Awesome</b> 列表一应俱全。</p>
+          </div>
+          <div class="about-card">
+            <h3>每日更新</h3>
+            <p>抓取任务每天 10:30（UTC+8）自动运行，数据快照存留最近 30 天，「新增」角标表示该项目昨天还没有上架。</p>
+          </div>
+          <div class="about-card">
+            <h3>发现好项目？</h3>
+            <p>本站本身也是开源的。想把你的 DSH 插件摆上货架，欢迎提交 Issue 或 PR —— 精选种子会第一时间收录。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p><strong>dsh 安家网</strong> · DSH.ajw.cn · DeepSeek Harness 插件开源工具超市</p>
+      <p class="footer-meta">数据来自 GitHub 公开 API，每日自动抓取 · 本站为社区项目，与 DeepSeek 官方无关 · <span id="footerTime"></span></p>
+      <p class="footer-meta"><a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener">备案号占位</a></p>
+    </div>
+  </footer>
+
+  <script src="data/projects.data.js"></script>
+  <script src="assets/js/app.js" defer></script>
+</body>
+</html>

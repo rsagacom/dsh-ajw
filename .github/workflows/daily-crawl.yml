@@ -1,0 +1,58 @@
+name: dsh-ajw 每日抓取
+
+on:
+  schedule:
+    # 每天 UTC 02:30 = 北京时间 10:30
+    - cron: '30 2 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  crawl:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: 每日抓取 GitHub 项目
+        run: node crawler/fetch.mjs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # 可选: 域名由 Cloudflare 管理时，抓取后自动清理边缘缓存
+          CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
+          CF_ZONE_ID: ${{ secrets.CF_ZONE_ID }}
+
+      - name: 提交数据变更
+        run: |
+          git config user.name "dsh-ajw-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add site/data
+          if git diff --cached --quiet; then
+            echo "数据无变化，跳过提交"
+          else
+            git commit -m "data: 每日抓取更新 $(date -u +%F)"
+            git push
+          fi
+
+      - name: 配置 Pages
+        uses: actions/configure-pages@v5
+
+      - name: 上传站点产物
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+      - name: 部署到 GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
