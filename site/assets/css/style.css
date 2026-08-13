@@ -141,22 +141,36 @@ code { font-family: var(--font-pixel); font-size: 0.92em; background: var(--surf
 
 /* ===== Hero 机库区 ===== */
 .hero { padding: 68px 0 40px; text-align: center; position: relative; }
-/* 背景主视觉（可选图片素材, 缺失时自动回落纯 CSS 机库渐变） */
+/* 机库氛围光（不含图片, 鲸鱼横幅见 .hero-art） */
 .hero::before {
   content: '';
-  position: absolute; inset: 0; z-index: -1; pointer-events: none;
-  background: url('assets/img/hero-hangar.png') center top / cover no-repeat;
-  opacity: 0.5;
-  mask-image: linear-gradient(#000 55%, transparent 96%);
-  -webkit-mask-image: linear-gradient(#000 55%, transparent 96%);
+  position: absolute; inset: 0; z-index: 0; pointer-events: none;
+  background:
+    radial-gradient(ellipse 70% 55% at 50% 30%, rgba(77, 107, 254, 0.10) 0%, transparent 70%),
+    radial-gradient(ellipse 50% 40% at 82% 12%, rgba(255, 180, 84, 0.06) 0%, transparent 70%);
 }
 .hero::after {
   content: '';
-  position: absolute; inset: 0; z-index: -2; pointer-events: none;
-  background:
-    linear-gradient(transparent 40%, rgba(10, 14, 22, 0.92) 100%),
-    repeating-linear-gradient(90deg, rgba(255, 180, 84, 0.05) 0 1px, transparent 1px 160px);
+  position: absolute; inset: 0; z-index: 0; pointer-events: none;
+  background: repeating-linear-gradient(90deg, rgba(255, 180, 84, 0.05) 0 1px, transparent 1px 160px);
 }
+.hero .container { position: relative; z-index: 1; }
+/* 机库鲸鱼横幅（大图完整展示） */
+.hero-art {
+  margin: 30px auto 0; max-width: 1080px; position: relative;
+  border: 1px solid var(--border-strong); border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.6), 0 12px 40px rgba(0, 0, 0, 0.55), 0 0 48px rgba(77, 107, 254, 0.22);
+}
+.hero-art::before, .hero-art::after { content: ''; position: absolute; width: 16px; height: 16px; z-index: 2; }
+.hero-art::before { top: 6px; left: 6px; border-top: 2px solid var(--amber); border-left: 2px solid var(--amber); opacity: .8; }
+.hero-art::after { bottom: 6px; right: 6px; border-bottom: 2px solid var(--amber); border-right: 2px solid var(--amber); opacity: .8; }
+.hero-art img {
+  display: block; width: 100%; height: auto;
+  filter: brightness(1.35) saturate(1.12);
+  image-rendering: auto;
+}
+.hero-art::marker { display: none; }
 .hero-eyebrow {
   display: inline-flex; align-items: center; gap: 9px;
   font-family: var(--font-pixel); font-size: 12px; letter-spacing: 0.06em;
