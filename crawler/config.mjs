@@ -81,7 +81,7 @@ export function relevanceScore(repo, kwWeight = 0) {
 
 // 判定是否与本站主题相关（防止噪音收录，如名为 dsh 的其他项目）
 export function isRelevant(repo) {
-  const text = [repo.full_name, repo.description || '', (repo.topics || []).join(' ')].toLowerCase()
+  const text = [repo.full_name, repo.description || '', (repo.topics || []).join(' ')].join(' ').toLowerCase()
   const hasDeepSeek = /deepseek/.test(text)
   const hasDsh = /\bdsh\b/.test(text)
   const hasHarnessish = /harness|plugin|skill|cordis/.test(text)

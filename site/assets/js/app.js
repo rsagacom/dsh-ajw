@@ -50,7 +50,7 @@
           '</div>' +
         '</div>' +
         '<div class="badges">' + badge(p.official, p.curated, isNew, p.category) + '</div>' +
-        (p.description ? '<p class="card-desc">' + esc(p.description) + '</p>' : '') +
+        (p.description ? '<p class="card-desc"' + (p.descriptionOriginal ? ' title="原文: ' + esc(p.descriptionOriginal) + '"' : '') + '>' + esc(p.description) + '</p>' : '') +
         '<div class="card-meta">' +
           '<span class="m stars" title="' + p.stars.toLocaleString('zh-CN') + ' 星">' + icon('star', null, true) + compact(p.stars) + '</span>' +
           '<span class="m">' + icon('fork') + compact(p.forks) + '</span>' +
@@ -131,7 +131,7 @@
             (p.avatar ? '<img class="avatar" src="' + esc(p.avatar) + '" alt="" loading="lazy" width="34" height="34">' : '') +
             '<span class="rank-name">' + esc(p.fullName) + '</span>' +
           '</div>' +
-          (p.description ? '<p class="rank-desc">' + esc(p.description) + '</p>' : '') +
+          (p.description ? '<p class="rank-desc"' + (p.descriptionOriginal ? ' title="原文: ' + esc(p.descriptionOriginal) + '"' : '') + '>' + esc(p.description) + '</p>' : '') +
           '<div class="rank-meta">' +
             '<span class="m">' + icon('star', null, true) + p.stars.toLocaleString('zh-CN') + '</span>' +
             '<span class="m">' + icon('fork') + compact(p.forks) + '</span>' +

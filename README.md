@@ -7,6 +7,7 @@
 ## 特性
 
 - **每日自动抓取**：围绕 `deepseek-harness`、`topic:dsh-plugin`、`dsh plugin`、`deepseek skill` 等关键词调用 GitHub 官方搜索 API，融合 [awesome-deepseek-harness](https://github.com/0xsline/awesome-deepseek-harness) 等精选列表
+- **外文介绍自动翻译**：所有非中文项目简介自动译为简体中文（Google 免费翻译接口为主、MyMemory 兜底、本地缓存译文），页面悬停可查看原文
 - **智能过滤与评分**：相关度评分 + 去重 + 去 fork/归档，剔除同名噪音项目（如名为 dsh 的其他工具）
 - **货架分类**：官方核心 / 精选列表 / 插件 / 主题皮肤 / Skill / 工具 / Awesome / 其他
 - **每日新增角标**：对比 30 天历史快照，标记「新增」项目

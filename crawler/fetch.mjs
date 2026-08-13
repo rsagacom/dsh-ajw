@@ -9,6 +9,7 @@ import {
   KEYWORDS, CURATED, CATEGORY_RULES, OFFICIAL_ORGS,
   relevanceScore, isRelevant, MIN_STARS, MIN_SCORE, SEARCH_PER_PAGE, SEARCH_SLEEP_MS,
 } from './config.mjs'
+import { translateDescriptions } from './translate.mjs'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const OUT_DIR = join(__dirname, '..', 'site', 'data')
@@ -35,14 +36,32 @@ const LANG_COLORS = {
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms))
 const log = (...a) => console.log('[dsh-ajw]', ...a)
 
-async function gh(path) {
-  const res = await fetch(API + path, { headers })
-  if (res.status === 403 || res.status === 429) {
-    const reset = res.headers.get('x-ratelimit-reset')
-    throw new Error(`GitHub API 限流 (${res.status})，reset: ${reset ? new Date(+reset * 1000).toISOString() : '未知'}`)
+async function gh(path, retries = 3) {
+  for (let i = 0; i <= retries; i++) {
+    let res
+    try {
+      res = await fetch(API + path, { headers })
+    } catch (e) {
+      if (i === retries) throw new Error(`网络错误: ${e.message}`)
+      await sleep(1500 * (i + 1))
+      continue
+    }
+    if (res.status === 403 || res.status === 429) {
+      const reset = Number(res.headers.get('x-ratelimit-reset') || 0)
+      const waitMs = reset ? Math.min(reset * 1000 - Date.now() + 2000, 15 * 60 * 1000) : 30000
+      if (waitMs > 0 && i < retries) {
+        log(`  GitHub 限流, ${Math.round(waitMs / 1000)}s 后自动重试`)
+        await sleep(waitMs)
+        continue
+      }
+      throw new Error(`GitHub API 限流 (${res.status})`)
+    }
+    if (!res.ok) {
+      if (res.status >= 500 && i < retries) { await sleep(1500 * (i + 1)); continue }
+      throw new Error(`GET ${path} -> HTTP ${res.status}`)
+    }
+    return res.json()
   }
-  if (!res.ok) throw new Error(`GET ${path} -> HTTP ${res.status}`)
-  return res.json()
 }
 
 async function searchKeyword(kw) {
@@ -57,9 +76,11 @@ async function searchKeyword(kw) {
   return { kw, items }
 }
 
-async function fetchCurated() {
+async function fetchCurated(map) {
   const out = []
   for (const full of CURATED) {
+    const key = full.toLowerCase()
+    if (map.has(key)) { map.get(key).curatedSeed = true; continue } // 搜索已命中, 省一次核心 API
     try {
       const d = await gh(`/repos/${full}`)
       if (d.full_name) { d.curatedSeed = true; out.push(d) }
@@ -184,28 +205,28 @@ async function main() {
 
   // 2) 精选种子 + awesome 列表解析
   const curatedSet = new Set(CURATED.map((c) => c.toLowerCase()))
-  const curatedDetails = await fetchCurated()
+  const curatedDetails = await fetchCurated(map)
   for (const r of curatedDetails) map.set(r.full_name.toLowerCase(), normalize(r, '精选种子', curatedSet))
 
-  const awesomeRepo = curatedDetails.find((r) => r.full_name.toLowerCase() === '0xsline/awesome-deepseek-harness')
+  // awesome 列表解析（即使精选种子 API 拉取失败也直接从 raw 读取）
+  const awesomeSrc = curatedDetails.find((r) => r.full_name.toLowerCase() === '0xsline/awesome-deepseek-harness')
+    || { full_name: '0xsline/awesome-deepseek-harness' }
   let awesomeLinks = []
-  if (awesomeRepo) {
-    const { links } = await parseAwesomeReadme(awesomeRepo)
-    awesomeLinks = links
-    log(`  awesome 列表解析到 ${links.length} 个仓库链接`)
-    const missing = links.filter((l) => !map.has(l))
-    const budget = TOKEN ? 100 : 12
-    for (const full of missing.slice(0, budget)) {
-      try {
-        const d = await gh(`/repos/${full}`)
-        map.set(full, normalize(d, 'awesome 列表', curatedSet))
-      } catch { /* 跳过 */ }
-      await sleep(TOKEN ? 400 : 900)
-    }
-    for (const l of links) {
-      const p = map.get(l)
-      if (p) { p.curated = true; if (!p.matchedBy.includes('awesome 列表')) p.matchedBy.push('awesome 列表') }
-    }
+  const { links } = await parseAwesomeReadme(awesomeSrc)
+  awesomeLinks = links
+  log(`  awesome 列表解析到 ${links.length} 个仓库链接`)
+  const missing = links.filter((l) => !map.has(l))
+  const budget = TOKEN ? 100 : 12
+  for (const full of missing.slice(0, budget)) {
+    try {
+      const d = await gh(`/repos/${full}`)
+      map.set(full, normalize(d, 'awesome 列表', curatedSet))
+    } catch { /* 跳过 */ }
+    await sleep(TOKEN ? 400 : 900)
+  }
+  for (const l of links) {
+    const p = map.get(l)
+    if (p) { p.curated = true; if (!p.matchedBy.includes('awesome 列表')) p.matchedBy.push('awesome 列表') }
   }
 
   // 3) 过滤 + 评分 + 分类 + 排序
@@ -221,6 +242,9 @@ async function main() {
   projects = projects.map((p) => ({ ...p, score: relevanceScore(p, 0) }))
   projects.sort((a, b) => b.stars - a.stars)
 
+  // 3.5) 外文介绍自动翻译为中文
+  const translation = await translateDescriptions(projects)
+
   const today = new Date().toISOString().slice(0, 10)
   const payload = {
     site: { name: 'dsh 安家网', domain: 'dsh.ajw.cn', slogan: 'DeepSeek Harness 插件开源工具超市' },
@@ -228,6 +252,7 @@ async function main() {
     date: today,
     count: projects.length,
     stats: buildStats(projects),
+    translation,
     projects,
   }
 
