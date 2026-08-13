@@ -7,13 +7,13 @@ set -u
 DOMAIN="ds.ajw.cn"
 PAGES_HOST="rsagacom.github.io"
 
-echo "== 1. DNS 解析检查 =="
-CNAME=$(curl -s --max-time 15 "https://cloudflare-dns.com/dns-query?name=${DOMAIN}&type=CNAME" -H "accept: application/dns-json")
-if echo "$CNAME" | grep -q '"data"'; then
-  echo "✓ CNAME 记录已存在:"
-  echo "$CNAME" | grep -o '"data":"[^"]*"' | head -2
+echo "== 1. DNS 与 HTTPS 生效检查 =="
+HTTP=$(curl -s -o /dev/null -w "%{http_code}" --max-time 25 "https://${DOMAIN}/")
+if [ "$HTTP" = "200" ]; then
+  echo "✓ https://${DOMAIN}/ -> HTTP 200, 域名已生效"
+  curl -sI --max-time 25 "https://${DOMAIN}/" | grep -iE "server:|cf-ray" | sed 's/^/  /'
 else
-  echo "✗ ${DOMAIN} 尚无 CNAME 记录（NXDOMAIN）"
+  echo "✗ https://${DOMAIN}/ -> HTTP ${HTTP} (未生效)"
   echo "  请在 Cloudflare -> ajw.cn -> DNS 添加:"
   echo "    类型 CNAME | 名称 ds | 目标 ${PAGES_HOST} | 代理: 开启(橙色云) | TTL 自动"
   exit 1
