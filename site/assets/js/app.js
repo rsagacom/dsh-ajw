@@ -227,19 +227,26 @@
         if (!prev) return
         var old = {}
         prev.projects.forEach(function (p) { old[p.fullName] = true })
-        newSet = DATA.projects.filter(function (p) { return !old[p.fullName] })
+        newSet = new Set(DATA.projects.filter(function (p) { return !old[p.fullName] }).map(function (p) { return p.fullName }))
         renderGrid()
       })
       .catch(function () { /* 无历史或本地 file:// 打开时静默降级 */ })
   }
 
-  var newSet = {}
+  var newSet = new Set()
 
   function boot() {
     if (!DATA || !Array.isArray(DATA.projects)) {
       $('#grid').innerHTML = '<div class="empty"><p>数据加载失败：请通过 HTTP 服务访问本站（nginx / GitHub Pages），或先运行 crawler/fetch.mjs 生成数据。</p></div>'
       return
     }
+    // 支持从手册跳转带分类参数: index.html?cat=<id>
+    var preCat = null
+    try {
+      preCat = new URLSearchParams(window.location.search).get('cat')
+      if (preCat && !DATA.projects.some(function (p) { return p.category.id === preCat })) preCat = null
+    } catch (_) { preCat = null }
+    if (preCat) state.cat = preCat
     renderHero()
     renderChips()
     renderLangs()
@@ -247,6 +254,10 @@
     renderGrid()
     bindEvents()
     loadHistory()
+    if (preCat) {
+      var t = $('#all')
+      if (t && t.scrollIntoView) setTimeout(function () { t.scrollIntoView({ behavior: 'smooth', block: 'start' }) }, 300)
+    }
   }
 
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', boot)

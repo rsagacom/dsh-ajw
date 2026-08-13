@@ -48,24 +48,39 @@ export const MIN_SCORE = 5          // 相关度得分低于此值不收录（�
 export const SEARCH_PER_PAGE = 100
 export const SEARCH_SLEEP_MS = 7000 // 未认证搜索限 10 次/分钟
 
-// 需求导向分类：按「用户想解决什么问题」组织货架（全部中文分类）
+// 需求导向分类：按「用户想解决什么问题」组织货架（个性化名称 + 专业介绍 + 检索提示）
 // 按顺序匹配第一个命中
 export const CATEGORY_RULES = [
-  { id: 'core',   name: '官方核心',   icon: 'badge',   test: (r) => OFFICIAL_ORGS.includes(r.full_name.split('/')[0]) && !/^awesome-/.test(r.name) },
-  { id: 'awesome',name: '精选列表',   icon: 'list',    test: (r) => /^awesome-|awesome/i.test(r.name) && /deepseek|dsh|harness/i.test(catText(r)) },
-  { id: 'client', name: '客户端与终端', icon: 'monitor', test: (r) => /\bdesktop\b|\btui\b|terminal|客户端|\bmobile\b/i.test(catText(r)) },
-  { id: 'agent',  name: 'Agent 与团队', icon: 'users',  test: (r) => /agent|team|subagent|多智能体|团队/i.test(catText(r)) },
-  { id: 'ui',     name: '界面与体验', icon: 'palette', test: (r) => /theme|skin|皮肤|主题|sidebar|panel|web-ui|web ui|progress|split|thumb|whale|\bui\b/i.test(catText(r)) },
-  { id: 'context',name: '上下文与记忆', icon: 'book',   test: (r) => /search|session|context|memory|记忆|engram|ctx|zotero|knowledge|\bkb\b/i.test(catText(r)) },
-  { id: 'input',  name: '输入与编辑', icon: 'pen',     test: (r) => /edit|input|paste|drag|office|prompt|message|notebook/i.test(catText(r)) },
-  { id: 'browser',name: '浏览器与远程', icon: 'globe',  test: (r) => /browser|remote|ssh|webbridge|web bridge/i.test(catText(r)) },
-  { id: 'model',  name: '模型与推理', icon: 'cpu',     test: (r) => /vision|model|llm|inference|fallback|adapter|a2a|acp|推理|视觉/i.test(catText(r)) },
-  { id: 'git',    name: 'Git 与工程', icon: 'git',     test: (r) => /\bgit\b|blame|workflow|inspect|plugin-check|spur|involute|engineering/i.test(catText(r)) },
-  { id: 'notify', name: '通知与渠道', icon: 'bell',    test: (r) => /feishu|飞书|wecom|wechat|weixin|微信|telegram|qq|notify|voice|bot|频道|通知/i.test(catText(r)) },
-  { id: 'fun',    name: '趣味与生活', icon: 'game',    test: (r) => /pet|sticker|gomoku|game|tavern|sfw|qq2006|fun|lifestyle|摸鱼|lazyfish/i.test(catText(r)) },
-  { id: 'infra',  name: '基建与开发', icon: 'wrench',  test: (r) => /registry|marisa|plugin manager|hub|update|injector|开发|基建/i.test(catText(r)) },
-  { id: 'tool',   name: '工具周边',   icon: 'box',     test: (r) => /cli|\btool\b|sandbox|工具|workbench/i.test(catText(r)) },
-  { id: 'ecosystem', name: 'DeepSeek 生态', icon: 'globe', test: () => true },
+  { id: 'core',   name: '原厂核心',   icon: 'badge',   desc: 'DeepSeek 官方出品的框架本体与官方工具集 —— 机器人的骨架与大脑。',   search: '检索词：官方 / deepseek-ai / 官方工具',
+    test: (r) => OFFICIAL_ORGS.includes(r.full_name.split('/')[0]) && !/^awesome-/.test(r.name) },
+  { id: 'agent',  name: '编队协作',   icon: 'users',   desc: '多智能体编排、子代理与团队协作插件，让机器人学会组团作战。',             search: '检索词：agent / team / 子代理',
+    test: (r) => /agent|team|subagent|多智能体|团队/i.test(catText(r)) },
+  { id: 'ui',     name: '驾驶舱与涂装', icon: 'palette', desc: 'Web UI 皮肤、侧边栏、面板与终端 TUI，把驾驶舱装修成你喜欢的样子。',   search: '检索词：皮肤 / 主题 / sidebar / TUI',
+    test: (r) => /theme|skin|皮肤|主题|sidebar|panel|web-ui|web ui|progress|split|thumb|whale|\bui\b/i.test(catText(r)) },
+  { id: 'context',name: '记忆与检索', icon: 'book',   desc: '会话搜索、跨会话长期记忆与知识库，让机器人记住一切、随问随调。',         search: '检索词：记忆 / 搜索 / session / 知识库',
+    test: (r) => /search|session|context|memory|记忆|engram|ctx|zotero|knowledge|\bkb\b/i.test(catText(r)) },
+  { id: 'input',  name: '操控与装填', icon: 'pen',    desc: '消息编辑、文件拖放、Office 读写等输入体验强化部件。',                    search: '检索词：编辑 / 输入 / office / 粘贴',
+    test: (r) => /edit|input|paste|drag|office|prompt|message|notebook/i.test(catText(r)) },
+  { id: 'browser',name: '感知与遥控', icon: 'globe',  desc: '内嵌浏览器、SSH 远程与跨端桥接，给机器人装上眼睛与远程手柄。',         search: '检索词：浏览器 / 远程 / ssh',
+    test: (r) => /browser|remote|ssh|webbridge|web bridge/i.test(catText(r)) },
+  { id: 'model',  name: '动力与感知核心', icon: 'cpu', desc: '视觉桥接、多模型路由与故障回退，升级机器人的引擎与传感器。',           search: '检索词：视觉 / vision / 多模型',
+    test: (r) => /vision|model|llm|inference|fallback|adapter|a2a|acp|推理|视觉/i.test(catText(r)) },
+  { id: 'git',    name: '工程与检修', icon: 'git',    desc: 'Git 身份、插件体检与工作流引擎 —— 工程化的检修工具。',                 search: '检索词：git / 工作流 / 体检',
+    test: (r) => /\bgit\b|blame|workflow|inspect|plugin-check|spur|involute|engineering/i.test(catText(r)) },
+  { id: 'notify', name: '通讯与广播', icon: 'bell',   desc: '飞书、微信、QQ、Telegram 机器人与语音频道，让机器人主动向你汇报。',      search: '检索词：飞书 / 通知 / bot / 语音',
+    test: (r) => /feishu|飞书|wecom|wechat|weixin|微信|telegram|qq|notify|voice|bot|频道|通知/i.test(catText(r)) },
+  { id: 'fun',    name: '个性化改装', icon: 'game',   desc: '桌面宠物、小游戏与整活皮肤 —— 机器人也要有生活情趣。',                  search: '检索词：宠物 / 游戏 / 皮肤',
+    test: (r) => /pet|sticker|gomoku|game|tavern|sfw|qq2006|fun|lifestyle|摸鱼|lazyfish/i.test(catText(r)) },
+  { id: 'client', name: '机体与座舱', icon: 'monitor', desc: '桌面端、终端 TUI 与移动适配，不同座舱任你挑选。',                      search: '检索词：桌面 / 终端 / 移动',
+    test: (r) => /\bdesktop\b|\btui\b|terminal|客户端|\bmobile\b/i.test(catText(r)) },
+  { id: 'infra',  name: '兵工厂车间', icon: 'wrench', desc: '插件管理器、注册表与开发脚手架 —— 自己造装甲的车间。',                search: '检索词：管理器 / 开发 / 注册表',
+    test: (r) => /registry|marisa|plugin manager|hub|update|injector|开发|基建/i.test(catText(r)) },
+  { id: 'tool',   name: '通用工具架', icon: 'box',    desc: 'CLI 与沙箱等周边工具，随手可得。',                                     search: '检索词：cli / 工具 / 沙箱',
+    test: (r) => /cli|\btool\b|sandbox|工具|workbench/i.test(catText(r)) },
+  { id: 'awesome',name: '装甲图鉴',   icon: 'list',   desc: '社区精选列表与完整目录，逛图鉴发现更多装甲。',                           search: '检索词：awesome / 列表 / 图鉴',
+    test: (r) => /^awesome-|awesome/i.test(r.name) && /deepseek|dsh|harness/i.test(catText(r)) },
+  { id: 'ecosystem', name: '外挂武器库', icon: 'globe', desc: 'DeepSeek 生态相关的开源项目 —— 兼容的外挂与弹药。',                  search: '检索词：deepseek / 生态',
+    test: () => true },
 ]
 
 // awesome-deepseek-harness 精选列表的章节 -> 本站分类映射（用户需求来源的权威分类）

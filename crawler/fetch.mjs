@@ -277,6 +277,7 @@ async function main() {
     count: projects.length,
     stats: buildStats(projects),
     translation,
+    categories: CATEGORY_RULES.map((c) => ({ id: c.id, name: c.name, icon: c.icon, desc: c.desc, search: c.search })),
     projects,
   }
 

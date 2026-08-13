@@ -104,14 +104,18 @@ async function translateOne(text) {
 }
 
 // 批量翻译项目简介（原地修改 projects）
+// TRANSLATE_MAX: 单次运行最多调用翻译接口的次数(0=不限)。本地网络翻译接口稀缺时可设小值,
+// 未翻译条目保留原文待下次运行或人工补缓存; GitHub Actions 里接口通畅, 不设限制。
 export async function translateDescriptions(projects) {
   await loadCache()
+  const maxCalls = Number(process.env.TRANSLATE_MAX || 0)
   let done = 0
   let cached = 0
   let failed = 0
+  let apiCalls = 0
   const usedKeys = new Set()
   const todo = projects.filter((p) => p.description && needsTranslation(p.description))
-  log(`待翻译简介 ${todo.length} 条`)
+  log(`待翻译简介 ${todo.length} 条${maxCalls ? `（本次最多调用接口 ${maxCalls} 次）` : ''}`)
   for (const p of todo) {
     const key = hash(p.description)
     usedKeys.add(key)
@@ -123,6 +127,8 @@ export async function translateDescriptions(projects) {
       done++
       continue
     }
+    if (maxCalls && apiCalls >= maxCalls) continue // 达到单次上限, 保留原文
+    apiCalls++
     const { zh } = await translateOne(p.description)
     if (zh) {
       p.descriptionOriginal = p.description
@@ -137,6 +143,6 @@ export async function translateDescriptions(projects) {
   // 缓存瘦身: 仅保留仍被使用的译文
   cache = Object.fromEntries([...usedKeys].filter((k) => cache[k]).map((k) => [k, cache[k]]))
   await saveCache()
-  log(`翻译完成: ${done} 条（缓存命中 ${cached}, 失败 ${failed}）`)
-  return { translated: done, cached, failed }
+  log(`翻译完成: ${done} 条（缓存命中 ${cached}, 接口调用 ${apiCalls}, 失败 ${failed}）`)
+  return { translated: done, cached, failed, apiCalls }
 }
