@@ -1,6 +1,6 @@
-# dsh 安家网 · DSH.ajw.cn
+# DS安甲网 · ds.ajw.cn
 
-> **DeepSeek Harness 插件开源工具超市** —— 每日聚合 GitHub 上 DeepSeek Harness / DSH 生态的开源项目：插件、主题皮肤、工具、Skill 与 Awesome 列表，一站式逛超市。
+> **为你的 DeepSeek Harness 机器人 安装上所需功能的装甲吧** —— 每日聚合 GitHub 上 DeepSeek Harness / DSH 生态的开源项目：插件、主题皮肤、工具、Skill 与 Awesome 列表，一站式逛超市。
 
 ![stack](https://img.shields.io/badge/stack-Node.js%20%2B%20%E9%9D%99%E6%80%81%E7%AB%99-blue) ![updates](https://img.shields.io/badge/%E6%9B%B4%E6%96%B0-%E6%AF%8F%E6%97%A5%2010%3A30%20(UTC%2B8)-green)
 
@@ -31,9 +31,9 @@ dsh-ajw/
 │   │   ├── projects.json        # 规范化 JSON
 │   │   ├── projects.data.js     # 前端加载的 JS 包装
 │   │   └── history/             # 最近 30 天快照
-│   └── CNAME              # dsh.ajw.cn
+│   └── CNAME              # ds.ajw.cn
 ├── deploy/
-│   ├── nginx-dsh.ajw.cn.conf    # 源站 nginx 配置（Cloudflare 感知）
+│   ├── nginx-ds.ajw.cn.conf    # 源站 nginx 配置（Cloudflare 感知）
 │   └── dsh-ajw.cron             # 服务器 crontab 示例
 └── .github/workflows/daily-crawl.yml  # GitHub Actions 每日抓取
 ```
@@ -59,21 +59,21 @@ python3 -m http.server 8080 --directory ../site
 
 ### 方案 B：源站 crontab
 
-把 `deploy/dsh-ajw.cron` 内容合入服务器 crontab（`crontab -e`），按需配置 `GITHUB_TOKEN` / `CF_API_TOKEN` / `CF_ZONE_ID` 环境变量。
+把 `deploy/ds-ajw.cron` 内容合入服务器 crontab（`crontab -e`），按需配置 `GITHUB_TOKEN` / `CF_API_TOKEN` / `CF_ZONE_ID` 环境变量。
 
-## 部署到 dsh.ajw.cn（Cloudflare 管理域名）
+## 部署到 ds.ajw.cn（Cloudflare 管理域名）
 
 前提：`ajw.cn` 已托管到 Cloudflare；有一台源站服务器（或使用 GitHub Pages 作为源站）。
 
 **方案 1：源站服务器 + Cloudflare 代理（推荐）**
 
-1. **源站 nginx**：安装 `deploy/nginx-dsh.ajw.cn.conf`，将 `root` 指向本仓库 `site/` 目录，`nginx -t && systemctl reload nginx`。
+1. **源站 nginx**：安装 `deploy/nginx-ds.ajw.cn.conf`，将 `root` 指向本仓库 `site/` 目录，`nginx -t && systemctl reload nginx`。
 2. **Cloudflare 源站证书**：面板 SSL/TLS → Origin Server → Create Certificate（15 年），下载后放到配置中 `ssl_certificate` 路径。
 3. **Cloudflare DNS**：添加记录
    - 类型 `A`，名称 `dsh`，内容 `源站IP`，**代理开启（橙色云）**。
 4. **SSL/TLS 模式**：设为 **Full (strict)**。
 5. **缓存**：`/data/` 目录 nginx 已设 `max-age=3600`；配合抓取器的 `CF_API_TOKEN`（需 Zone → Cache Purge 权限）每次更新后即时清缓存。
-6. 验证：`curl -I https://dsh.ajw.cn/` 应返回 `200` 且带 `CF-Ray` 头。
+6. 验证：`curl -I https://ds.ajw.cn/` 应返回 `200` 且带 `CF-Ray` 头。
 
 **方案 2：GitHub Pages + Cloudflare**
 

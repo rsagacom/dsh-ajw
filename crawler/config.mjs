@@ -1,10 +1,10 @@
-// dsh 安家网 · 抓取器配置
+// DS安甲网 · 抓取器配置
 // 关键词策略：核心词（DeepSeek Harness / dsh 插件）+ 扩展词（DeepSeek 生态工具）
 // weight 越大代表该关键词命中与本站主题越相关
 
 export const SITE = {
-  name: 'dsh 安家网',
-  domain: 'dsh.ajw.cn',
+  name: 'DS安甲网',
+  domain: 'ds.ajw.cn',
   home: 'https://github.com/',
 }
 

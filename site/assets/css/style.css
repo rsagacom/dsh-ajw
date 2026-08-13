@@ -161,11 +161,21 @@ code { font-family: var(--font-pixel); font-size: 0.92em; background: var(--surf
 }
 .hero-eyebrow::before { content: ''; width: 7px; height: 7px; background: var(--green); box-shadow: 0 0 8px var(--green); animation: blink 1.8s steps(1) infinite; }
 .hero-title {
-  margin: 0 0 16px; font-family: var(--font-pixel); font-weight: 600;
+  margin: 0 0 10px; font-family: var(--font-pixel); font-weight:600;
   font-size: clamp(1.7rem, 4.6vw, 2.9rem);
   line-height: 1.3; letter-spacing: 0.02em;
   text-shadow: 0 2px 0 rgba(0, 0, 0, 0.8), 0 0 34px rgba(77, 107, 254, 0.25);
 }
+.hero-tagline {
+  margin: 0 0 20px;
+  font-family: var(--font-pixel); font-weight: 600;
+  font-size: clamp(0.95rem, 2.2vw, 1.2rem);
+  letter-spacing: 0.05em;
+  color: var(--green);
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.8), 0 0 20px rgba(55, 214, 122, 0.35);
+}
+.hero-tagline::before { content: '[ '; color: var(--amber); }
+.hero-tagline::after { content: ' ]'; color: var(--amber); }
 .accent-glow {
   color: var(--amber);
   text-shadow: 0 2px 0 rgba(0, 0, 0, 0.8), 0 0 40px rgba(255, 180, 84, 0.35);

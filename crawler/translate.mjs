@@ -1,4 +1,4 @@
-// dsh 安家网 · 外文介绍自动翻译模块
+// DS安甲网 · 外文介绍自动翻译模块
 // 规则: 简介中 CJK 字符占比 < 0.3 视为需要翻译 -> 译为简体中文
 // 策略: Google 免费翻译接口 (gtx) 为主, MyMemory 兜底; 译文缓存到 crawler/cache/translations.json
 //       翻译失败时保留原文, 下次运行自动重试
@@ -39,7 +39,7 @@ async function saveCache() {
 async function translateGoogle(text) {
   const res = await fetch(
     'https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=zh-CN&dt=t&q=' + encodeURIComponent(text),
-    { headers: { 'User-Agent': 'Mozilla/5.0 (dsh-ajw-crawler)' } }
+    { headers: { 'User-Agent': 'Mozilla/5.0 (ds-ajw-crawler)' } }
   )
   if (!res.ok) throw new Error(`google ${res.status}`)
   const d = await res.json()
@@ -74,7 +74,7 @@ function restore(text) {
 async function translateMyMemory(text) {
   const res = await fetch(
     'https://api.mymemory.translated.net/get?q=' + encodeURIComponent(text) + '&langpair=autodetect|zh-CN',
-    { headers: { 'User-Agent': 'Mozilla/5.0 (dsh-ajw-crawler)' } }
+    { headers: { 'User-Agent': 'Mozilla/5.0 (ds-ajw-crawler)' } }
   )
   if (!res.ok) throw new Error(`mymemory ${res.status}`)
   const d = await res.json()

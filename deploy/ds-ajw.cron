@@ -1,4 +1,4 @@
-# dsh 安家网 · 服务器 crontab 示例（不使用 GitHub Actions 时）
+# DS安甲网 · 服务器 crontab 示例（不使用 GitHub Actions 时）
 # 安装: crontab -e 后粘贴以下内容，注意替换实际路径
 # 每天 02:30 运行（北京时间 10:30 前完成，随后由 Cloudflare purge 刷新缓存）
 
@@ -10,4 +10,4 @@ PATH=/usr/local/bin:/usr/bin:/bin
 # CF_API_TOKEN=xxx
 # CF_ZONE_ID=xxx
 
-30 2 * * * cd /srv/www/dsh-ajw && /usr/bin/node crawler/fetch.mjs >> /var/log/dsh-ajw-crawler.log 2>&1
+30 2 * * * cd /srv/www/dsh-ajw && /usr/bin/node crawler/fetch.mjs >> /var/log/ds-ajw-crawler.log 2>&1

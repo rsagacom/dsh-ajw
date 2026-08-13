@@ -1,4 +1,4 @@
-// dsh 安家网 · 每日聚合抓取器
+// DS安甲网 · 每日聚合抓取器
 // 用法: node crawler/fetch.mjs [--dry-run]
 // 环境变量: GITHUB_TOKEN (可选, 提高限额), DRY_RUN=1 跳过写盘
 import { writeFile, mkdir, readdir, unlink } from 'node:fs/promises'
@@ -22,7 +22,7 @@ const RAW = 'https://raw.githubusercontent.com'
 
 const headers = {
   Accept: 'application/vnd.github+json',
-  'User-Agent': 'dsh-ajw-crawler/1.0 (+https://dsh.ajw.cn)',
+  'User-Agent': 'ds-ajw-crawler/1.0 (+https://ds.ajw.cn)',
   ...(TOKEN ? { Authorization: `Bearer ${TOKEN}` } : {}),
 }
 
@@ -132,7 +132,7 @@ async function purgeCloudflare() {
     const res = await fetch(`https://api.cloudflare.com/client/v4/zones/${zone}/purge_cache`, {
       method: 'POST',
       headers: { Authorization: `Bearer ${token}`, 'Content-Type': 'application/json' },
-      body: JSON.stringify({ files: ['https://dsh.ajw.cn/', 'https://dsh.ajw.cn/data/projects.data.js', 'https://dsh.ajw.cn/data/projects.json'] }),
+      body: JSON.stringify({ files: ['https://ds.ajw.cn/', 'https://ds.ajw.cn/data/projects.data.js', 'https://ds.ajw.cn/data/projects.json'] }),
     })
     const d = await res.json()
     log(`  Cloudflare 缓存清理: ${d.success ? '成功' : '失败 ' + JSON.stringify(d.errors || [])}`)
@@ -271,7 +271,7 @@ async function main() {
 
   const today = new Date().toISOString().slice(0, 10)
   const payload = {
-    site: { name: 'dsh 安家网', domain: 'dsh.ajw.cn', slogan: 'DeepSeek Harness 插件开源工具超市' },
+    site: { name: 'DS安甲网', domain: 'ds.ajw.cn', slogan: '为你的 DeepSeek Harness 机器人 安装上所需功能的装甲吧' },
     generatedAt: new Date().toISOString(),
     date: today,
     count: projects.length,
