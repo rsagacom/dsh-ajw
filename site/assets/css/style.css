@@ -87,6 +87,12 @@ code { font-family: var(--font-pixel); font-size: 0.92em; background: var(--surf
 }
 .header-inner { display: flex; align-items: center; gap: 22px; height: var(--header-h); }
 .brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--text); min-width: 0; }
+.brand-mascot {
+  width: 34px; height: 34px; border-radius: 6px; object-fit: cover; flex: none;
+  border: 1px solid var(--border-strong);
+  box-shadow: 0 0 12px rgba(77, 107, 254, 0.35), var(--bevel);
+  image-rendering: pixelated;
+}
 .brand-mark {
   font-family: var(--font-pixel); font-weight: 600; font-size: 14px; letter-spacing: 0.05em;
   background: linear-gradient(135deg, #5b78ff, #3547c9); color: #fff;
@@ -473,6 +479,14 @@ section { padding: 40px 0 8px; }
   .comm-body { flex-wrap: wrap; }
   .qr-frame { width: 100%; height: 180px; }
 }
+/* 金属装甲纹理叠加（panel-metal.png, 低透明度平铺） */
+.card::after, .rank-card::after, .comm-card::after, .about-card::after {
+  content: ''; position: absolute; inset: 0; border-radius: inherit; pointer-events: none;
+  background: url('../img/panel-metal.png') repeat;
+  background-size: 256px 256px;
+  opacity: 0.05;
+}
+.about-card { position: relative; }
 .about-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 16px; }
 .about-card {
   background: linear-gradient(#141b29, #10161f); border: 1px solid var(--border);
