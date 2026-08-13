@@ -39,7 +39,7 @@ async function saveCache() {
 async function translateGoogle(text) {
   const res = await fetch(
     'https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=zh-CN&dt=t&q=' + encodeURIComponent(text),
-    { headers: { 'User-Agent': 'Mozilla/5.0 (ds-ajw-crawler)' } }
+    { headers: { 'User-Agent': 'Mozilla/5.0 (ds-ajw-crawler)' }, signal: AbortSignal.timeout(5000) }
   )
   if (!res.ok) throw new Error(`google ${res.status}`)
   const d = await res.json()
@@ -74,7 +74,7 @@ function restore(text) {
 async function translateMyMemory(text) {
   const res = await fetch(
     'https://api.mymemory.translated.net/get?q=' + encodeURIComponent(text) + '&langpair=autodetect|zh-CN',
-    { headers: { 'User-Agent': 'Mozilla/5.0 (ds-ajw-crawler)' } }
+    { headers: { 'User-Agent': 'Mozilla/5.0 (ds-ajw-crawler)' }, signal: AbortSignal.timeout(15000) }
   )
   if (!res.ok) throw new Error(`mymemory ${res.status}`)
   const d = await res.json()
@@ -83,23 +83,29 @@ async function translateMyMemory(text) {
   return zh.trim()
 }
 
+// Google 连续失败降级: 本机网络下 Google 接口不通, 快速跳过避免每条挂满超时
+let googleFails = 0
 async function translateOne(text) {
   const key = hash(text)
   if (cache[key]) return { zh: cache[key], cached: true }
   const guarded = protect(text)
-  try {
-    const zh = await translateGoogle(guarded)
-    cache[key] = restore(zh)
-    return { zh: cache[key], cached: false }
-  } catch {
-    await sleep(300)
+  if (googleFails < 2) {
     try {
-      const zh = await translateMyMemory(guarded)
+      const zh = await translateGoogle(guarded)
+      googleFails = 0
       cache[key] = restore(zh)
       return { zh: cache[key], cached: false }
     } catch {
-      return { zh: null, cached: false } // 失败保留原文，下次运行自动重试
+      googleFails++
     }
+  }
+  await sleep(200)
+  try {
+    const zh = await translateMyMemory(guarded)
+    cache[key] = restore(zh)
+    return { zh: cache[key], cached: false }
+  } catch {
+    return { zh: null, cached: false } // 失败保留原文，下次运行自动重试
   }
 }
 
