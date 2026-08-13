@@ -46,6 +46,10 @@
       <symbol id="i-pen" viewBox="0 0 24 24"><path d="M4 20l4.5-1 10-10a2.1 2.1 0 0 0-3-3l-10 10L4 20Z"/><path d="M13.5 6.5l3 3"/></symbol>
       <symbol id="i-book" viewBox="0 0 24 24"><path d="M4 5a2 2 0 0 1 2-2h13v18H6a2 2 0 0 1-2-2V5Z"/><path d="M4 17h15M9 7h6"/></symbol>
       <symbol id="i-game" viewBox="0 0 24 24"><path d="M6 11h4M8 9v4"/><circle cx="15" cy="10" r=".5"/><circle cx="17" cy="13" r=".5"/><path d="M6 8h9a5 5 0 0 1 5 5v2a3 3 0 0 1-3 3h-2l-2-2H9l-2 2H5a3 3 0 0 1-3-3v-2a5 5 0 0 1 5-5Z"/></symbol>
+      <symbol id="i-qr" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><path d="M14 14h3v3h-3zM20 14h1M14 20h1M18 18h3v3"/></symbol>
+      <symbol id="i-chat" viewBox="0 0 24 24"><path d="M21 12a8 8 0 0 1-8 8H4l2.5-3.1A8 8 0 1 1 21 12Z"/><path d="M8.5 11h.01M12 11h.01M15.5 11h.01"/></symbol>
+      <symbol id="i-warn" viewBox="0 0 24 24"><path d="M12 3 2.5 20h19L12 3Z"/><path d="M12 10v5M12 17.5h.01"/></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m8.5 12 2.5 2.5 5-5"/></symbol>
     </defs>
   </svg>
 
@@ -64,6 +68,7 @@
         <a href="#ranking">机库榜</a>
         <a href="#all">部件货架</a>
         <a href="manual.html" target="_blank" rel="noopener">手册</a>
+        <a href="#community">社区</a>
         <a href="#about">关于</a>
       </nav>
       <a class="btn btn-ghost header-gh" href="https://github.com/search?q=deepseek-harness&type=repositories" target="_blank" rel="noopener">
@@ -150,6 +155,16 @@
       </div>
     </section>
 
+    <section class="community" id="community" aria-labelledby="community-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="community-title"><svg class="icon" aria-hidden="true"><use href="#i-users"/></svg> 社群与补给频道</h2>
+          <span class="section-note">机师交流 · 入口筹备中</span>
+        </div>
+        <div class="community-grid" id="communityGrid"></div>
+      </div>
+    </section>
+
     <section class="about" id="about" aria-labelledby="about-title">
       <div class="container">
         <div class="section-head">
@@ -186,6 +201,7 @@
   </footer>
 
   <script src="data/projects.data.js"></script>
+  <script src="community-config.js"></script>
   <script src="assets/js/app.js" defer></script>
 </body>
 </html>

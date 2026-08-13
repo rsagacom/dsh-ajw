@@ -235,6 +235,57 @@
 
   var newSet = new Set()
 
+  function renderCommunity() {
+    var el = $('#communityGrid')
+    if (!el) return
+    var C = window.DSH_COMMUNITY || {}
+    var bbs = C.bbs || {}
+    var wechat = C.wechat || {}
+    var bbsOn = !!bbs.url
+    var html =
+      '<article class="comm-card">' +
+        '<div class="comm-bar"><span class="led ' + (bbsOn ? 'on' : 'amber') + '"></span>CH-01 · BBS UPLINK<span class="ch">COM ' + (bbsOn ? 'ONLINE' : 'STANDBY') + '</span></div>' +
+        '<div class="comm-body">' +
+          '<span class="comm-ico">' + icon('chat') + '</span>' +
+          '<div class="comm-info">' +
+            '<h3>' + esc(bbs.name || '在线社区 BBS') + '</h3>' +
+            '<p>' + esc(bbs.desc || '机师论坛：插件讨论、装机分享、问题互助') + '</p>' +
+            '<span class="comm-status' + (bbsOn ? ' on' : '') + '">' + icon(bbsOn ? 'check' : 'warn') + esc(bbsOn ? '频道已开通' : (bbs.status || '筹备中 · 敬请期待')) + '</span>' +
+          '</div>' +
+        '</div>' +
+        '<div class="comm-foot">' + (bbsOn
+          ? '<a class="btn" href="' + esc(bbs.url) + '" target="_blank" rel="noopener">进入论坛' + icon('ext') + '</a>'
+          : '<button class="btn disabled" type="button" disabled>入口筹备中</button>') +
+        '</div>' +
+      '</article>' +
+      '<article class="comm-card">' +
+        '<div class="comm-bar"><span class="led amber"></span>CH-02 · WECHAT CHANNEL<span class="ch">QR ' + (wechat.qr ? 'READY' : 'PENDING') + '</span></div>' +
+        '<div class="comm-body">' +
+          '<div class="qr-frame" id="qrFrame">' + icon('qr') + '<span>二维码张贴位</span><span class="qr-stamp">筹备中</span></div>' +
+          '<div class="comm-info">' +
+            '<h3>' + esc(wechat.name || '微信交流群') + '</h3>' +
+            '<p>' + esc(wechat.desc || '扫码加入机师群，第一时间收到每日补给情报') + '</p>' +
+            '<span class="comm-status" id="wechatStatus">' + icon('warn') + esc(wechat.status || '筹备中 · 敬请期待') + '</span>' +
+          '</div>' +
+        '</div>' +
+        '<div class="comm-foot"><span class="section-note">二维码就位后频道自动点亮</span></div>' +
+      '</article>'
+    el.innerHTML = html
+    if (wechat.qr) {
+      var img = new Image()
+      img.onload = function () {
+        var f = document.getElementById('qrFrame')
+        if (f) { f.innerHTML = ''; f.appendChild(img) }
+        var st = document.getElementById('wechatStatus')
+        if (st) { st.classList.add('on'); st.innerHTML = icon('check') + '扫码进群' }
+        var led = document.querySelector('#communityGrid .comm-card:last-child .led')
+        if (led) led.classList.add('on')
+      }
+      img.alt = (wechat.name || '微信群') + ' 二维码'
+      img.src = wechat.qr
+    }
+  }
+
   function boot() {
     if (!DATA || !Array.isArray(DATA.projects)) {
       $('#grid').innerHTML = '<div class="empty"><p>数据加载失败：请通过 HTTP 服务访问本站（nginx / GitHub Pages），或先运行 crawler/fetch.mjs 生成数据。</p></div>'
@@ -252,6 +303,7 @@
     renderLangs()
     renderRank()
     renderGrid()
+    renderCommunity()
     bindEvents()
     loadHistory()
     if (preCat) {
