@@ -9,7 +9,8 @@
 - **每日自动抓取**：围绕 `deepseek-harness`、`topic:dsh-plugin`、`dsh plugin`、`deepseek skill` 等关键词调用 GitHub 官方搜索 API，融合 [awesome-deepseek-harness](https://github.com/0xsline/awesome-deepseek-harness) 等精选列表
 - **外文介绍自动翻译**：所有非中文项目简介自动译为简体中文（Google 免费翻译接口为主、MyMemory 兜底、本地缓存译文），页面悬停可查看原文
 - **智能过滤与评分**：相关度评分 + 去重 + 去 fork/归档，剔除同名噪音项目（如名为 dsh 的其他工具）
-- **货架分类**：官方核心 / 精选列表 / 插件 / 主题皮肤 / Skill / 工具 / Awesome / 其他
+- **需求导向中文分类**：以「用户想解决什么问题」组织货架 —— 官方核心 / 界面与体验 / 上下文与记忆 / 输入与编辑 / 浏览器与远程 / 模型与推理 / Git 与工程 / 通知与渠道 / 趣味与生活 / 基建与开发 / 客户端与终端 / Agent 与团队 / 精选列表 / DeepSeek 生态
+- **一键安装命令**：每张卡片附可复制的安装命令（`dsh plugin add "github:owner/repo"` / `git clone` / `npx`），一键复制粘贴给 Agent 即可安装
 - **每日新增角标**：对比 30 天历史快照，标记「新增」项目
 - **零构建前端**：纯原生 HTML/CSS/JS 深色主题，响应式 + 无障碍（焦点环 / 减少动态效果 / 键盘导航），任何静态服务器可托管
 - **Cloudflare 友好**：域名由 Cloudflare 管理时，抓取完成后自动调用 purge_cache 清理边缘缓存

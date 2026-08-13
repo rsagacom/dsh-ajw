@@ -4,4 +4,6 @@ node_modules/
 site/.DS_Store
 .idea/
 .vscode/
-crawler/cache/
+# 翻译缓存: 译文随数据一起入库, 避免每日重复翻译、消耗翻译接口配额
+crawler/cache/*
+!crawler/cache/translations.json

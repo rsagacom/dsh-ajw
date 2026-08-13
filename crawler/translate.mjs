@@ -48,6 +48,29 @@ async function translateGoogle(text) {
   return zh.trim()
 }
 
+// 品牌词保护: 翻译前替换为占位符, 翻译后还原, 避免专有名词被乱译
+const PROTECT = [
+  ['DeepSeek Harness', 'PROTECT_A'], ['DeepSeek-Harness', 'PROTECT_A'],
+  ['deepseek-harness', 'PROTECT_B'], ['DeepSeek', 'PROTECT_C'],
+  ['GitHub', 'PROTECT_D'], ['VS Code', 'PROTECT_E'], ['VSCode', 'PROTECT_E'],
+  ['Codex', 'PROTECT_F'], ['Claude', 'PROTECT_G'], ['OpenClaw', 'PROTECT_H'],
+  ['MCP', 'PROTECT_I'], ['LLM', 'PROTECT_J'], ['API', 'PROTECT_K'],
+  ['WebUI', 'PROTECT_L'], ['Web UI', 'PROTECT_L'], ['TUI', 'PROTECT_M'],
+]
+function protect(text) {
+  let t = text
+  PROTECT.forEach(([term, ph], i) => { t = t.split(term).join(ph) })
+  return t
+}
+function restore(text) {
+  let t = text
+  PROTECT.forEach(([term, ph]) => {
+    // 还原占位符（大小写可能被翻译器改变, 统一按原词还原）
+    t = t.replace(new RegExp(ph, 'gi'), term)
+  })
+  return t
+}
+
 async function translateMyMemory(text) {
   const res = await fetch(
     'https://api.mymemory.translated.net/get?q=' + encodeURIComponent(text) + '&langpair=autodetect|zh-CN',
@@ -63,18 +86,19 @@ async function translateMyMemory(text) {
 async function translateOne(text) {
   const key = hash(text)
   if (cache[key]) return { zh: cache[key], cached: true }
+  const guarded = protect(text)
   try {
-    const zh = await translateGoogle(text)
-    cache[key] = zh
-    return { zh, cached: false }
+    const zh = await translateGoogle(guarded)
+    cache[key] = restore(zh)
+    return { zh: cache[key], cached: false }
   } catch {
     await sleep(300)
     try {
-      const zh = await translateMyMemory(text)
-      cache[key] = zh
-      return { zh, cached: false }
+      const zh = await translateMyMemory(guarded)
+      cache[key] = restore(zh)
+      return { zh: cache[key], cached: false }
     } catch {
-      return { zh: null, cached: false } // 失败保留原文，下次重试
+      return { zh: null, cached: false } // 失败保留原文，下次运行自动重试
     }
   }
 }

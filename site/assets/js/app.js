@@ -5,8 +5,8 @@
   var DATA = window.DSH_PROJECTS
   var $ = function (sel) { return document.querySelector(sel) }
 
-  var CAT_ICONS = { official: 'badge', curated: 'star', plugin: 'puzzle', theme: 'palette', skill: 'spark', tool: 'wrench', awesome: 'list', other: 'box' }
-  var CAT_ORDER = ['official', 'curated', 'plugin', 'theme', 'skill', 'tool', 'awesome', 'other']
+  var CAT_ICONS = { core: 'badge', awesome: 'list', client: 'monitor', agent: 'users', ui: 'palette', context: 'book', input: 'pen', browser: 'globe', model: 'cpu', git: 'git', notify: 'bell', fun: 'game', infra: 'wrench', tool: 'box', ecosystem: 'globe' }
+  var CAT_ORDER = ['core', 'agent', 'ui', 'context', 'input', 'browser', 'model', 'git', 'notify', 'fun', 'client', 'infra', 'tool', 'awesome', 'ecosystem']
   var state = { q: '', cat: 'all', lang: '', sort: 'stars' }
 
   function esc(s) {
@@ -59,6 +59,15 @@
           '<span class="m updated">' + icon('refresh') + daysAgo(p.pushedAt) + '</span>' +
         '</div>' +
         (topics ? '<div class="topics" aria-label="标签">' + topics + '</div>' : '') +
+        (p.install && p.install.cmd ? (
+          '<div class="card-install">' +
+            '<span class="install-label">' + esc(p.install.hint || '一键安装') + '</span>' +
+            '<div class="install-row">' +
+              '<code class="install-cmd">' + esc(p.install.cmd) + '</code>' +
+              '<button class="copy-btn" type="button" data-cmd="' + esc(p.install.cmd) + '" aria-label="复制安装命令">' + icon('copy') + '</button>' +
+            '</div>' +
+          '</div>'
+        ) : '') +
         '<div class="card-actions">' +
           '<a class="btn" href="' + esc(p.htmlUrl) + '" target="_blank" rel="noopener">' + icon('github', null, true) + 'GitHub</a>' +
           (p.homepage ? '<a class="btn btn-ghost" href="' + esc(p.homepage) + '" target="_blank" rel="noopener" aria-label="项目主页">' + icon('ext') + '</a>' : '') +
@@ -174,6 +183,29 @@
       $('#langFilter').value = ''
       renderChips()
       renderGrid()
+    })
+    // 一键复制安装命令
+    $('#grid').addEventListener('click', function (e) {
+      var btn = e.target.closest('.copy-btn')
+      if (!btn) return
+      var done = function () {
+        btn.classList.add('copied')
+        btn.setAttribute('aria-label', '已复制')
+        setTimeout(function () { btn.classList.remove('copied'); btn.setAttribute('aria-label', '复制安装命令') }, 1600)
+      }
+      var fallbackCopy = function (text) {
+        var ta = document.createElement('textarea')
+        ta.value = text
+        ta.style.position = 'fixed'
+        ta.style.opacity = '0'
+        document.body.appendChild(ta)
+        ta.select()
+        try { document.execCommand('copy') } catch (_) { /* 忽略 */ }
+        document.body.removeChild(ta)
+      }
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(btn.dataset.cmd).then(done).catch(function () { fallbackCopy(btn.dataset.cmd); done() })
+      } else { fallbackCopy(btn.dataset.cmd); done() }
     })
     // 顶部搜索框失焦时滚动到列表
     $('#search').addEventListener('keydown', function (e) {

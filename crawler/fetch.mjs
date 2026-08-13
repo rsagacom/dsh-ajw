@@ -8,6 +8,7 @@ import { dirname, join } from 'node:path'
 import {
   KEYWORDS, CURATED, CATEGORY_RULES, OFFICIAL_ORGS,
   relevanceScore, isRelevant, MIN_STARS, MIN_SCORE, SEARCH_PER_PAGE, SEARCH_SLEEP_MS,
+  AWESOME_SECTION_CATEGORY, installFor,
 } from './config.mjs'
 import { translateDescriptions } from './translate.mjs'
 
@@ -92,22 +93,33 @@ async function fetchCurated(map) {
   return out
 }
 
-// 尽力解析 awesome-deepseek-harness 等列表的 README，提取仓库链接作为精选来源
+// 尽力解析 awesome-deepseek-harness 等列表的 README，提取仓库链接及其所属章节（章节=用户需求分类）
+function slugify(s) {
+  return s.toLowerCase().replace(/&/g, '-').replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '')
+}
 async function parseAwesomeReadme(repo) {
   const links = new Set()
+  const sectionByLink = {}
+  let section = ''
   for (const branch of ['main', 'master']) {
     try {
       const res = await fetch(`${RAW}/${repo.full_name}/${branch}/README.md`, { headers })
       if (!res.ok) continue
       const text = await res.text()
-      for (const m of text.matchAll(/github\.com\/([A-Za-z0-9_.-]+\/[A-Za-z0-9_.-]+)/g)) {
+      for (const line of text.split('\n')) {
+        const h = line.match(/^##\s+(.+)$/)
+        if (h) { section = slugify(h[1]); continue }
+        const m = line.match(/github\.com\/([A-Za-z0-9_.-]+\/[A-Za-z0-9_.-]+)/)
+        if (!m) continue
         const full = m[1].toLowerCase()
-        if (!full.endsWith('.md') && !/\.(png|jpg|svg|gif|webp)$/.test(full)) links.add(full)
+        if (full.endsWith('.md') || /\.(png|jpg|svg|gif|webp)$/.test(full)) continue
+        links.add(full)
+        if (!sectionByLink[full] && section) sectionByLink[full] = section
       }
-      if (links.size) return { branch, links: [...links].slice(0, 80) }
+      if (links.size) return { branch, links: [...links].slice(0, 80), sectionByLink }
     } catch { /* 尝试下一个分支 */ }
   }
-  return { branch: null, links: [] }
+  return { branch: null, links: [], sectionByLink: {} }
 }
 
 // 抓取后清理 Cloudflare 边缘缓存，让访客立即看到新数据
@@ -212,7 +224,7 @@ async function main() {
   const awesomeSrc = curatedDetails.find((r) => r.full_name.toLowerCase() === '0xsline/awesome-deepseek-harness')
     || { full_name: '0xsline/awesome-deepseek-harness' }
   let awesomeLinks = []
-  const { links } = await parseAwesomeReadme(awesomeSrc)
+  const { links, sectionByLink } = await parseAwesomeReadme(awesomeSrc)
   awesomeLinks = links
   log(`  awesome 列表解析到 ${links.length} 个仓库链接`)
   const missing = links.filter((l) => !map.has(l))
@@ -226,7 +238,16 @@ async function main() {
   }
   for (const l of links) {
     const p = map.get(l)
-    if (p) { p.curated = true; if (!p.matchedBy.includes('awesome 列表')) p.matchedBy.push('awesome 列表') }
+    if (p) {
+      p.curated = true
+      if (!p.matchedBy.includes('awesome 列表')) p.matchedBy.push('awesome 列表')
+      // 应用精选列表章节 -> 需求分类
+      const catId = AWESOME_SECTION_CATEGORY[sectionByLink[l]]
+      if (catId) {
+        const cat = CATEGORY_RULES.find((c) => c.id === catId)
+        if (cat) p.category = { id: cat.id, name: cat.name, icon: cat.icon }
+      }
+    }
   }
 
   // 3) 过滤 + 评分 + 分类 + 排序
@@ -241,6 +262,9 @@ async function main() {
   })
   projects = projects.map((p) => ({ ...p, score: relevanceScore(p, 0) }))
   projects.sort((a, b) => b.stars - a.stars)
+
+  // 3.4) 生成一键安装命令
+  projects = projects.map((p) => ({ ...p, install: installFor(p) }))
 
   // 3.5) 外文介绍自动翻译为中文
   const translation = await translateDescriptions(projects)
