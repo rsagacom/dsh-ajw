@@ -102,22 +102,28 @@ async function parseAwesomeReadme(repo) {
   const sectionByLink = {}
   let section = ''
   for (const branch of ['main', 'master']) {
-    try {
-      const res = await fetch(`${RAW}/${repo.full_name}/${branch}/README.md`, { headers })
-      if (!res.ok) continue
-      const text = await res.text()
-      for (const line of text.split('\n')) {
-        const h = line.match(/^##\s+(.+)$/)
-        if (h) { section = slugify(h[1]); continue }
-        const m = line.match(/github\.com\/([A-Za-z0-9_.-]+\/[A-Za-z0-9_.-]+)/)
-        if (!m) continue
-        const full = m[1].toLowerCase()
-        if (full.endsWith('.md') || /\.(png|jpg|svg|gif|webp)$/.test(full)) continue
-        links.add(full)
-        if (!sectionByLink[full] && section) sectionByLink[full] = section
+    for (let attempt = 0; attempt < 3; attempt++) {
+      try {
+        const res = await fetch(`${RAW}/${repo.full_name}/${branch}/README.md`, { headers, signal: AbortSignal.timeout(20000) })
+        if (!res.ok) break
+        const text = await res.text()
+        for (const line of text.split('\n')) {
+          const h = line.match(/^##\s+(.+)$/)
+          if (h) { section = slugify(h[1]); continue }
+          const m = line.match(/github\.com\/([A-Za-z0-9_.-]+\/[A-Za-z0-9_.-]+)/)
+          if (!m) continue
+          const full = m[1].toLowerCase()
+          if (full.endsWith('.md') || /\.(png|jpg|svg|gif|webp)$/.test(full)) continue
+          links.add(full)
+          if (!sectionByLink[full] && section) sectionByLink[full] = section
+        }
+        if (links.size) return { branch, links: [...links].slice(0, 80), sectionByLink }
+        break
+      } catch {
+        if (attempt < 2) { await sleep(2000); continue }
+        break
       }
-      if (links.size) return { branch, links: [...links].slice(0, 80), sectionByLink }
-    } catch { /* 尝试下一个分支 */ }
+    }
   }
   return { branch: null, links: [], sectionByLink: {} }
 }

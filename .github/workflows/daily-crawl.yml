@@ -37,7 +37,7 @@ jobs:
         run: |
           git config user.name "dsh-ajw-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add site/data
+          git add site/data crawler/cache/translations.json
           if git diff --cached --quiet; then
             echo "数据无变化，跳过提交"
           else
