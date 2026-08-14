@@ -82,8 +82,8 @@
       if (state.cat !== 'all' && p.category.id !== state.cat) return false
       if (state.lang && p.language !== state.lang) return false
       if (q) {
-        var hay = (p.fullName + ' ' + (p.description || '') + ' ' + (p.topics || []).join(' ') + ' ' + p.owner).toLowerCase()
-        if (hay.indexOf(q) === -1) return false
+        // 名称完全匹配（项目名或 所有者/项目名, 不区分大小写）
+        if (p.name.toLowerCase() !== q && p.fullName.toLowerCase() !== q) return false
       }
       return true
     })
