@@ -4,12 +4,12 @@
     "domain": "ds.ajw.cn",
     "slogan": "为你的 DeepSeek Harness 机器人 安装上所需功能的装甲吧"
   },
-  "generatedAt": "2026-08-14T00:26:12.695Z",
+  "generatedAt": "2026-08-14T00:32:01.873Z",
   "date": "2026-08-14",
-  "count": 469,
+  "count": 468,
   "stats": {
-    "totalProjects": 469,
-    "totalStars": 49913,
+    "totalProjects": 468,
+    "totalStars": 50360,
     "topLanguages": [
       {
         "name": "TypeScript",
@@ -17,7 +17,7 @@
       },
       {
         "name": "JavaScript",
-        "count": 138
+        "count": 137
       },
       {
         "name": "Python",
@@ -53,9 +53,9 @@
       }
     ],
     "byCategory": {
-      "agent": 120,
+      "agent": 121,
       "ecosystem": 111,
-      "ui": 56,
+      "ui": 55,
       "context": 48,
       "client": 31,
       "model": 24,
@@ -65,16 +65,16 @@
       "git": 11,
       "awesome": 8,
       "notify": 8,
-      "fun": 7,
       "browser": 6,
+      "fun": 6,
       "core": 1
     }
   },
   "translation": {
     "translated": 320,
-    "cached": 318,
+    "cached": 320,
     "failed": 0,
-    "apiCalls": 2
+    "apiCalls": 0
   },
   "categories": [
     {
@@ -193,8 +193,8 @@
       "htmlUrl": "https://github.com/deepseek-ai/deepseek-harness",
       "homepage": "https://deepseek.com/harness",
       "description": "DeepSeek Harness：一切都是插件。",
-      "stars": 41653,
-      "forks": 3281,
+      "stars": 42071,
+      "forks": 3309,
       "language": "TypeScript",
       "languageColor": "#3178c6",
       "topics": [
@@ -242,8 +242,8 @@
       "htmlUrl": "https://github.com/Devin-AXIS/iPolloWork",
       "homepage": "https://www.ipollo.ai/",
       "description": "下一代、源可用的 AI 工作区，具有用于可编辑代码、设计、演示文稿、网站和视频的自我进化代理运行时，这是一种 Codex 替代方案，集成了用于子代理委派的 DeepSeek Harness，将 iPolloWork 的完整 AI 工作台与 DSH 的专用代理和两个插件生态系统结合在一个工作流程中。",
-      "stars": 3594,
-      "forks": 776,
+      "stars": 3599,
+      "forks": 777,
       "language": "HTML",
       "languageColor": "#e34c26",
       "topics": [
@@ -367,7 +367,7 @@
       "htmlUrl": "https://github.com/zhu1090093659/dsh-web-ui",
       "homepage": "",
       "description": "DeepSeek Harness (DSH) WebUI 的插件和皮肤集合 - 任务板、git 图表、右侧面板、远程移动 UI、宠物、实时令牌统计信息和皮肤中心。",
-      "stars": 548,
+      "stars": 550,
       "forks": 23,
       "language": "TypeScript",
       "languageColor": "#3178c6",
@@ -417,7 +417,7 @@
       "htmlUrl": "https://github.com/AdamPlatin123/awesome-dsh-plugins",
       "homepage": "",
       "description": "前部索引仓库（Radar）：自动扫描发现的所有 dsh 插件候选；经测试合格的将移入后序精选目录仓库",
-      "stars": 320,
+      "stars": 323,
       "forks": 20,
       "language": "Shell",
       "languageColor": "#89e051",
@@ -457,7 +457,7 @@
       "htmlUrl": "https://github.com/ccch1mneyyy/dsh-cc-tui",
       "homepage": "",
       "description": "解决DSH 官方尚无终端 TUI 痛点的补位之作，献给偏爱cli的各位极客：Claude Code 风格全屏交互终端插件——像素鲸鱼顶栏、实时工作状态行、思考流式展开、双击 Esc 回滚、上下文进度条 + TPS 仪表。npm 一键安装。",
-      "stars": 221,
+      "stars": 222,
       "forks": 6,
       "language": "TypeScript",
       "languageColor": "#3178c6",
@@ -569,7 +569,7 @@
       "htmlUrl": "https://github.com/0xsline/awesome-deepseek-harness",
       "homepage": "",
       "description": "DeepSeek Harness (DSH) 生态系统：来自 dsh-external/hub 和公共 dsh-plugin 主题的精选插件、工具和基础设施。",
-      "stars": 153,
+      "stars": 155,
       "forks": 27,
       "language": "Python",
       "languageColor": "#3572A5",
@@ -626,6 +626,49 @@
       "translated": true
     },
     {
+      "id": 1326893710,
+      "fullName": "omdsh-dev/DSH-better-sidebar",
+      "name": "DSH-better-sidebar",
+      "owner": "omdsh-dev",
+      "avatar": "https://avatars.githubusercontent.com/u/312905287?v=4",
+      "htmlUrl": "https://github.com/omdsh-dev/DSH-better-sidebar",
+      "homepage": "",
+      "description": "一个侧边栏的完整工作台，支持三方拓展注册新Tab页面，内置文件渲染编辑/终端/Git/子代理",
+      "stars": 135,
+      "forks": 3,
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "topics": [
+        "deepseek",
+        "deepseek-harness",
+        "dsh",
+        "dsh-plugin",
+        "sidebar"
+      ],
+      "license": "MIT",
+      "createdAt": "2026-08-07",
+      "pushedAt": "2026-08-13",
+      "archived": false,
+      "fork": false,
+      "official": false,
+      "curated": true,
+      "curatedSeed": false,
+      "score": 13,
+      "category": {
+        "id": "ui",
+        "name": "驾驶舱与涂装",
+        "icon": "palette"
+      },
+      "matchedBy": [
+        "awesome 列表"
+      ],
+      "install": {
+        "kind": "dsh-plugin",
+        "cmd": "dsh plugin add \"github:omdsh-dev/DSH-better-sidebar\"",
+        "hint": "粘贴给 Agent 即可安装"
+      }
+    },
+    {
       "id": 1333123776,
       "fullName": "Small-tailqwq/dsh-deep-whale",
       "name": "dsh-deep-whale",
@@ -668,51 +711,6 @@
       "translated": true
     },
     {
-      "id": 1326893710,
-      "fullName": "omdsh-dev/DSH-better-sidebar",
-      "name": "DSH-better-sidebar",
-      "owner": "omdsh-dev",
-      "avatar": "https://avatars.githubusercontent.com/u/312905287?v=4",
-      "htmlUrl": "https://github.com/omdsh-dev/DSH-better-sidebar",
-      "homepage": "",
-      "description": "一个侧边栏的完整工作台，支持三方拓展注册新Tab页面，内置文件渲染编辑/终端/Git/子代理",
-      "stars": 131,
-      "forks": 3,
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "topics": [
-        "deepseek",
-        "deepseek-harness",
-        "dsh",
-        "dsh-plugin",
-        "sidebar"
-      ],
-      "license": "MIT",
-      "createdAt": "2026-08-07",
-      "pushedAt": "2026-08-13",
-      "archived": false,
-      "fork": false,
-      "official": false,
-      "curated": false,
-      "curatedSeed": false,
-      "score": 13,
-      "category": {
-        "id": "ui",
-        "name": "驾驶舱与涂装",
-        "icon": "palette"
-      },
-      "matchedBy": [
-        "DeepSeek Harness",
-        "dsh-plugin 主题",
-        "DeepSeek + DSH"
-      ],
-      "install": {
-        "kind": "dsh-plugin",
-        "cmd": "dsh plugin add \"github:omdsh-dev/DSH-better-sidebar\"",
-        "hint": "粘贴给 Agent 即可安装"
-      }
-    },
-    {
       "id": 1333175049,
       "fullName": "awesome-dsh-plugin/awesome-dsh-plugin",
       "name": "awesome-dsh-plugin",
@@ -721,7 +719,7 @@
       "htmlUrl": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
       "homepage": "https://awesome-dsh-plugin.com",
       "description": "A curated list of plugins for DeepSeek Harness (dsh) · DeepSeek Harness 插件精选列表",
-      "stars": 125,
+      "stars": 127,
       "forks": 20,
       "language": "HTML",
       "languageColor": "#e34c26",
@@ -773,7 +771,7 @@
       "htmlUrl": "https://github.com/Nagi-ovo/dsh-ads",
       "homepage": "",
       "description": "是兄弟就来蹬我！DSH Web UI 广告：2005 年中文站点风格的侧栏广告 / 对话内信息流 / 角落弹窗 + 一个真实热区比视觉小得多的关闭叉。素材全虚构，域名打码。",
-      "stars": 117,
+      "stars": 118,
       "forks": 0,
       "language": "TypeScript",
       "languageColor": "#3178c6",
@@ -863,7 +861,7 @@
       "htmlUrl": "https://github.com/huiliyi37/dsh-tianshu-tui",
       "homepage": "https://github.com/huiliyi37/dsh-tianshu-tui",
       "description": "dsh-tianshu-tui — DeepSeek Harness 终端 UI",
-      "stars": 76,
+      "stars": 77,
       "forks": 0,
       "language": "TypeScript",
       "languageColor": "#3178c6",
@@ -1377,7 +1375,12 @@
       "language": "Python",
       "languageColor": "#3572A5",
       "topics": [
-        "dsh-plugin"
+        "agents",
+        "awesome",
+        "awesome-list",
+        "deepseek",
+        "dsh-plugin",
+        "plugins"
       ],
       "license": "MIT",
       "createdAt": "2026-08-13",
@@ -1387,15 +1390,18 @@
       "official": false,
       "curated": false,
       "curatedSeed": true,
-      "score": 6,
+      "score": 10,
       "category": {
-        "id": "fun",
-        "name": "个性化改装",
-        "icon": "game"
+        "id": "agent",
+        "name": "编队协作",
+        "icon": "users"
       },
       "matchedBy": [
         "dsh-plugin 主题",
-        "DSH 插件"
+        "DSH 插件",
+        "DeepSeek + DSH",
+        "Awesome 列表",
+        "DeepSeek 插件"
       ],
       "install": {
         "kind": "dsh-plugin",
@@ -1461,7 +1467,7 @@
       "htmlUrl": "https://github.com/omdsh-dev/dsh-at-file",
       "homepage": "",
       "description": "Codex 风格的 @file 提到了 DeepSeek Harness：在编辑器中搜索工作区文件并将其内容附加到提示中。",
-      "stars": 26,
+      "stars": 27,
       "forks": 0,
       "language": "JavaScript",
       "languageColor": "#f1e05a",
@@ -1506,7 +1512,7 @@
       "htmlUrl": "https://github.com/Lum1104/dsh-browser",
       "homepage": "",
       "description": "dsh 插件：Chrome 侧边栏扩展，可让 DSH 直接操作您的浏览器，无需视觉功能。",
-      "stars": 26,
+      "stars": 27,
       "forks": 0,
       "language": "TypeScript",
       "languageColor": "#3178c6",
@@ -2326,6 +2332,73 @@
       "translated": true
     },
     {
+      "id": 1333173677,
+      "fullName": "Dominic789654/awesome-deepseek-harness",
+      "name": "awesome-deepseek-harness",
+      "owner": "Dominic789654",
+      "avatar": "https://avatars.githubusercontent.com/u/47224289?v=4",
+      "htmlUrl": "https://github.com/Dominic789654/awesome-deepseek-harness",
+      "homepage": "",
+      "description": "DeepSeek Harness (DSH) 的插件、技能、MCP 服务器、协调器和 UI 的精选列表。可视化·PPT·编码·代理·循环（自动研究）等等。 #dsh",
+      "stars": 12,
+      "forks": 3,
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "topics": [
+        "agent",
+        "agent-framework",
+        "ai-agent",
+        "ai-agents",
+        "awesome",
+        "awesome-list",
+        "coding-agent",
+        "deepseek",
+        "deepseek-ai",
+        "deepseek-harness",
+        "deepseek-harness-plugin",
+        "deepseek-harness-plugins",
+        "dsh",
+        "dsh-plugin",
+        "dsh-plugins",
+        "llm",
+        "llm-agent",
+        "mcp",
+        "plugins"
+      ],
+      "license": "NOASSERTION",
+      "createdAt": "2026-08-13",
+      "pushedAt": "2026-08-13",
+      "archived": false,
+      "fork": false,
+      "official": false,
+      "curated": false,
+      "curatedSeed": false,
+      "score": 14,
+      "category": {
+        "id": "agent",
+        "name": "编队协作",
+        "icon": "users"
+      },
+      "matchedBy": [
+        "DeepSeek Harness",
+        "dsh-plugin 主题",
+        "DeepSeek Harness 短语",
+        "DSH 插件",
+        "DeepSeek + DSH",
+        "Awesome 列表",
+        "Harness 插件组合",
+        "DeepSeek Skill",
+        "DeepSeek 插件"
+      ],
+      "install": {
+        "kind": "dsh-plugin",
+        "cmd": "dsh plugin add \"github:Dominic789654/awesome-deepseek-harness\"",
+        "hint": "粘贴给 Agent 即可安装"
+      },
+      "descriptionOriginal": "A curated list of plugins, skills, MCP servers, orchestrators & UIs for DeepSeek Harness (DSH). Visualization · PPT · Coding · Agents · Loops (auto-research) and more. #dsh",
+      "translated": true
+    },
+    {
       "id": 1332590097,
       "fullName": "SenmuuuuW/dsh-group-photo",
       "name": "dsh-group-photo",
@@ -2472,73 +2545,6 @@
       "translated": true
     },
     {
-      "id": 1333173677,
-      "fullName": "Dominic789654/awesome-deepseek-harness",
-      "name": "awesome-deepseek-harness",
-      "owner": "Dominic789654",
-      "avatar": "https://avatars.githubusercontent.com/u/47224289?v=4",
-      "htmlUrl": "https://github.com/Dominic789654/awesome-deepseek-harness",
-      "homepage": "",
-      "description": "DeepSeek Harness (DSH) 的插件、技能、MCP 服务器、协调器和 UI 的精选列表。可视化·PPT·编码·代理·循环（自动研究）等等。 #dsh",
-      "stars": 11,
-      "forks": 3,
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "topics": [
-        "agent",
-        "agent-framework",
-        "ai-agent",
-        "ai-agents",
-        "awesome",
-        "awesome-list",
-        "coding-agent",
-        "deepseek",
-        "deepseek-ai",
-        "deepseek-harness",
-        "deepseek-harness-plugin",
-        "deepseek-harness-plugins",
-        "dsh",
-        "dsh-plugin",
-        "dsh-plugins",
-        "llm",
-        "llm-agent",
-        "mcp",
-        "plugins"
-      ],
-      "license": "NOASSERTION",
-      "createdAt": "2026-08-13",
-      "pushedAt": "2026-08-13",
-      "archived": false,
-      "fork": false,
-      "official": false,
-      "curated": false,
-      "curatedSeed": false,
-      "score": 14,
-      "category": {
-        "id": "agent",
-        "name": "编队协作",
-        "icon": "users"
-      },
-      "matchedBy": [
-        "DeepSeek Harness",
-        "dsh-plugin 主题",
-        "DeepSeek Harness 短语",
-        "DSH 插件",
-        "DeepSeek + DSH",
-        "Awesome 列表",
-        "Harness 插件组合",
-        "DeepSeek Skill",
-        "DeepSeek 插件"
-      ],
-      "install": {
-        "kind": "dsh-plugin",
-        "cmd": "dsh plugin add \"github:Dominic789654/awesome-deepseek-harness\"",
-        "hint": "粘贴给 Agent 即可安装"
-      },
-      "descriptionOriginal": "A curated list of plugins, skills, MCP servers, orchestrators & UIs for DeepSeek Harness (DSH). Visualization · PPT · Coding · Agents · Loops (auto-research) and more. #dsh",
-      "translated": true
-    },
-    {
       "id": 1324720195,
       "fullName": "Moeblack/dsh-message-edit",
       "name": "dsh-message-edit",
@@ -2547,7 +2553,7 @@
       "htmlUrl": "https://github.com/Moeblack/dsh-message-edit",
       "homepage": "",
       "description": "DSH 插件：基于分支的消息编辑、重滚、重试、版本时间线",
-      "stars": 11,
+      "stars": 12,
       "forks": 0,
       "language": "TypeScript",
       "languageColor": "#3178c6",
@@ -2579,6 +2585,50 @@
         "hint": "粘贴给 Agent 即可安装"
       },
       "descriptionOriginal": "DSH plugin: branch-based message editing, reroll, retry, version timeline",
+      "translated": true
+    },
+    {
+      "id": 1333343804,
+      "fullName": "OBdangshang07/DSH_Creative_Workshop",
+      "name": "DSH_Creative_Workshop",
+      "owner": "OBdangshang07",
+      "avatar": "https://avatars.githubusercontent.com/u/133413285?v=4",
+      "htmlUrl": "https://github.com/OBdangshang07/DSH_Creative_Workshop",
+      "homepage": "",
+      "description": "受 Steam 创意工坊启发的 DeepSeek Harness 插件发现、信任、图形搜索、集合和事务安装规划",
+      "stars": 11,
+      "forks": 0,
+      "language": "HTML",
+      "languageColor": "#e34c26",
+      "topics": [],
+      "license": "MIT",
+      "createdAt": "2026-08-13",
+      "pushedAt": "2026-08-13",
+      "archived": false,
+      "fork": false,
+      "official": false,
+      "curated": false,
+      "curatedSeed": false,
+      "score": 9,
+      "category": {
+        "id": "agent",
+        "name": "编队协作",
+        "icon": "users"
+      },
+      "matchedBy": [
+        "DeepSeek Harness",
+        "DeepSeek Harness 短语",
+        "DSH 插件",
+        "DeepSeek + DSH",
+        "Harness 插件组合",
+        "DeepSeek 插件"
+      ],
+      "install": {
+        "kind": "dsh-plugin",
+        "cmd": "dsh plugin add \"github:OBdangshang07/DSH_Creative_Workshop\"",
+        "hint": "粘贴给 Agent 即可安装"
+      },
+      "descriptionOriginal": "Steam-Workshop-inspired discovery, trust, graph search, collections, and transactional installation planning for DeepSeek Harness plugins",
       "translated": true
     },
     {
@@ -2707,6 +2757,48 @@
       }
     },
     {
+      "id": 1331025830,
+      "fullName": "forrestchang/dsh-multica-runtime",
+      "name": "dsh-multica-runtime",
+      "owner": "forrestchang",
+      "avatar": "https://avatars.githubusercontent.com/u/7857126?v=4",
+      "htmlUrl": "https://github.com/forrestchang/dsh-multica-runtime",
+      "homepage": "",
+      "description": "支持 Multica 上的 dsh 运行时。",
+      "stars": 11,
+      "forks": 0,
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "topics": [
+        "dsh",
+        "dsh-plugin"
+      ],
+      "license": "",
+      "createdAt": "2026-08-11",
+      "pushedAt": "2026-08-13",
+      "archived": false,
+      "fork": false,
+      "official": false,
+      "curated": false,
+      "curatedSeed": false,
+      "score": 6,
+      "category": {
+        "id": "ecosystem",
+        "name": "外挂武器库",
+        "icon": "globe"
+      },
+      "matchedBy": [
+        "dsh-plugin 主题"
+      ],
+      "install": {
+        "kind": "clone",
+        "cmd": "git clone https://github.com/forrestchang/dsh-multica-runtime.git",
+        "hint": "克隆到本地"
+      },
+      "descriptionOriginal": "Support dsh runtime on Multica.",
+      "translated": true
+    },
+    {
       "id": 1331588760,
       "fullName": "zhouwumu2-lab/dsh-vision-fix",
       "name": "dsh-vision-fix",
@@ -2743,50 +2835,6 @@
         "hint": "粘贴给 Agent 即可安装"
       },
       "descriptionOriginal": "Temporary fork for PR: fix dsh.plugin.json in files",
-      "translated": true
-    },
-    {
-      "id": 1333343804,
-      "fullName": "OBdangshang07/DSH_Creative_Workshop",
-      "name": "DSH_Creative_Workshop",
-      "owner": "OBdangshang07",
-      "avatar": "https://avatars.githubusercontent.com/u/133413285?v=4",
-      "htmlUrl": "https://github.com/OBdangshang07/DSH_Creative_Workshop",
-      "homepage": "",
-      "description": "受 Steam 创意工坊启发的 DeepSeek Harness 插件发现、信任、图形搜索、集合和事务安装规划",
-      "stars": 10,
-      "forks": 0,
-      "language": "HTML",
-      "languageColor": "#e34c26",
-      "topics": [],
-      "license": "MIT",
-      "createdAt": "2026-08-13",
-      "pushedAt": "2026-08-13",
-      "archived": false,
-      "fork": false,
-      "official": false,
-      "curated": false,
-      "curatedSeed": false,
-      "score": 9,
-      "category": {
-        "id": "agent",
-        "name": "编队协作",
-        "icon": "users"
-      },
-      "matchedBy": [
-        "DeepSeek Harness",
-        "DeepSeek Harness 短语",
-        "DSH 插件",
-        "DeepSeek + DSH",
-        "Harness 插件组合",
-        "DeepSeek 插件"
-      ],
-      "install": {
-        "kind": "dsh-plugin",
-        "cmd": "dsh plugin add \"github:OBdangshang07/DSH_Creative_Workshop\"",
-        "hint": "粘贴给 Agent 即可安装"
-      },
-      "descriptionOriginal": "Steam-Workshop-inspired discovery, trust, graph search, collections, and transactional installation planning for DeepSeek Harness plugins",
       "translated": true
     },
     {
@@ -2832,48 +2880,6 @@
         "hint": "克隆到本地"
       },
       "descriptionOriginal": "DSH 零依赖工具包 collection —— time / encoding / json / calculator / csv / regex / markdown / diff / stat / schema 十个确定性工具，统一入口一键安装",
-      "translated": true
-    },
-    {
-      "id": 1331025830,
-      "fullName": "forrestchang/dsh-multica-runtime",
-      "name": "dsh-multica-runtime",
-      "owner": "forrestchang",
-      "avatar": "https://avatars.githubusercontent.com/u/7857126?v=4",
-      "htmlUrl": "https://github.com/forrestchang/dsh-multica-runtime",
-      "homepage": "",
-      "description": "支持 Multica 上的 dsh 运行时。",
-      "stars": 10,
-      "forks": 0,
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "topics": [
-        "dsh",
-        "dsh-plugin"
-      ],
-      "license": "",
-      "createdAt": "2026-08-11",
-      "pushedAt": "2026-08-13",
-      "archived": false,
-      "fork": false,
-      "official": false,
-      "curated": false,
-      "curatedSeed": false,
-      "score": 6,
-      "category": {
-        "id": "ecosystem",
-        "name": "外挂武器库",
-        "icon": "globe"
-      },
-      "matchedBy": [
-        "dsh-plugin 主题"
-      ],
-      "install": {
-        "kind": "clone",
-        "cmd": "git clone https://github.com/forrestchang/dsh-multica-runtime.git",
-        "hint": "克隆到本地"
-      },
-      "descriptionOriginal": "Support dsh runtime on Multica.",
       "translated": true
     },
     {
@@ -3017,6 +3023,44 @@
       }
     },
     {
+      "id": 1333204687,
+      "fullName": "ipfred/deepseek-harness-app",
+      "name": "deepseek-harness-app",
+      "owner": "ipfred",
+      "avatar": "https://avatars.githubusercontent.com/u/46060993?v=4",
+      "htmlUrl": "https://github.com/ipfred/deepseek-harness-app",
+      "homepage": "",
+      "description": "",
+      "stars": 8,
+      "forks": 1,
+      "language": "Shell",
+      "languageColor": "#89e051",
+      "topics": [],
+      "license": "MIT",
+      "createdAt": "2026-08-13",
+      "pushedAt": "2026-08-13",
+      "archived": false,
+      "fork": false,
+      "official": false,
+      "curated": false,
+      "curatedSeed": false,
+      "score": 0,
+      "category": {
+        "id": "ecosystem",
+        "name": "外挂武器库",
+        "icon": "globe"
+      },
+      "matchedBy": [
+        "DeepSeek Harness",
+        "DeepSeek Harness 短语"
+      ],
+      "install": {
+        "kind": "clone",
+        "cmd": "git clone https://github.com/ipfred/deepseek-harness-app.git",
+        "hint": "克隆到本地"
+      }
+    },
+    {
       "id": 1332396549,
       "fullName": "whiteguo233/dsh-openbiliclaw",
       "name": "dsh-openbiliclaw",
@@ -3146,44 +3190,6 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/omdsh-dev/dsh-plugin-dev.git",
-        "hint": "克隆到本地"
-      }
-    },
-    {
-      "id": 1333204687,
-      "fullName": "ipfred/deepseek-harness-app",
-      "name": "deepseek-harness-app",
-      "owner": "ipfred",
-      "avatar": "https://avatars.githubusercontent.com/u/46060993?v=4",
-      "htmlUrl": "https://github.com/ipfred/deepseek-harness-app",
-      "homepage": "",
-      "description": "",
-      "stars": 7,
-      "forks": 1,
-      "language": "Shell",
-      "languageColor": "#89e051",
-      "topics": [],
-      "license": "MIT",
-      "createdAt": "2026-08-13",
-      "pushedAt": "2026-08-13",
-      "archived": false,
-      "fork": false,
-      "official": false,
-      "curated": false,
-      "curatedSeed": false,
-      "score": 0,
-      "category": {
-        "id": "ecosystem",
-        "name": "外挂武器库",
-        "icon": "globe"
-      },
-      "matchedBy": [
-        "DeepSeek Harness",
-        "DeepSeek Harness 短语"
-      ],
-      "install": {
-        "kind": "clone",
-        "cmd": "git clone https://github.com/ipfred/deepseek-harness-app.git",
         "hint": "克隆到本地"
       }
     },
@@ -3567,6 +3573,47 @@
         "hint": "克隆到本地"
       },
       "descriptionOriginal": "DeepSeekHarness桌面端打包",
+      "translated": true
+    },
+    {
+      "id": 1333383620,
+      "fullName": "tonyd2wild/DeepSeek-Harness-Web-Tools",
+      "name": "DeepSeek-Harness-Web-Tools",
+      "owner": "tonyd2wild",
+      "avatar": "https://avatars.githubusercontent.com/u/219747476?v=4",
+      "htmlUrl": "https://github.com/tonyd2wild/DeepSeek-Harness-Web-Tools",
+      "homepage": "",
+      "description": "DeepSeek Harness (dsh) 的免费、无密钥 web_search 和 web_fetch — 由 DuckDuckGo 支持，无需注册。非官方社区项目。",
+      "stars": 6,
+      "forks": 0,
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "topics": [],
+      "license": "MIT",
+      "createdAt": "2026-08-13",
+      "pushedAt": "2026-08-13",
+      "archived": false,
+      "fork": false,
+      "official": false,
+      "curated": false,
+      "curatedSeed": false,
+      "score": 11,
+      "category": {
+        "id": "context",
+        "name": "记忆与检索",
+        "icon": "book"
+      },
+      "matchedBy": [
+        "DeepSeek Harness",
+        "DeepSeek Harness 短语",
+        "DeepSeek + DSH"
+      ],
+      "install": {
+        "kind": "dsh-plugin",
+        "cmd": "dsh plugin add \"github:tonyd2wild/DeepSeek-Harness-Web-Tools\"",
+        "hint": "粘贴给 Agent 即可安装"
+      },
+      "descriptionOriginal": "Free, keyless web_search and web_fetch for the DeepSeek Harness (dsh) — DuckDuckGo-backed, no signup. Unofficial community project.",
       "translated": true
     },
     {
@@ -3963,47 +4010,6 @@
         "cmd": "git clone https://github.com/hzhe0083-source/deepseek-harness-desktop.git",
         "hint": "克隆到本地"
       }
-    },
-    {
-      "id": 1333383620,
-      "fullName": "tonyd2wild/DeepSeek-Harness-Web-Tools",
-      "name": "DeepSeek-Harness-Web-Tools",
-      "owner": "tonyd2wild",
-      "avatar": "https://avatars.githubusercontent.com/u/219747476?v=4",
-      "htmlUrl": "https://github.com/tonyd2wild/DeepSeek-Harness-Web-Tools",
-      "homepage": "",
-      "description": "DeepSeek Harness (dsh) 的免费、无密钥 web_search 和 web_fetch — 由 DuckDuckGo 支持，无需注册。非官方社区项目。",
-      "stars": 5,
-      "forks": 0,
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "topics": [],
-      "license": "MIT",
-      "createdAt": "2026-08-13",
-      "pushedAt": "2026-08-13",
-      "archived": false,
-      "fork": false,
-      "official": false,
-      "curated": false,
-      "curatedSeed": false,
-      "score": 11,
-      "category": {
-        "id": "context",
-        "name": "记忆与检索",
-        "icon": "book"
-      },
-      "matchedBy": [
-        "DeepSeek Harness",
-        "DeepSeek Harness 短语",
-        "DeepSeek + DSH"
-      ],
-      "install": {
-        "kind": "dsh-plugin",
-        "cmd": "dsh plugin add \"github:tonyd2wild/DeepSeek-Harness-Web-Tools\"",
-        "hint": "粘贴给 Agent 即可安装"
-      },
-      "descriptionOriginal": "Free, keyless web_search and web_fetch for the DeepSeek Harness (dsh) — DuckDuckGo-backed, no signup. Unofficial community project.",
-      "translated": true
     },
     {
       "id": 1333012627,
@@ -5469,6 +5475,46 @@
       "translated": true
     },
     {
+      "id": 1333204169,
+      "fullName": "ZhengQingJing/deepseek-harness-launcher",
+      "name": "deepseek-harness-launcher",
+      "owner": "ZhengQingJing",
+      "avatar": "https://avatars.githubusercontent.com/u/190947690?v=4",
+      "htmlUrl": "https://github.com/ZhengQingJing/deepseek-harness-launcher",
+      "homepage": "",
+      "description": "deepseek-harness Launcher — 一键启动 DeepSeek Harness WebUI 的 macOS 原生小工具",
+      "stars": 3,
+      "forks": 0,
+      "language": "Swift",
+      "languageColor": "#F05138",
+      "topics": [],
+      "license": "MIT",
+      "createdAt": "2026-08-13",
+      "pushedAt": "2026-08-13",
+      "archived": false,
+      "fork": false,
+      "official": false,
+      "curated": false,
+      "curatedSeed": false,
+      "score": 7,
+      "category": {
+        "id": "ui",
+        "name": "驾驶舱与涂装",
+        "icon": "palette"
+      },
+      "matchedBy": [
+        "DeepSeek Harness",
+        "DeepSeek Harness 短语"
+      ],
+      "install": {
+        "kind": "dsh-plugin",
+        "cmd": "dsh plugin add \"github:ZhengQingJing/deepseek-harness-launcher\"",
+        "hint": "粘贴给 Agent 即可安装"
+      },
+      "descriptionOriginal": "deepseek-harness Launcher — 一键启动 DeepSeek Harness Web UI 的 macOS 原生小工具",
+      "translated": true
+    },
+    {
       "id": 1331627677,
       "fullName": "fufankeji/deepseek-harness-web",
       "name": "deepseek-harness-web",
@@ -5512,46 +5558,6 @@
         "hint": "粘贴给 Agent 即可安装"
       },
       "descriptionOriginal": "A web interface and compatibility layer for DeepSeek Harness.",
-      "translated": true
-    },
-    {
-      "id": 1333204169,
-      "fullName": "ZhengQingJing/deepseek-harness-launcher",
-      "name": "deepseek-harness-launcher",
-      "owner": "ZhengQingJing",
-      "avatar": "https://avatars.githubusercontent.com/u/190947690?v=4",
-      "htmlUrl": "https://github.com/ZhengQingJing/deepseek-harness-launcher",
-      "homepage": "",
-      "description": "deepseek-harness Launcher — 一键启动 DeepSeek Harness WebUI 的 macOS 原生小工具",
-      "stars": 3,
-      "forks": 0,
-      "language": "Swift",
-      "languageColor": "#F05138",
-      "topics": [],
-      "license": "MIT",
-      "createdAt": "2026-08-13",
-      "pushedAt": "2026-08-13",
-      "archived": false,
-      "fork": false,
-      "official": false,
-      "curated": false,
-      "curatedSeed": false,
-      "score": 7,
-      "category": {
-        "id": "ui",
-        "name": "驾驶舱与涂装",
-        "icon": "palette"
-      },
-      "matchedBy": [
-        "DeepSeek Harness",
-        "DeepSeek Harness 短语"
-      ],
-      "install": {
-        "kind": "dsh-plugin",
-        "cmd": "dsh plugin add \"github:ZhengQingJing/deepseek-harness-launcher\"",
-        "hint": "粘贴给 Agent 即可安装"
-      },
-      "descriptionOriginal": "deepseek-harness Launcher — 一键启动 DeepSeek Harness Web UI 的 macOS 原生小工具",
       "translated": true
     },
     {
@@ -5735,6 +5741,47 @@
         "hint": "粘贴给 Agent 即可安装"
       },
       "descriptionOriginal": "WeCom AI Bot text and image bridge for DeepSeek Harness",
+      "translated": true
+    },
+    {
+      "id": 1333461808,
+      "fullName": "tonyd2wild/DeepSeek-Harness-Vision-Tools",
+      "name": "DeepSeek-Harness-Vision-Tools",
+      "owner": "tonyd2wild",
+      "avatar": "https://avatars.githubusercontent.com/u/219747476?v=4",
+      "htmlUrl": "https://github.com/tonyd2wild/DeepSeek-Harness-Vision-Tools",
+      "homepage": "",
+      "description": "为 DeepSeek Harness (dsh) 眼睛提供任何文本模型 + 任何视觉模型：用于聊天图像附件的视觉代理和用于磁盘上文件的分析图像工具。非官方社区项目。",
+      "stars": 3,
+      "forks": 0,
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "topics": [],
+      "license": "MIT",
+      "createdAt": "2026-08-13",
+      "pushedAt": "2026-08-13",
+      "archived": false,
+      "fork": false,
+      "official": false,
+      "curated": false,
+      "curatedSeed": false,
+      "score": 11,
+      "category": {
+        "id": "model",
+        "name": "动力与感知核心",
+        "icon": "cpu"
+      },
+      "matchedBy": [
+        "DeepSeek Harness",
+        "DeepSeek Harness 短语",
+        "DeepSeek + DSH"
+      ],
+      "install": {
+        "kind": "dsh-plugin",
+        "cmd": "dsh plugin add \"github:tonyd2wild/DeepSeek-Harness-Vision-Tools\"",
+        "hint": "粘贴给 Agent 即可安装"
+      },
+      "descriptionOriginal": "Give the DeepSeek Harness (dsh) eyes with any text model + any vision model: a vision proxy for chat image attachments and an analyze_image tool for files on disk. Unofficial community project.",
       "translated": true
     },
     {
@@ -6434,6 +6481,50 @@
       "translated": true
     },
     {
+      "id": 1333295181,
+      "fullName": "GiantGKL/dsh-cost",
+      "name": "dsh-cost",
+      "owner": "GiantGKL",
+      "avatar": "https://avatars.githubusercontent.com/u/70208100?v=4",
+      "htmlUrl": "https://github.com/GiantGKL/dsh-cost",
+      "homepage": "",
+      "description": "",
+      "stars": 3,
+      "forks": 0,
+      "language": "JavaScript",
+      "languageColor": "#f1e05a",
+      "topics": [
+        "cost-tracker",
+        "deepseek",
+        "deepseek-harness",
+        "dsh-plugin"
+      ],
+      "license": "MIT",
+      "createdAt": "2026-08-13",
+      "pushedAt": "2026-08-13",
+      "archived": false,
+      "fork": false,
+      "official": false,
+      "curated": false,
+      "curatedSeed": false,
+      "score": 13,
+      "category": {
+        "id": "ecosystem",
+        "name": "外挂武器库",
+        "icon": "globe"
+      },
+      "matchedBy": [
+        "DeepSeek Harness",
+        "dsh-plugin 主题",
+        "DeepSeek + DSH"
+      ],
+      "install": {
+        "kind": "clone",
+        "cmd": "git clone https://github.com/GiantGKL/dsh-cost.git",
+        "hint": "克隆到本地"
+      }
+    },
+    {
       "id": 1323612604,
       "fullName": "william-jin-cmu/dsh-companion",
       "name": "dsh-companion",
@@ -6577,54 +6668,6 @@
       "translated": true
     },
     {
-      "id": 1333125576,
-      "fullName": "LaplaceYoung/dsh-qq2006",
-      "name": "dsh-qq2006",
-      "owner": "LaplaceYoung",
-      "avatar": "https://avatars.githubusercontent.com/u/219803883?v=4",
-      "htmlUrl": "https://github.com/LaplaceYoung/dsh-qq2006",
-      "homepage": "",
-      "description": "DSH (DeepSeek Harness) 的 QQ2006 皮肤插件：注册 qq2006 主题、镜像 body[data-ds-skin]、全局皮肤表与完整素材",
-      "stars": 3,
-      "forks": 0,
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "topics": [
-        "deepseek-harness",
-        "dsh-plugin",
-        "dsh-skin",
-        "qq2006",
-        "theme"
-      ],
-      "license": "BSD-3-Clause",
-      "createdAt": "2026-08-13",
-      "pushedAt": "2026-08-13",
-      "archived": false,
-      "fork": false,
-      "official": false,
-      "curated": false,
-      "curatedSeed": false,
-      "score": 14,
-      "category": {
-        "id": "ui",
-        "name": "驾驶舱与涂装",
-        "icon": "palette"
-      },
-      "matchedBy": [
-        "DeepSeek Harness",
-        "dsh-plugin 主题",
-        "DeepSeek Harness 短语",
-        "DeepSeek + DSH"
-      ],
-      "install": {
-        "kind": "dsh-plugin",
-        "cmd": "dsh plugin add \"github:LaplaceYoung/dsh-qq2006\"",
-        "hint": "粘贴给 Agent 即可安装"
-      },
-      "descriptionOriginal": "DSH (DeepSeek Harness) 的 QQ2006 皮肤插件：注册 qq2006 主题、镜像 body[data-ds-skin]、全局皮肤表与完整素材",
-      "translated": true
-    },
-    {
       "id": 1333241464,
       "fullName": "Electricitysheep/dsh-tool-turbo",
       "name": "dsh-tool-turbo",
@@ -6678,6 +6721,54 @@
         "hint": "粘贴给 Agent 即可安装"
       },
       "descriptionOriginal": "Per-round reasoning_effort optimizer for DeepSeek Harness (dsh): auto-downgrades tool-call reasoning for simple tool chains, lifting back for heavy work. Cuts thinking time between tool calls.",
+      "translated": true
+    },
+    {
+      "id": 1333125576,
+      "fullName": "LaplaceYoung/dsh-qq2006",
+      "name": "dsh-qq2006",
+      "owner": "LaplaceYoung",
+      "avatar": "https://avatars.githubusercontent.com/u/219803883?v=4",
+      "htmlUrl": "https://github.com/LaplaceYoung/dsh-qq2006",
+      "homepage": "",
+      "description": "DSH (DeepSeek Harness) 的 QQ2006 皮肤插件：注册 qq2006 主题、镜像 body[data-ds-skin]、全局皮肤表与完整素材",
+      "stars": 3,
+      "forks": 0,
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "topics": [
+        "deepseek-harness",
+        "dsh-plugin",
+        "dsh-skin",
+        "qq2006",
+        "theme"
+      ],
+      "license": "BSD-3-Clause",
+      "createdAt": "2026-08-13",
+      "pushedAt": "2026-08-13",
+      "archived": false,
+      "fork": false,
+      "official": false,
+      "curated": false,
+      "curatedSeed": false,
+      "score": 14,
+      "category": {
+        "id": "ui",
+        "name": "驾驶舱与涂装",
+        "icon": "palette"
+      },
+      "matchedBy": [
+        "DeepSeek Harness",
+        "dsh-plugin 主题",
+        "DeepSeek Harness 短语",
+        "DeepSeek + DSH"
+      ],
+      "install": {
+        "kind": "dsh-plugin",
+        "cmd": "dsh plugin add \"github:LaplaceYoung/dsh-qq2006\"",
+        "hint": "粘贴给 Agent 即可安装"
+      },
+      "descriptionOriginal": "DSH (DeepSeek Harness) 的 QQ2006 皮肤插件：注册 qq2006 主题、镜像 body[data-ds-skin]、全局皮肤表与完整素材",
       "translated": true
     },
     {
@@ -6852,7 +6943,7 @@
       ],
       "license": "MIT",
       "createdAt": "2026-08-13",
-      "pushedAt": "2026-08-13",
+      "pushedAt": "2026-08-14",
       "archived": false,
       "fork": false,
       "official": false,
@@ -7604,6 +7695,48 @@
       }
     },
     {
+      "id": 1333324528,
+      "fullName": "Mongfayi/dsh-recall",
+      "name": "dsh-recall",
+      "owner": "Mongfayi",
+      "avatar": "https://avatars.githubusercontent.com/u/175377816?v=4",
+      "htmlUrl": "https://github.com/Mongfayi/dsh-recall",
+      "homepage": "",
+      "description": "DSH WebUI 的消息撤回 (撤回) 插件：每条用户消息上都有一个撤消按钮，可永久删除该回合及其后的所有内容，而无需恢复代码更改。",
+      "stars": 3,
+      "forks": 0,
+      "language": "JavaScript",
+      "languageColor": "#f1e05a",
+      "topics": [
+        "dsh-plugin"
+      ],
+      "license": "MIT",
+      "createdAt": "2026-08-13",
+      "pushedAt": "2026-08-13",
+      "archived": false,
+      "fork": false,
+      "official": false,
+      "curated": false,
+      "curatedSeed": false,
+      "score": 6,
+      "category": {
+        "id": "ui",
+        "name": "驾驶舱与涂装",
+        "icon": "palette"
+      },
+      "matchedBy": [
+        "dsh-plugin 主题",
+        "DSH 插件"
+      ],
+      "install": {
+        "kind": "dsh-plugin",
+        "cmd": "dsh plugin add \"github:Mongfayi/dsh-recall\"",
+        "hint": "粘贴给 Agent 即可安装"
+      },
+      "descriptionOriginal": "Message recall (撤回) plugin for the DSH Web UI: one undo button on each user message that removes the turn and everything after it, durably, without reverting code changes.",
+      "translated": true
+    },
+    {
       "id": 1333155975,
       "fullName": "Komeiji-Shiki/graycode-for-dsh",
       "name": "graycode-for-dsh",
@@ -7727,48 +7860,6 @@
         "cmd": "git clone https://github.com/gameswu/dsh-plugin-background.git",
         "hint": "克隆到本地"
       }
-    },
-    {
-      "id": 1333324528,
-      "fullName": "Mongfayi/dsh-recall",
-      "name": "dsh-recall",
-      "owner": "Mongfayi",
-      "avatar": "https://avatars.githubusercontent.com/u/175377816?v=4",
-      "htmlUrl": "https://github.com/Mongfayi/dsh-recall",
-      "homepage": "",
-      "description": "DSH WebUI 的消息撤回 (撤回) 插件：每条用户消息上都有一个撤消按钮，可永久删除该回合及其后的所有内容，而无需恢复代码更改。",
-      "stars": 3,
-      "forks": 0,
-      "language": "JavaScript",
-      "languageColor": "#f1e05a",
-      "topics": [
-        "dsh-plugin"
-      ],
-      "license": "MIT",
-      "createdAt": "2026-08-13",
-      "pushedAt": "2026-08-13",
-      "archived": false,
-      "fork": false,
-      "official": false,
-      "curated": false,
-      "curatedSeed": false,
-      "score": 6,
-      "category": {
-        "id": "ui",
-        "name": "驾驶舱与涂装",
-        "icon": "palette"
-      },
-      "matchedBy": [
-        "dsh-plugin 主题",
-        "DSH 插件"
-      ],
-      "install": {
-        "kind": "dsh-plugin",
-        "cmd": "dsh plugin add \"github:Mongfayi/dsh-recall\"",
-        "hint": "粘贴给 Agent 即可安装"
-      },
-      "descriptionOriginal": "Message recall (撤回) plugin for the DSH Web UI: one undo button on each user message that removes the turn and everything after it, durably, without reverting code changes.",
-      "translated": true
     },
     {
       "id": 1329031985,
@@ -8902,6 +8993,46 @@
       "translated": true
     },
     {
+      "id": 1333291466,
+      "fullName": "AFCaternos/Termux-DeepSeek-Harness",
+      "name": "Termux-DeepSeek-Harness",
+      "owner": "AFCaternos",
+      "avatar": "https://avatars.githubusercontent.com/u/181631151?v=4",
+      "htmlUrl": "https://github.com/AFCaternos/Termux-DeepSeek-Harness",
+      "homepage": "",
+      "description": "在Termux上一键安装DeepSeek Harness",
+      "stars": 2,
+      "forks": 0,
+      "language": "Shell",
+      "languageColor": "#89e051",
+      "topics": [],
+      "license": "MIT",
+      "createdAt": "2026-08-13",
+      "pushedAt": "2026-08-13",
+      "archived": false,
+      "fork": false,
+      "official": false,
+      "curated": false,
+      "curatedSeed": false,
+      "score": 7,
+      "category": {
+        "id": "ecosystem",
+        "name": "外挂武器库",
+        "icon": "globe"
+      },
+      "matchedBy": [
+        "DeepSeek Harness",
+        "DeepSeek Harness 短语"
+      ],
+      "install": {
+        "kind": "clone",
+        "cmd": "git clone https://github.com/AFCaternos/Termux-DeepSeek-Harness.git",
+        "hint": "克隆到本地"
+      },
+      "descriptionOriginal": "在Termux上一键安装DeepSeek Harness",
+      "translated": true
+    },
+    {
       "id": 1333242825,
       "fullName": "bobleer/deepseek-harness-plugin-mcp",
       "name": "deepseek-harness-plugin-mcp",
@@ -8951,46 +9082,6 @@
         "hint": "粘贴给 Agent 即可安装"
       },
       "descriptionOriginal": "MCP server that lets any agent discover, install, and run DeepSeek Harness plugins (topic: dsh-plugin).",
-      "translated": true
-    },
-    {
-      "id": 1333291466,
-      "fullName": "AFCaternos/Termux-DeepSeek-Harness",
-      "name": "Termux-DeepSeek-Harness",
-      "owner": "AFCaternos",
-      "avatar": "https://avatars.githubusercontent.com/u/181631151?v=4",
-      "htmlUrl": "https://github.com/AFCaternos/Termux-DeepSeek-Harness",
-      "homepage": "",
-      "description": "在Termux上一键安装DeepSeek Harness",
-      "stars": 2,
-      "forks": 0,
-      "language": "Shell",
-      "languageColor": "#89e051",
-      "topics": [],
-      "license": "MIT",
-      "createdAt": "2026-08-13",
-      "pushedAt": "2026-08-13",
-      "archived": false,
-      "fork": false,
-      "official": false,
-      "curated": false,
-      "curatedSeed": false,
-      "score": 7,
-      "category": {
-        "id": "ecosystem",
-        "name": "外挂武器库",
-        "icon": "globe"
-      },
-      "matchedBy": [
-        "DeepSeek Harness",
-        "DeepSeek Harness 短语"
-      ],
-      "install": {
-        "kind": "clone",
-        "cmd": "git clone https://github.com/AFCaternos/Termux-DeepSeek-Harness.git",
-        "hint": "克隆到本地"
-      },
-      "descriptionOriginal": "在Termux上一键安装DeepSeek Harness",
       "translated": true
     },
     {
@@ -9296,47 +9387,6 @@
         "hint": "克隆到本地"
       },
       "descriptionOriginal": "Deepseek-Harness Vscode Integration",
-      "translated": true
-    },
-    {
-      "id": 1333461808,
-      "fullName": "tonyd2wild/DeepSeek-Harness-Vision-Tools",
-      "name": "DeepSeek-Harness-Vision-Tools",
-      "owner": "tonyd2wild",
-      "avatar": "https://avatars.githubusercontent.com/u/219747476?v=4",
-      "htmlUrl": "https://github.com/tonyd2wild/DeepSeek-Harness-Vision-Tools",
-      "homepage": "",
-      "description": "为 DeepSeek Harness (dsh) 眼睛提供任何文本模型 + 任何视觉模型：用于聊天图像附件的视觉代理和用于磁盘上文件的分析图像工具。非官方社区项目。",
-      "stars": 2,
-      "forks": 0,
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "topics": [],
-      "license": "MIT",
-      "createdAt": "2026-08-13",
-      "pushedAt": "2026-08-13",
-      "archived": false,
-      "fork": false,
-      "official": false,
-      "curated": false,
-      "curatedSeed": false,
-      "score": 11,
-      "category": {
-        "id": "model",
-        "name": "动力与感知核心",
-        "icon": "cpu"
-      },
-      "matchedBy": [
-        "DeepSeek Harness",
-        "DeepSeek Harness 短语",
-        "DeepSeek + DSH"
-      ],
-      "install": {
-        "kind": "dsh-plugin",
-        "cmd": "dsh plugin add \"github:tonyd2wild/DeepSeek-Harness-Vision-Tools\"",
-        "hint": "粘贴给 Agent 即可安装"
-      },
-      "descriptionOriginal": "Give the DeepSeek Harness (dsh) eyes with any text model + any vision model: a vision proxy for chat image attachments and an analyze_image tool for files on disk. Unofficial community project.",
       "translated": true
     },
     {
@@ -9788,56 +9838,6 @@
         "hint": "粘贴给 Agent 即可安装"
       },
       "descriptionOriginal": "Local-first failure postmortems for DeepSeek Harness sessions.",
-      "translated": true
-    },
-    {
-      "id": 1333289045,
-      "fullName": "Ericwong5021/dsh-kanban",
-      "name": "dsh-kanban",
-      "owner": "Ericwong5021",
-      "avatar": "https://avatars.githubusercontent.com/u/26177736?v=4",
-      "htmlUrl": "https://github.com/Ericwong5021/dsh-kanban",
-      "homepage": "",
-      "description": "DeepSeek Harness WebUI 的任务板插件",
-      "stars": 2,
-      "forks": 0,
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "topics": [
-        "deepseek",
-        "deepseek-harness",
-        "dsh-plugin",
-        "task-board",
-        "web-ui"
-      ],
-      "license": "MIT",
-      "createdAt": "2026-08-13",
-      "pushedAt": "2026-08-13",
-      "archived": false,
-      "fork": false,
-      "official": false,
-      "curated": false,
-      "curatedSeed": false,
-      "score": 13,
-      "category": {
-        "id": "ui",
-        "name": "驾驶舱与涂装",
-        "icon": "palette"
-      },
-      "matchedBy": [
-        "DeepSeek Harness",
-        "DeepSeek Harness 短语",
-        "DSH 插件",
-        "DeepSeek + DSH",
-        "Harness 插件组合",
-        "DeepSeek 插件"
-      ],
-      "install": {
-        "kind": "dsh-plugin",
-        "cmd": "dsh plugin add \"github:Ericwong5021/dsh-kanban\"",
-        "hint": "粘贴给 Agent 即可安装"
-      },
-      "descriptionOriginal": "Task board plugin for the DeepSeek Harness Web UI",
       "translated": true
     },
     {
@@ -10561,61 +10561,24 @@
       "translated": true
     },
     {
-      "id": 1333238747,
-      "fullName": "XYZ1024-alt/dsh-side-panel",
-      "name": "dsh-side-panel",
-      "owner": "XYZ1024-alt",
-      "avatar": "https://avatars.githubusercontent.com/u/62231549?v=4",
-      "htmlUrl": "https://github.com/XYZ1024-alt/dsh-side-panel",
+      "id": 1333289045,
+      "fullName": "Ericwong5021/dsh-kanban",
+      "name": "dsh-kanban",
+      "owner": "Ericwong5021",
+      "avatar": "https://avatars.githubusercontent.com/u/26177736?v=4",
+      "htmlUrl": "https://github.com/Ericwong5021/dsh-kanban",
       "homepage": "",
-      "description": "",
+      "description": "DeepSeek Harness WebUI 的任务板插件",
       "stars": 2,
       "forks": 0,
-      "language": "JavaScript",
-      "languageColor": "#f1e05a",
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
       "topics": [
-        "dsh-plugin"
-      ],
-      "license": "MIT",
-      "createdAt": "2026-08-13",
-      "pushedAt": "2026-08-13",
-      "archived": false,
-      "fork": false,
-      "official": false,
-      "curated": false,
-      "curatedSeed": false,
-      "score": 6,
-      "category": {
-        "id": "ui",
-        "name": "驾驶舱与涂装",
-        "icon": "palette"
-      },
-      "matchedBy": [
-        "dsh-plugin 主题"
-      ],
-      "install": {
-        "kind": "dsh-plugin",
-        "cmd": "dsh plugin add \"github:XYZ1024-alt/dsh-side-panel\"",
-        "hint": "粘贴给 Agent 即可安装"
-      }
-    },
-    {
-      "id": 1333215683,
-      "fullName": "bitterSmilezzz/dsh-mac-desktop",
-      "name": "dsh-mac-desktop",
-      "owner": "bitterSmilezzz",
-      "avatar": "https://avatars.githubusercontent.com/u/38044568?v=4",
-      "htmlUrl": "https://github.com/bitterSmilezzz/dsh-mac-desktop",
-      "homepage": "",
-      "description": "DeepSeek Harness 插件：在本机 macOS 桌面窗口（SwiftUI + WKWebView）中打开 Web GUI。",
-      "stars": 2,
-      "forks": 0,
-      "language": "Swift",
-      "languageColor": "#F05138",
-      "topics": [
+        "deepseek",
         "deepseek-harness",
         "dsh-plugin",
-        "macos"
+        "task-board",
+        "web-ui"
       ],
       "license": "MIT",
       "createdAt": "2026-08-13",
@@ -10627,12 +10590,11 @@
       "curatedSeed": false,
       "score": 13,
       "category": {
-        "id": "client",
-        "name": "机体与座舱",
-        "icon": "monitor"
+        "id": "ui",
+        "name": "驾驶舱与涂装",
+        "icon": "palette"
       },
       "matchedBy": [
-        "dsh-plugin 主题",
         "DeepSeek Harness 短语",
         "DSH 插件",
         "DeepSeek + DSH",
@@ -10640,11 +10602,11 @@
         "DeepSeek 插件"
       ],
       "install": {
-        "kind": "clone",
-        "cmd": "git clone https://github.com/bitterSmilezzz/dsh-mac-desktop.git",
-        "hint": "克隆到本地"
+        "kind": "dsh-plugin",
+        "cmd": "dsh plugin add \"github:Ericwong5021/dsh-kanban\"",
+        "hint": "粘贴给 Agent 即可安装"
       },
-      "descriptionOriginal": "DeepSeek Harness plugin: open the Web GUI in a native macOS desktop window (SwiftUI + WKWebView).",
+      "descriptionOriginal": "Task board plugin for the DeepSeek Harness Web UI",
       "translated": true
     },
     {
@@ -11306,6 +11268,53 @@
       "translated": true
     },
     {
+      "id": 1333215683,
+      "fullName": "bitterSmilezzz/dsh-mac-desktop",
+      "name": "dsh-mac-desktop",
+      "owner": "bitterSmilezzz",
+      "avatar": "https://avatars.githubusercontent.com/u/38044568?v=4",
+      "htmlUrl": "https://github.com/bitterSmilezzz/dsh-mac-desktop",
+      "homepage": "",
+      "description": "DeepSeek Harness 插件：在本机 macOS 桌面窗口（SwiftUI + WKWebView）中打开 Web GUI。",
+      "stars": 2,
+      "forks": 0,
+      "language": "Swift",
+      "languageColor": "#F05138",
+      "topics": [
+        "deepseek-harness",
+        "dsh-plugin",
+        "macos"
+      ],
+      "license": "MIT",
+      "createdAt": "2026-08-13",
+      "pushedAt": "2026-08-13",
+      "archived": false,
+      "fork": false,
+      "official": false,
+      "curated": false,
+      "curatedSeed": false,
+      "score": 13,
+      "category": {
+        "id": "client",
+        "name": "机体与座舱",
+        "icon": "monitor"
+      },
+      "matchedBy": [
+        "DeepSeek Harness 短语",
+        "DSH 插件",
+        "DeepSeek + DSH",
+        "Harness 插件组合",
+        "DeepSeek 插件"
+      ],
+      "install": {
+        "kind": "clone",
+        "cmd": "git clone https://github.com/bitterSmilezzz/dsh-mac-desktop.git",
+        "hint": "克隆到本地"
+      },
+      "descriptionOriginal": "DeepSeek Harness plugin: open the Web GUI in a native macOS desktop window (SwiftUI + WKWebView).",
+      "translated": true
+    },
+    {
       "id": 1333319484,
       "fullName": "guanyifang344/dsh-launcher-mac",
       "name": "dsh-launcher-mac",
@@ -11343,6 +11352,54 @@
         "hint": "克隆到本地"
       },
       "descriptionOriginal": "Lightweight macOS launcher for DeepSeek Harness: autostart at logon + a small WKWebView window (Swift + WKWebView)",
+      "translated": true
+    },
+    {
+      "id": 1330691547,
+      "fullName": "vibeinging/dsh-trace",
+      "name": "dsh-trace",
+      "owner": "vibeinging",
+      "avatar": "https://avatars.githubusercontent.com/u/8122332?v=4",
+      "htmlUrl": "https://github.com/vibeinging/dsh-trace",
+      "homepage": "",
+      "description": "PROTECT_遥测后端，通过 HTTP 将转弯、模型步骤和工具调用导出到 yiTrace。",
+      "stars": 2,
+      "forks": 0,
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "topics": [
+        "deepseek-harness",
+        "dsh",
+        "dsh-plugin",
+        "observability",
+        "telemetry",
+        "tracing",
+        "yitrace"
+      ],
+      "license": "BSD-3-Clause",
+      "createdAt": "2026-08-11",
+      "pushedAt": "2026-08-12",
+      "archived": false,
+      "fork": false,
+      "official": false,
+      "curated": false,
+      "curatedSeed": false,
+      "score": 13,
+      "category": {
+        "id": "model",
+        "name": "动力与感知核心",
+        "icon": "cpu"
+      },
+      "matchedBy": [
+        "DeepSeek Harness 短语",
+        "DeepSeek + DSH"
+      ],
+      "install": {
+        "kind": "dsh-plugin",
+        "cmd": "dsh plugin add \"github:vibeinging/dsh-trace\"",
+        "hint": "粘贴给 Agent 即可安装"
+      },
+      "descriptionOriginal": "DeepSeek Harness telemetry backend that exports turns, model steps, and tool calls to yiTrace over HTTP.",
       "translated": true
     },
     {
@@ -11394,54 +11451,6 @@
         "hint": "粘贴给 Agent 即可安装"
       },
       "descriptionOriginal": "GitHub connector for DeepSeek Harness (dsh): one-click connect, create/review/merge PRs from the conversation",
-      "translated": true
-    },
-    {
-      "id": 1330691547,
-      "fullName": "vibeinging/dsh-trace",
-      "name": "dsh-trace",
-      "owner": "vibeinging",
-      "avatar": "https://avatars.githubusercontent.com/u/8122332?v=4",
-      "htmlUrl": "https://github.com/vibeinging/dsh-trace",
-      "homepage": "",
-      "description": "PROTECT_遥测后端，通过 HTTP 将转弯、模型步骤和工具调用导出到 yiTrace。",
-      "stars": 2,
-      "forks": 0,
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "topics": [
-        "deepseek-harness",
-        "dsh",
-        "dsh-plugin",
-        "observability",
-        "telemetry",
-        "tracing",
-        "yitrace"
-      ],
-      "license": "BSD-3-Clause",
-      "createdAt": "2026-08-11",
-      "pushedAt": "2026-08-12",
-      "archived": false,
-      "fork": false,
-      "official": false,
-      "curated": false,
-      "curatedSeed": false,
-      "score": 13,
-      "category": {
-        "id": "model",
-        "name": "动力与感知核心",
-        "icon": "cpu"
-      },
-      "matchedBy": [
-        "DeepSeek Harness 短语",
-        "DeepSeek + DSH"
-      ],
-      "install": {
-        "kind": "dsh-plugin",
-        "cmd": "dsh plugin add \"github:vibeinging/dsh-trace\"",
-        "hint": "粘贴给 Agent 即可安装"
-      },
-      "descriptionOriginal": "DeepSeek Harness telemetry backend that exports turns, model steps, and tool calls to yiTrace over HTTP.",
       "translated": true
     },
     {
@@ -11944,46 +11953,6 @@
       "translated": true
     },
     {
-      "id": 1333124321,
-      "fullName": "ChenYCL/debug-ai-npm",
-      "name": "debug-ai-npm",
-      "owner": "ChenYCL",
-      "avatar": "https://avatars.githubusercontent.com/u/25706676?v=4",
-      "htmlUrl": "https://github.com/ChenYCL/debug-ai-npm",
-      "homepage": "",
-      "description": "DeepSeek Harness CLI (dsh) — 逆向重构版: 多 LLM 支持的 AI Agent 运行时启动器",
-      "stars": 2,
-      "forks": 0,
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "topics": [],
-      "license": "",
-      "createdAt": "2026-08-13",
-      "pushedAt": "2026-08-13",
-      "archived": false,
-      "fork": false,
-      "official": false,
-      "curated": false,
-      "curatedSeed": false,
-      "score": 11,
-      "category": {
-        "id": "agent",
-        "name": "编队协作",
-        "icon": "users"
-      },
-      "matchedBy": [
-        "DeepSeek Harness 短语",
-        "DeepSeek + DSH"
-      ],
-      "install": {
-        "kind": "dsh-plugin",
-        "cmd": "dsh plugin add \"github:ChenYCL/debug-ai-npm\"",
-        "hint": "粘贴给 Agent 即可安装"
-      },
-      "descriptionOriginal": "DeepSeek Harness CLI (dsh) — 逆向重构版: 多 LLM 支持的 AI Agent 运行时启动器",
-      "translated": true
-    },
-    {
       "id": 1333347873,
       "fullName": "entireyu/dsh-launcher",
       "name": "dsh-launcher",
@@ -12024,6 +11993,46 @@
         "hint": "克隆到本地"
       },
       "descriptionOriginal": "DeepSeek Harness Launcher（DSH 安装启动助手），由DSH + DS-V4-Pro-0813开发的tauri程序。",
+      "translated": true
+    },
+    {
+      "id": 1333124321,
+      "fullName": "ChenYCL/debug-ai-npm",
+      "name": "debug-ai-npm",
+      "owner": "ChenYCL",
+      "avatar": "https://avatars.githubusercontent.com/u/25706676?v=4",
+      "htmlUrl": "https://github.com/ChenYCL/debug-ai-npm",
+      "homepage": "",
+      "description": "DeepSeek Harness CLI (dsh) — 逆向重构版: 多 LLM 支持的 AI Agent 运行时启动器",
+      "stars": 2,
+      "forks": 0,
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "topics": [],
+      "license": "",
+      "createdAt": "2026-08-13",
+      "pushedAt": "2026-08-13",
+      "archived": false,
+      "fork": false,
+      "official": false,
+      "curated": false,
+      "curatedSeed": false,
+      "score": 11,
+      "category": {
+        "id": "agent",
+        "name": "编队协作",
+        "icon": "users"
+      },
+      "matchedBy": [
+        "DeepSeek Harness 短语",
+        "DeepSeek + DSH"
+      ],
+      "install": {
+        "kind": "dsh-plugin",
+        "cmd": "dsh plugin add \"github:ChenYCL/debug-ai-npm\"",
+        "hint": "粘贴给 Agent 即可安装"
+      },
+      "descriptionOriginal": "DeepSeek Harness CLI (dsh) — 逆向重构版: 多 LLM 支持的 AI Agent 运行时启动器",
       "translated": true
     },
     {
@@ -13281,45 +13290,6 @@
       "translated": true
     },
     {
-      "id": 1329739741,
-      "fullName": "HuanLinOTO/dsh-plugin-sleep",
-      "name": "dsh-plugin-sleep",
-      "owner": "HuanLinOTO",
-      "avatar": "https://avatars.githubusercontent.com/u/94176676?v=4",
-      "htmlUrl": "https://github.com/HuanLinOTO/dsh-plugin-sleep",
-      "homepage": "",
-      "description": "",
-      "stars": 2,
-      "forks": 0,
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "topics": [
-        "dsh-plugin"
-      ],
-      "license": "NOASSERTION",
-      "createdAt": "2026-08-10",
-      "pushedAt": "2026-08-13",
-      "archived": false,
-      "fork": false,
-      "official": false,
-      "curated": false,
-      "curatedSeed": false,
-      "score": 6,
-      "category": {
-        "id": "ecosystem",
-        "name": "外挂武器库",
-        "icon": "globe"
-      },
-      "matchedBy": [
-        "DSH 插件"
-      ],
-      "install": {
-        "kind": "clone",
-        "cmd": "git clone https://github.com/HuanLinOTO/dsh-plugin-sleep.git",
-        "hint": "克隆到本地"
-      }
-    },
-    {
       "id": 1331842107,
       "fullName": "HuanLinOTO/dsh-plugin-interpreters",
       "name": "dsh-plugin-interpreters",
@@ -13355,6 +13325,45 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/HuanLinOTO/dsh-plugin-interpreters.git",
+        "hint": "克隆到本地"
+      }
+    },
+    {
+      "id": 1329739741,
+      "fullName": "HuanLinOTO/dsh-plugin-sleep",
+      "name": "dsh-plugin-sleep",
+      "owner": "HuanLinOTO",
+      "avatar": "https://avatars.githubusercontent.com/u/94176676?v=4",
+      "htmlUrl": "https://github.com/HuanLinOTO/dsh-plugin-sleep",
+      "homepage": "",
+      "description": "",
+      "stars": 2,
+      "forks": 0,
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "topics": [
+        "dsh-plugin"
+      ],
+      "license": "NOASSERTION",
+      "createdAt": "2026-08-10",
+      "pushedAt": "2026-08-13",
+      "archived": false,
+      "fork": false,
+      "official": false,
+      "curated": false,
+      "curatedSeed": false,
+      "score": 6,
+      "category": {
+        "id": "ecosystem",
+        "name": "外挂武器库",
+        "icon": "globe"
+      },
+      "matchedBy": [
+        "DSH 插件"
+      ],
+      "install": {
+        "kind": "clone",
+        "cmd": "git clone https://github.com/HuanLinOTO/dsh-plugin-sleep.git",
         "hint": "克隆到本地"
       }
     },
@@ -13437,47 +13446,6 @@
       }
     },
     {
-      "id": 1333272092,
-      "fullName": "Xilin3/dsh-prompt-persona",
-      "name": "dsh-prompt-persona",
-      "owner": "Xilin3",
-      "avatar": "https://avatars.githubusercontent.com/u/287499614?v=4",
-      "htmlUrl": "https://github.com/Xilin3/dsh-prompt-persona",
-      "homepage": "",
-      "description": "DSH 插件：从“设置”页面编辑系统提示（部署角色），并提供实时预览。",
-      "stars": 2,
-      "forks": 0,
-      "language": "JavaScript",
-      "languageColor": "#f1e05a",
-      "topics": [
-        "dsh-plugin"
-      ],
-      "license": "MIT",
-      "createdAt": "2026-08-13",
-      "pushedAt": "2026-08-13",
-      "archived": false,
-      "fork": false,
-      "official": false,
-      "curated": false,
-      "curatedSeed": false,
-      "score": 6,
-      "category": {
-        "id": "input",
-        "name": "操控与装填",
-        "icon": "pen"
-      },
-      "matchedBy": [
-        "DSH 插件"
-      ],
-      "install": {
-        "kind": "dsh-plugin",
-        "cmd": "dsh plugin add \"github:Xilin3/dsh-prompt-persona\"",
-        "hint": "粘贴给 Agent 即可安装"
-      },
-      "descriptionOriginal": "DSH plugin: edit the system prompt (deployment persona) from the Settings page, with live preview.",
-      "translated": true
-    },
-    {
       "id": 1324517730,
       "fullName": "Moeblack/dsh-prompt-studio",
       "name": "dsh-prompt-studio",
@@ -13517,6 +13485,47 @@
         "hint": "粘贴给 Agent 即可安装"
       },
       "descriptionOriginal": "DSH plugin: edit user and built-in system-prompt sections with live preview (Prompt Studio)",
+      "translated": true
+    },
+    {
+      "id": 1333272092,
+      "fullName": "Xilin3/dsh-prompt-persona",
+      "name": "dsh-prompt-persona",
+      "owner": "Xilin3",
+      "avatar": "https://avatars.githubusercontent.com/u/287499614?v=4",
+      "htmlUrl": "https://github.com/Xilin3/dsh-prompt-persona",
+      "homepage": "",
+      "description": "DSH 插件：从“设置”页面编辑系统提示（部署角色），并提供实时预览。",
+      "stars": 2,
+      "forks": 0,
+      "language": "JavaScript",
+      "languageColor": "#f1e05a",
+      "topics": [
+        "dsh-plugin"
+      ],
+      "license": "MIT",
+      "createdAt": "2026-08-13",
+      "pushedAt": "2026-08-13",
+      "archived": false,
+      "fork": false,
+      "official": false,
+      "curated": false,
+      "curatedSeed": false,
+      "score": 6,
+      "category": {
+        "id": "input",
+        "name": "操控与装填",
+        "icon": "pen"
+      },
+      "matchedBy": [
+        "DSH 插件"
+      ],
+      "install": {
+        "kind": "dsh-plugin",
+        "cmd": "dsh plugin add \"github:Xilin3/dsh-prompt-persona\"",
+        "hint": "粘贴给 Agent 即可安装"
+      },
+      "descriptionOriginal": "DSH plugin: edit the system prompt (deployment persona) from the Settings page, with live preview.",
       "translated": true
     },
     {
@@ -13699,48 +13708,6 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/Moeblack/deepseek-manners.git",
-        "hint": "克隆到本地"
-      }
-    },
-    {
-      "id": 1333295181,
-      "fullName": "GiantGKL/dsh-cost",
-      "name": "dsh-cost",
-      "owner": "GiantGKL",
-      "avatar": "https://avatars.githubusercontent.com/u/70208100?v=4",
-      "htmlUrl": "https://github.com/GiantGKL/dsh-cost",
-      "homepage": "",
-      "description": "",
-      "stars": 2,
-      "forks": 0,
-      "language": "JavaScript",
-      "languageColor": "#f1e05a",
-      "topics": [
-        "cost-tracker",
-        "deepseek",
-        "deepseek-harness",
-        "dsh-plugin"
-      ],
-      "license": "MIT",
-      "createdAt": "2026-08-13",
-      "pushedAt": "2026-08-13",
-      "archived": false,
-      "fork": false,
-      "official": false,
-      "curated": false,
-      "curatedSeed": false,
-      "score": 13,
-      "category": {
-        "id": "ecosystem",
-        "name": "外挂武器库",
-        "icon": "globe"
-      },
-      "matchedBy": [
-        "DeepSeek + DSH"
-      ],
-      "install": {
-        "kind": "clone",
-        "cmd": "git clone https://github.com/GiantGKL/dsh-cost.git",
         "hint": "克隆到本地"
       }
     },
@@ -14401,7 +14368,6 @@
       },
       "matchedBy": [
         "DSH 插件",
-        "DeepSeek + DSH",
         "Harness 插件组合"
       ],
       "install": {
@@ -14494,6 +14460,46 @@
       "translated": true
     },
     {
+      "id": 1333370511,
+      "fullName": "little-greenbean/dsh-tui",
+      "name": "dsh-tui",
+      "owner": "little-greenbean",
+      "avatar": "https://avatars.githubusercontent.com/u/62200636?v=4",
+      "htmlUrl": "https://github.com/little-greenbean/dsh-tui",
+      "homepage": "",
+      "description": "DeepSeek Harness (dsh) 的 Claude-CLI 风格终端聊天 — 通过“dsh 插件”安装的 Thin Ink 插件",
+      "stars": 1,
+      "forks": 0,
+      "language": "JavaScript",
+      "languageColor": "#f1e05a",
+      "topics": [],
+      "license": "MIT",
+      "createdAt": "2026-08-13",
+      "pushedAt": "2026-08-13",
+      "archived": false,
+      "fork": false,
+      "official": false,
+      "curated": false,
+      "curatedSeed": false,
+      "score": 13,
+      "category": {
+        "id": "client",
+        "name": "机体与座舱",
+        "icon": "monitor"
+      },
+      "matchedBy": [
+        "DSH 插件",
+        "Harness 插件组合"
+      ],
+      "install": {
+        "kind": "clone",
+        "cmd": "git clone https://github.com/little-greenbean/dsh-tui.git",
+        "hint": "克隆到本地"
+      },
+      "descriptionOriginal": "Claude-CLI-style terminal chat for DeepSeek Harness (dsh) — a thin Ink plugin installed via `dsh plugin`",
+      "translated": true
+    },
+    {
       "id": 1331998945,
       "fullName": "vibeinging/dsh-turn-navigator",
       "name": "dsh-turn-navigator",
@@ -14533,46 +14539,6 @@
         "hint": "克隆到本地"
       },
       "descriptionOriginal": "Private DSH Web turn navigation plugin",
-      "translated": true
-    },
-    {
-      "id": 1333370511,
-      "fullName": "little-greenbean/dsh-tui",
-      "name": "dsh-tui",
-      "owner": "little-greenbean",
-      "avatar": "https://avatars.githubusercontent.com/u/62200636?v=4",
-      "htmlUrl": "https://github.com/little-greenbean/dsh-tui",
-      "homepage": "",
-      "description": "DeepSeek Harness (dsh) 的 Claude-CLI 风格终端聊天 — 通过“dsh 插件”安装的 Thin Ink 插件",
-      "stars": 1,
-      "forks": 0,
-      "language": "JavaScript",
-      "languageColor": "#f1e05a",
-      "topics": [],
-      "license": "MIT",
-      "createdAt": "2026-08-13",
-      "pushedAt": "2026-08-13",
-      "archived": false,
-      "fork": false,
-      "official": false,
-      "curated": false,
-      "curatedSeed": false,
-      "score": 13,
-      "category": {
-        "id": "client",
-        "name": "机体与座舱",
-        "icon": "monitor"
-      },
-      "matchedBy": [
-        "DSH 插件",
-        "Harness 插件组合"
-      ],
-      "install": {
-        "kind": "clone",
-        "cmd": "git clone https://github.com/little-greenbean/dsh-tui.git",
-        "hint": "克隆到本地"
-      },
-      "descriptionOriginal": "Claude-CLI-style terminal chat for DeepSeek Harness (dsh) — a thin Ink plugin installed via `dsh plugin`",
       "translated": true
     },
     {
@@ -14895,48 +14861,6 @@
       "translated": true
     },
     {
-      "id": 1333229416,
-      "fullName": "PeanutsDou/peanut-dsh-plugin",
-      "name": "peanut-dsh-plugin",
-      "owner": "PeanutsDou",
-      "avatar": "https://avatars.githubusercontent.com/u/189261767?v=4",
-      "htmlUrl": "https://github.com/PeanutsDou/peanut-dsh-plugin",
-      "homepage": "",
-      "description": "PeanutsDou 的 DeepSeek Harness 插件合集：dsh-launcher 桌面壳等个人维护插件",
-      "stars": 1,
-      "forks": 0,
-      "language": "C#",
-      "languageColor": "#178600",
-      "topics": [
-        "dsh-plugin"
-      ],
-      "license": "",
-      "createdAt": "2026-08-13",
-      "pushedAt": "2026-08-13",
-      "archived": false,
-      "fork": false,
-      "official": false,
-      "curated": false,
-      "curatedSeed": false,
-      "score": 13,
-      "category": {
-        "id": "ecosystem",
-        "name": "外挂武器库",
-        "icon": "globe"
-      },
-      "matchedBy": [
-        "DSH 插件",
-        "Harness 插件组合"
-      ],
-      "install": {
-        "kind": "clone",
-        "cmd": "git clone https://github.com/PeanutsDou/peanut-dsh-plugin.git",
-        "hint": "克隆到本地"
-      },
-      "descriptionOriginal": "PeanutsDou 的 DeepSeek Harness 插件合集：dsh-launcher 桌面壳等个人维护插件",
-      "translated": true
-    },
-    {
       "id": 1333299105,
       "fullName": "YYTbit/dsh-plugin-rag",
       "name": "dsh-plugin-rag",
@@ -14981,22 +14905,22 @@
       "translated": true
     },
     {
-      "id": 1333312116,
-      "fullName": "Scorp1o117/dsh-plugin-marketplace",
-      "name": "dsh-plugin-marketplace",
-      "owner": "Scorp1o117",
-      "avatar": "https://avatars.githubusercontent.com/u/96406191?v=4",
-      "htmlUrl": "https://github.com/Scorp1o117/dsh-plugin-marketplace",
+      "id": 1333229416,
+      "fullName": "PeanutsDou/peanut-dsh-plugin",
+      "name": "peanut-dsh-plugin",
+      "owner": "PeanutsDou",
+      "avatar": "https://avatars.githubusercontent.com/u/189261767?v=4",
+      "htmlUrl": "https://github.com/PeanutsDou/peanut-dsh-plugin",
       "homepage": "",
-      "description": "DeepSeek Harness WebUI 的插件市场：在设置页面内浏览 github.com/topics/dsh-plugin — 搜索、按星号排序、查看安装说明。",
+      "description": "PeanutsDou 的 DeepSeek Harness 插件合集：dsh-launcher 桌面壳等个人维护插件",
       "stars": 1,
       "forks": 0,
-      "language": "JavaScript",
-      "languageColor": "#f1e05a",
+      "language": "C#",
+      "languageColor": "#178600",
       "topics": [
         "dsh-plugin"
       ],
-      "license": "MIT",
+      "license": "",
       "createdAt": "2026-08-13",
       "pushedAt": "2026-08-13",
       "archived": false,
@@ -15006,20 +14930,20 @@
       "curatedSeed": false,
       "score": 13,
       "category": {
-        "id": "ui",
-        "name": "驾驶舱与涂装",
-        "icon": "palette"
+        "id": "ecosystem",
+        "name": "外挂武器库",
+        "icon": "globe"
       },
       "matchedBy": [
         "DSH 插件",
         "Harness 插件组合"
       ],
       "install": {
-        "kind": "dsh-plugin",
-        "cmd": "dsh plugin add \"github:Scorp1o117/dsh-plugin-marketplace\"",
-        "hint": "粘贴给 Agent 即可安装"
+        "kind": "clone",
+        "cmd": "git clone https://github.com/PeanutsDou/peanut-dsh-plugin.git",
+        "hint": "克隆到本地"
       },
-      "descriptionOriginal": "Plugin marketplace for DeepSeek Harness Web UI: browse github.com/topics/dsh-plugin inside the settings page — search, sort by stars, view install instructions.",
+      "descriptionOriginal": "PeanutsDou 的 DeepSeek Harness 插件合集：dsh-launcher 桌面壳等个人维护插件",
       "translated": true
     },
     {
@@ -15070,6 +14994,48 @@
         "hint": "粘贴给 Agent 即可安装"
       },
       "descriptionOriginal": "Colorscheme Plugin For DeepSeek Harness",
+      "translated": true
+    },
+    {
+      "id": 1333312116,
+      "fullName": "Scorp1o117/dsh-plugin-marketplace",
+      "name": "dsh-plugin-marketplace",
+      "owner": "Scorp1o117",
+      "avatar": "https://avatars.githubusercontent.com/u/96406191?v=4",
+      "htmlUrl": "https://github.com/Scorp1o117/dsh-plugin-marketplace",
+      "homepage": "",
+      "description": "DeepSeek Harness WebUI 的插件市场：在设置页面内浏览 github.com/topics/dsh-plugin — 搜索、按星号排序、查看安装说明。",
+      "stars": 1,
+      "forks": 0,
+      "language": "JavaScript",
+      "languageColor": "#f1e05a",
+      "topics": [
+        "dsh-plugin"
+      ],
+      "license": "MIT",
+      "createdAt": "2026-08-13",
+      "pushedAt": "2026-08-13",
+      "archived": false,
+      "fork": false,
+      "official": false,
+      "curated": false,
+      "curatedSeed": false,
+      "score": 13,
+      "category": {
+        "id": "ui",
+        "name": "驾驶舱与涂装",
+        "icon": "palette"
+      },
+      "matchedBy": [
+        "DSH 插件",
+        "Harness 插件组合"
+      ],
+      "install": {
+        "kind": "dsh-plugin",
+        "cmd": "dsh plugin add \"github:Scorp1o117/dsh-plugin-marketplace\"",
+        "hint": "粘贴给 Agent 即可安装"
+      },
+      "descriptionOriginal": "Plugin marketplace for DeepSeek Harness Web UI: browse github.com/topics/dsh-plugin inside the settings page — search, sort by stars, view install instructions.",
       "translated": true
     },
     {
@@ -15644,6 +15610,49 @@
       "translated": true
     },
     {
+      "id": 1333288003,
+      "fullName": "YYTbit/dsh-plugin-context-compressor",
+      "name": "dsh-plugin-context-compressor",
+      "owner": "YYTbit",
+      "avatar": "https://avatars.githubusercontent.com/u/198713780?v=4",
+      "htmlUrl": "https://github.com/YYTbit/dsh-plugin-context-compressor",
+      "homepage": "",
+      "description": "DeepSeek Harness 的上下文压缩技巧",
+      "stars": 1,
+      "forks": 0,
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "topics": [
+        "deepseek-harness",
+        "dsh-plugin"
+      ],
+      "license": "MIT",
+      "createdAt": "2026-08-13",
+      "pushedAt": "2026-08-13",
+      "archived": false,
+      "fork": false,
+      "official": false,
+      "curated": false,
+      "curatedSeed": false,
+      "score": 14,
+      "category": {
+        "id": "context",
+        "name": "记忆与检索",
+        "icon": "book"
+      },
+      "matchedBy": [
+        "DSH 插件",
+        "Harness 插件组合"
+      ],
+      "install": {
+        "kind": "dsh-plugin",
+        "cmd": "dsh plugin add \"github:YYTbit/dsh-plugin-context-compressor\"",
+        "hint": "粘贴给 Agent 即可安装"
+      },
+      "descriptionOriginal": "Context compression skill for DeepSeek Harness",
+      "translated": true
+    },
+    {
       "id": 1333283809,
       "fullName": "YYTbit/dsh-plugin-code-review",
       "name": "dsh-plugin-code-review",
@@ -15851,21 +15860,24 @@
       "translated": true
     },
     {
-      "id": 1333288003,
-      "fullName": "YYTbit/dsh-plugin-context-compressor",
-      "name": "dsh-plugin-context-compressor",
+      "id": 1333244424,
+      "fullName": "YYTbit/dsh-plugin-vision-toolkit",
+      "name": "dsh-plugin-vision-toolkit",
       "owner": "YYTbit",
       "avatar": "https://avatars.githubusercontent.com/u/198713780?v=4",
-      "htmlUrl": "https://github.com/YYTbit/dsh-plugin-context-compressor",
+      "htmlUrl": "https://github.com/YYTbit/dsh-plugin-vision-toolkit",
       "homepage": "",
-      "description": "DeepSeek Harness 的上下文压缩技巧",
+      "description": "DeepSeek Harness 视觉工具包——为纯文本代理提供眼睛",
       "stars": 1,
       "forks": 0,
       "language": "TypeScript",
       "languageColor": "#3178c6",
       "topics": [
         "deepseek-harness",
-        "dsh-plugin"
+        "deepseek-vl",
+        "dsh-plugin",
+        "multimodal",
+        "vision"
       ],
       "license": "MIT",
       "createdAt": "2026-08-13",
@@ -15875,11 +15887,11 @@
       "official": false,
       "curated": false,
       "curatedSeed": false,
-      "score": 14,
+      "score": 13,
       "category": {
-        "id": "context",
-        "name": "记忆与检索",
-        "icon": "book"
+        "id": "agent",
+        "name": "编队协作",
+        "icon": "users"
       },
       "matchedBy": [
         "DSH 插件",
@@ -15887,10 +15899,10 @@
       ],
       "install": {
         "kind": "dsh-plugin",
-        "cmd": "dsh plugin add \"github:YYTbit/dsh-plugin-context-compressor\"",
+        "cmd": "dsh plugin add \"github:YYTbit/dsh-plugin-vision-toolkit\"",
         "hint": "粘贴给 Agent 即可安装"
       },
-      "descriptionOriginal": "Context compression skill for DeepSeek Harness",
+      "descriptionOriginal": "Vision toolkit for DeepSeek Harness -- give text-only agents eyes",
       "translated": true
     },
     {
@@ -15935,52 +15947,6 @@
         "hint": "克隆到本地"
       },
       "descriptionOriginal": "DeepSeek Harness community plugin workshop and directory",
-      "translated": true
-    },
-    {
-      "id": 1333244424,
-      "fullName": "YYTbit/dsh-plugin-vision-toolkit",
-      "name": "dsh-plugin-vision-toolkit",
-      "owner": "YYTbit",
-      "avatar": "https://avatars.githubusercontent.com/u/198713780?v=4",
-      "htmlUrl": "https://github.com/YYTbit/dsh-plugin-vision-toolkit",
-      "homepage": "",
-      "description": "DeepSeek Harness 视觉工具包——为纯文本代理提供眼睛",
-      "stars": 1,
-      "forks": 0,
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "topics": [
-        "deepseek-harness",
-        "deepseek-vl",
-        "dsh-plugin",
-        "multimodal",
-        "vision"
-      ],
-      "license": "MIT",
-      "createdAt": "2026-08-13",
-      "pushedAt": "2026-08-13",
-      "archived": false,
-      "fork": false,
-      "official": false,
-      "curated": false,
-      "curatedSeed": false,
-      "score": 13,
-      "category": {
-        "id": "agent",
-        "name": "编队协作",
-        "icon": "users"
-      },
-      "matchedBy": [
-        "DSH 插件",
-        "Harness 插件组合"
-      ],
-      "install": {
-        "kind": "dsh-plugin",
-        "cmd": "dsh plugin add \"github:YYTbit/dsh-plugin-vision-toolkit\"",
-        "hint": "粘贴给 Agent 即可安装"
-      },
-      "descriptionOriginal": "Vision toolkit for DeepSeek Harness -- give text-only agents eyes",
       "translated": true
     },
     {
@@ -16111,6 +16077,50 @@
       "translated": true
     },
     {
+      "id": 1333296107,
+      "fullName": "SakalioLabs/dsh-code-ide",
+      "name": "dsh-code-ide",
+      "owner": "SakalioLabs",
+      "avatar": "https://avatars.githubusercontent.com/u/293286782?v=4",
+      "htmlUrl": "https://github.com/SakalioLabs/dsh-code-ide",
+      "homepage": "",
+      "description": "DeepSeek Harness 代码 IDE 插件",
+      "stars": 1,
+      "forks": 0,
+      "language": "",
+      "languageColor": "#8b949e",
+      "topics": [
+        "dsh",
+        "dsh-plugin"
+      ],
+      "license": "MIT",
+      "createdAt": "2026-08-13",
+      "pushedAt": "2026-08-13",
+      "archived": false,
+      "fork": false,
+      "official": false,
+      "curated": false,
+      "curatedSeed": false,
+      "score": 13,
+      "category": {
+        "id": "ecosystem",
+        "name": "外挂武器库",
+        "icon": "globe"
+      },
+      "matchedBy": [
+        "DSH 插件",
+        "DeepSeek + DSH",
+        "Harness 插件组合"
+      ],
+      "install": {
+        "kind": "clone",
+        "cmd": "git clone https://github.com/SakalioLabs/dsh-code-ide.git",
+        "hint": "克隆到本地"
+      },
+      "descriptionOriginal": "DeepSeek Harness Code IDE Plugin",
+      "translated": true
+    },
+    {
       "id": 1328918516,
       "fullName": "vibeinging/dsh-agent-budget",
       "name": "dsh-agent-budget",
@@ -16191,50 +16201,6 @@
         "hint": "克隆到本地"
       },
       "descriptionOriginal": "The community ecosystem and plugin directory for DeepSeek Harness.",
-      "translated": true
-    },
-    {
-      "id": 1333296107,
-      "fullName": "SakalioLabs/dsh-code-ide",
-      "name": "dsh-code-ide",
-      "owner": "SakalioLabs",
-      "avatar": "https://avatars.githubusercontent.com/u/293286782?v=4",
-      "htmlUrl": "https://github.com/SakalioLabs/dsh-code-ide",
-      "homepage": "",
-      "description": "DeepSeek Harness 代码 IDE 插件",
-      "stars": 1,
-      "forks": 0,
-      "language": "",
-      "languageColor": "#8b949e",
-      "topics": [
-        "dsh",
-        "dsh-plugin"
-      ],
-      "license": "MIT",
-      "createdAt": "2026-08-13",
-      "pushedAt": "2026-08-13",
-      "archived": false,
-      "fork": false,
-      "official": false,
-      "curated": false,
-      "curatedSeed": false,
-      "score": 13,
-      "category": {
-        "id": "ecosystem",
-        "name": "外挂武器库",
-        "icon": "globe"
-      },
-      "matchedBy": [
-        "DSH 插件",
-        "DeepSeek + DSH",
-        "Harness 插件组合"
-      ],
-      "install": {
-        "kind": "clone",
-        "cmd": "git clone https://github.com/SakalioLabs/dsh-code-ide.git",
-        "hint": "克隆到本地"
-      },
-      "descriptionOriginal": "DeepSeek Harness Code IDE Plugin",
       "translated": true
     },
     {
@@ -16895,6 +16861,46 @@
       "translated": true
     },
     {
+      "id": 1333360918,
+      "fullName": "gemone/dsh-chrome",
+      "name": "dsh-chrome",
+      "owner": "gemone",
+      "avatar": "https://avatars.githubusercontent.com/u/53191371?v=4",
+      "htmlUrl": "https://github.com/gemone/dsh-chrome",
+      "homepage": "",
+      "description": "DeepSeek Harness 插件：面向模型的 Chrome DevTools 协议 (CDP) 工具 — 导航、评估、屏幕截图、滚动、键入、单击、按键、关闭",
+      "stars": 1,
+      "forks": 0,
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "topics": [],
+      "license": "MIT",
+      "createdAt": "2026-08-13",
+      "pushedAt": "2026-08-13",
+      "archived": false,
+      "fork": false,
+      "official": false,
+      "curated": false,
+      "curatedSeed": false,
+      "score": 9,
+      "category": {
+        "id": "model",
+        "name": "动力与感知核心",
+        "icon": "cpu"
+      },
+      "matchedBy": [
+        "DSH 插件",
+        "Harness 插件组合"
+      ],
+      "install": {
+        "kind": "dsh-plugin",
+        "cmd": "dsh plugin add \"github:gemone/dsh-chrome\"",
+        "hint": "粘贴给 Agent 即可安装"
+      },
+      "descriptionOriginal": "DeepSeek Harness plugin: model-facing Chrome DevTools Protocol (CDP) tools — navigate, evaluate, screenshot, scroll, type, click, press_key, close",
+      "translated": true
+    },
+    {
       "id": 1333299313,
       "fullName": "TTTPOB/dsh-task-models",
       "name": "dsh-task-models",
@@ -17019,46 +17025,6 @@
       "translated": true
     },
     {
-      "id": 1333360918,
-      "fullName": "gemone/dsh-chrome",
-      "name": "dsh-chrome",
-      "owner": "gemone",
-      "avatar": "https://avatars.githubusercontent.com/u/53191371?v=4",
-      "htmlUrl": "https://github.com/gemone/dsh-chrome",
-      "homepage": "",
-      "description": "DeepSeek Harness 插件：面向模型的 Chrome DevTools 协议 (CDP) 工具 — 导航、评估、屏幕截图、滚动、键入、单击、按键、关闭",
-      "stars": 1,
-      "forks": 0,
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "topics": [],
-      "license": "MIT",
-      "createdAt": "2026-08-13",
-      "pushedAt": "2026-08-13",
-      "archived": false,
-      "fork": false,
-      "official": false,
-      "curated": false,
-      "curatedSeed": false,
-      "score": 9,
-      "category": {
-        "id": "model",
-        "name": "动力与感知核心",
-        "icon": "cpu"
-      },
-      "matchedBy": [
-        "DSH 插件",
-        "Harness 插件组合"
-      ],
-      "install": {
-        "kind": "dsh-plugin",
-        "cmd": "dsh plugin add \"github:gemone/dsh-chrome\"",
-        "hint": "粘贴给 Agent 即可安装"
-      },
-      "descriptionOriginal": "DeepSeek Harness plugin: model-facing Chrome DevTools Protocol (CDP) tools — navigate, evaluate, screenshot, scroll, type, click, press_key, close",
-      "translated": true
-    },
-    {
       "id": 1333360534,
       "fullName": "xiaomiba0904/dsh-obsidian-export",
       "name": "dsh-obsidian-export",
@@ -17148,52 +17114,6 @@
       "translated": true
     },
     {
-      "id": 1333243248,
-      "fullName": "randerous/dsh-turn-budget",
-      "name": "dsh-turn-budget",
-      "owner": "randerous",
-      "avatar": "https://avatars.githubusercontent.com/u/34825048?v=4",
-      "htmlUrl": "https://github.com/randerous/dsh-turn-budget",
-      "homepage": "",
-      "description": "DeepSeek Harness 的建议转向步进预算提醒 — 循环收敛防护（dsh-plugin）",
-      "stars": 1,
-      "forks": 0,
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "topics": [
-        "agent",
-        "cordis",
-        "deepseek-harness",
-        "dsh-plugin",
-        "guard"
-      ],
-      "license": "MIT",
-      "createdAt": "2026-08-13",
-      "pushedAt": "2026-08-13",
-      "archived": false,
-      "fork": false,
-      "official": false,
-      "curated": false,
-      "curatedSeed": false,
-      "score": 15,
-      "category": {
-        "id": "agent",
-        "name": "编队协作",
-        "icon": "users"
-      },
-      "matchedBy": [
-        "DSH 插件",
-        "Harness 插件组合"
-      ],
-      "install": {
-        "kind": "dsh-plugin",
-        "cmd": "dsh plugin add \"github:randerous/dsh-turn-budget\"",
-        "hint": "粘贴给 Agent 即可安装"
-      },
-      "descriptionOriginal": "Advisory turn step-budget reminders for DeepSeek Harness — loop convergence guard (dsh-plugin)",
-      "translated": true
-    },
-    {
       "id": 1333292088,
       "fullName": "tappass/dsh-governance",
       "name": "dsh-governance",
@@ -17238,6 +17158,52 @@
         "hint": "粘贴给 Agent 即可安装"
       },
       "descriptionOriginal": "The authority layer for agentic AI, as a DeepSeek Harness plugin. Governs every tool call against your business rules via TapPass /v1/govern.",
+      "translated": true
+    },
+    {
+      "id": 1333243248,
+      "fullName": "randerous/dsh-turn-budget",
+      "name": "dsh-turn-budget",
+      "owner": "randerous",
+      "avatar": "https://avatars.githubusercontent.com/u/34825048?v=4",
+      "htmlUrl": "https://github.com/randerous/dsh-turn-budget",
+      "homepage": "",
+      "description": "DeepSeek Harness 的建议转向步进预算提醒 — 循环收敛防护（dsh-plugin）",
+      "stars": 1,
+      "forks": 0,
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "topics": [
+        "agent",
+        "cordis",
+        "deepseek-harness",
+        "dsh-plugin",
+        "guard"
+      ],
+      "license": "MIT",
+      "createdAt": "2026-08-13",
+      "pushedAt": "2026-08-13",
+      "archived": false,
+      "fork": false,
+      "official": false,
+      "curated": false,
+      "curatedSeed": false,
+      "score": 15,
+      "category": {
+        "id": "agent",
+        "name": "编队协作",
+        "icon": "users"
+      },
+      "matchedBy": [
+        "DSH 插件",
+        "Harness 插件组合"
+      ],
+      "install": {
+        "kind": "dsh-plugin",
+        "cmd": "dsh plugin add \"github:randerous/dsh-turn-budget\"",
+        "hint": "粘贴给 Agent 即可安装"
+      },
+      "descriptionOriginal": "Advisory turn step-budget reminders for DeepSeek Harness — loop convergence guard (dsh-plugin)",
       "translated": true
     },
     {
@@ -17721,49 +17687,6 @@
       "translated": true
     },
     {
-      "id": 1333246244,
-      "fullName": "pandashere/dsh-self-control-guard",
-      "name": "dsh-self-control-guard",
-      "owner": "pandashere",
-      "avatar": "https://avatars.githubusercontent.com/u/33127380?v=4",
-      "htmlUrl": "https://github.com/pandashere/dsh-self-control-guard",
-      "homepage": "",
-      "description": "用于 DeepSeek Harness 主机退出和重新启动工作流程的自我控制防护插件。",
-      "stars": 1,
-      "forks": 0,
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "topics": [
-        "deepseek-harness",
-        "dsh-plugin"
-      ],
-      "license": "MIT",
-      "createdAt": "2026-08-13",
-      "pushedAt": "2026-08-13",
-      "archived": false,
-      "fork": false,
-      "official": false,
-      "curated": false,
-      "curatedSeed": false,
-      "score": 13,
-      "category": {
-        "id": "git",
-        "name": "工程与检修",
-        "icon": "git"
-      },
-      "matchedBy": [
-        "DSH 插件",
-        "Harness 插件组合"
-      ],
-      "install": {
-        "kind": "dsh-plugin",
-        "cmd": "dsh plugin add \"github:pandashere/dsh-self-control-guard\"",
-        "hint": "粘贴给 Agent 即可安装"
-      },
-      "descriptionOriginal": "Self-control guard plugin for DeepSeek Harness host exit and restart workflows.",
-      "translated": true
-    },
-    {
       "id": 1333209502,
       "fullName": "haytham818/dsh-notify",
       "name": "dsh-notify",
@@ -17804,6 +17727,51 @@
         "hint": "粘贴给 Agent 即可安装"
       },
       "descriptionOriginal": "DSH system notification plugin: desktop notifications when an agent finishes a task, errors, asks a question, or waits for approval (dsh 系统通知插件)",
+      "translated": true
+    },
+    {
+      "id": 1333189078,
+      "fullName": "PangYiMing/dsh-mobile-control",
+      "name": "dsh-mobile-control",
+      "owner": "PangYiMing",
+      "avatar": "https://avatars.githubusercontent.com/u/18424614?v=4",
+      "htmlUrl": "https://github.com/PangYiMing/dsh-mobile-control",
+      "homepage": "",
+      "description": "DSH plugin for controlling mobile devices (ADB/iOS) — DeepSeek Harness 操控手机插件",
+      "stars": 1,
+      "forks": 0,
+      "language": "JavaScript",
+      "languageColor": "#f1e05a",
+      "topics": [
+        "deepseek-harness",
+        "dsh-plugin",
+        "mobile-automation",
+        "mobile-control"
+      ],
+      "license": "MIT",
+      "createdAt": "2026-08-13",
+      "pushedAt": "2026-08-13",
+      "archived": false,
+      "fork": false,
+      "official": false,
+      "curated": false,
+      "curatedSeed": false,
+      "score": 13,
+      "category": {
+        "id": "client",
+        "name": "机体与座舱",
+        "icon": "monitor"
+      },
+      "matchedBy": [
+        "DSH 插件",
+        "Harness 插件组合"
+      ],
+      "install": {
+        "kind": "clone",
+        "cmd": "git clone https://github.com/PangYiMing/dsh-mobile-control.git",
+        "hint": "克隆到本地"
+      },
+      "descriptionOriginal": "DSH plugin for controlling mobile devices (ADB/iOS) — DeepSeek Harness 操控手机插件",
       "translated": true
     },
     {
@@ -17883,45 +17851,6 @@
       "translated": true
     },
     {
-      "id": 1333245369,
-      "fullName": "xiaoshihou514/dsh-weixin",
-      "name": "dsh-weixin",
-      "owner": "xiaoshihou514",
-      "avatar": "https://avatars.githubusercontent.com/u/108414369?v=4",
-      "htmlUrl": "https://github.com/xiaoshihou514/dsh-weixin",
-      "homepage": "",
-      "description": "DeepSeek Harness：微信",
-      "stars": 1,
-      "forks": 0,
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "topics": [],
-      "license": "MIT",
-      "createdAt": "2026-08-13",
-      "pushedAt": "2026-08-13",
-      "archived": false,
-      "fork": false,
-      "official": false,
-      "curated": false,
-      "curatedSeed": false,
-      "score": 7,
-      "category": {
-        "id": "notify",
-        "name": "通讯与广播",
-        "icon": "bell"
-      },
-      "matchedBy": [
-        "DeepSeek + DSH"
-      ],
-      "install": {
-        "kind": "dsh-plugin",
-        "cmd": "dsh plugin add \"github:xiaoshihou514/dsh-weixin\"",
-        "hint": "粘贴给 Agent 即可安装"
-      },
-      "descriptionOriginal": "DeepSeek Harness: Weixin",
-      "translated": true
-    },
-    {
       "id": 1333243997,
       "fullName": "xiaoshihou514/dsh-tui",
       "name": "dsh-tui",
@@ -17958,6 +17887,45 @@
         "hint": "克隆到本地"
       },
       "descriptionOriginal": "DeepSeek Harness: TUI",
+      "translated": true
+    },
+    {
+      "id": 1333245369,
+      "fullName": "xiaoshihou514/dsh-weixin",
+      "name": "dsh-weixin",
+      "owner": "xiaoshihou514",
+      "avatar": "https://avatars.githubusercontent.com/u/108414369?v=4",
+      "htmlUrl": "https://github.com/xiaoshihou514/dsh-weixin",
+      "homepage": "",
+      "description": "DeepSeek Harness：微信",
+      "stars": 1,
+      "forks": 0,
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "topics": [],
+      "license": "MIT",
+      "createdAt": "2026-08-13",
+      "pushedAt": "2026-08-13",
+      "archived": false,
+      "fork": false,
+      "official": false,
+      "curated": false,
+      "curatedSeed": false,
+      "score": 7,
+      "category": {
+        "id": "notify",
+        "name": "通讯与广播",
+        "icon": "bell"
+      },
+      "matchedBy": [
+        "DeepSeek + DSH"
+      ],
+      "install": {
+        "kind": "dsh-plugin",
+        "cmd": "dsh plugin add \"github:xiaoshihou514/dsh-weixin\"",
+        "hint": "粘贴给 Agent 即可安装"
+      },
+      "descriptionOriginal": "DeepSeek Harness: Weixin",
       "translated": true
     },
     {
@@ -18080,6 +18048,45 @@
       "translated": true
     },
     {
+      "id": 1333268555,
+      "fullName": "AdamPlatin123/dsh-zcf",
+      "name": "dsh-zcf",
+      "owner": "AdamPlatin123",
+      "avatar": "https://avatars.githubusercontent.com/u/154926636?v=4",
+      "htmlUrl": "https://github.com/AdamPlatin123/dsh-zcf",
+      "homepage": "",
+      "description": "dsh-zcf：DeepSeek 零配置流程 — DeepSeek Harness 的单命令设置向导",
+      "stars": 1,
+      "forks": 0,
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "topics": [],
+      "license": "BSD-3-Clause",
+      "createdAt": "2026-08-13",
+      "pushedAt": "2026-08-13",
+      "archived": false,
+      "fork": false,
+      "official": false,
+      "curated": false,
+      "curatedSeed": false,
+      "score": 11,
+      "category": {
+        "id": "ecosystem",
+        "name": "外挂武器库",
+        "icon": "globe"
+      },
+      "matchedBy": [
+        "DeepSeek + DSH"
+      ],
+      "install": {
+        "kind": "clone",
+        "cmd": "git clone https://github.com/AdamPlatin123/dsh-zcf.git",
+        "hint": "克隆到本地"
+      },
+      "descriptionOriginal": "dsh-zcf: DeepSeek Zero-Config Flow — one-command setup wizard for DeepSeek Harness",
+      "translated": true
+    },
+    {
       "id": 1333601595,
       "fullName": "czzzlq/deepseek-harness-background",
       "name": "deepseek-harness-background",
@@ -18119,45 +18126,6 @@
         "hint": "克隆到本地"
       },
       "descriptionOriginal": "deepseek-harness背景自定义",
-      "translated": true
-    },
-    {
-      "id": 1333268555,
-      "fullName": "AdamPlatin123/dsh-zcf",
-      "name": "dsh-zcf",
-      "owner": "AdamPlatin123",
-      "avatar": "https://avatars.githubusercontent.com/u/154926636?v=4",
-      "htmlUrl": "https://github.com/AdamPlatin123/dsh-zcf",
-      "homepage": "",
-      "description": "dsh-zcf：DeepSeek 零配置流程 — DeepSeek Harness 的单命令设置向导",
-      "stars": 1,
-      "forks": 0,
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "topics": [],
-      "license": "BSD-3-Clause",
-      "createdAt": "2026-08-13",
-      "pushedAt": "2026-08-13",
-      "archived": false,
-      "fork": false,
-      "official": false,
-      "curated": false,
-      "curatedSeed": false,
-      "score": 11,
-      "category": {
-        "id": "ecosystem",
-        "name": "外挂武器库",
-        "icon": "globe"
-      },
-      "matchedBy": [
-        "DeepSeek + DSH"
-      ],
-      "install": {
-        "kind": "clone",
-        "cmd": "git clone https://github.com/AdamPlatin123/dsh-zcf.git",
-        "hint": "克隆到本地"
-      },
-      "descriptionOriginal": "dsh-zcf: DeepSeek Zero-Config Flow — one-command setup wizard for DeepSeek Harness",
       "translated": true
     },
     {
@@ -19226,6 +19194,48 @@
       "translated": true
     },
     {
+      "id": 1333246244,
+      "fullName": "pandashere/dsh-self-control-guard",
+      "name": "dsh-self-control-guard",
+      "owner": "pandashere",
+      "avatar": "https://avatars.githubusercontent.com/u/33127380?v=4",
+      "htmlUrl": "https://github.com/pandashere/dsh-self-control-guard",
+      "homepage": "",
+      "description": "用于 DeepSeek Harness 主机退出和重新启动工作流程的自我控制防护插件。",
+      "stars": 1,
+      "forks": 0,
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "topics": [
+        "deepseek-harness",
+        "dsh-plugin"
+      ],
+      "license": "MIT",
+      "createdAt": "2026-08-13",
+      "pushedAt": "2026-08-13",
+      "archived": false,
+      "fork": false,
+      "official": false,
+      "curated": false,
+      "curatedSeed": false,
+      "score": 13,
+      "category": {
+        "id": "git",
+        "name": "工程与检修",
+        "icon": "git"
+      },
+      "matchedBy": [
+        "Harness 插件组合"
+      ],
+      "install": {
+        "kind": "dsh-plugin",
+        "cmd": "dsh plugin add \"github:pandashere/dsh-self-control-guard\"",
+        "hint": "粘贴给 Agent 即可安装"
+      },
+      "descriptionOriginal": "Self-control guard plugin for DeepSeek Harness host exit and restart workflows.",
+      "translated": true
+    },
+    {
       "id": 1333284940,
       "fullName": "yangzhe1003/dsh-web-search-firecrawl",
       "name": "dsh-web-search-firecrawl",
@@ -19354,50 +19364,6 @@
         "hint": "粘贴给 Agent 即可安装"
       },
       "descriptionOriginal": "DSH 插件评测工具：YAML 用例驱动真实 agent 回归评测 + baseline 对比 PASS/WARN/FAIL 门禁｜Regression eval harness for DeepSeek Harness plugins",
-      "translated": true
-    },
-    {
-      "id": 1333189078,
-      "fullName": "PangYiMing/dsh-mobile-control",
-      "name": "dsh-mobile-control",
-      "owner": "PangYiMing",
-      "avatar": "https://avatars.githubusercontent.com/u/18424614?v=4",
-      "htmlUrl": "https://github.com/PangYiMing/dsh-mobile-control",
-      "homepage": "",
-      "description": "DSH plugin for controlling mobile devices (ADB/iOS) — DeepSeek Harness 操控手机插件",
-      "stars": 1,
-      "forks": 0,
-      "language": "JavaScript",
-      "languageColor": "#f1e05a",
-      "topics": [
-        "deepseek-harness",
-        "dsh-plugin",
-        "mobile-automation",
-        "mobile-control"
-      ],
-      "license": "MIT",
-      "createdAt": "2026-08-13",
-      "pushedAt": "2026-08-13",
-      "archived": false,
-      "fork": false,
-      "official": false,
-      "curated": false,
-      "curatedSeed": false,
-      "score": 13,
-      "category": {
-        "id": "client",
-        "name": "机体与座舱",
-        "icon": "monitor"
-      },
-      "matchedBy": [
-        "Harness 插件组合"
-      ],
-      "install": {
-        "kind": "clone",
-        "cmd": "git clone https://github.com/PangYiMing/dsh-mobile-control.git",
-        "hint": "克隆到本地"
-      },
-      "descriptionOriginal": "DSH plugin for controlling mobile devices (ADB/iOS) — DeepSeek Harness 操控手机插件",
       "translated": true
     },
     {
