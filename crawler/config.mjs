@@ -135,3 +135,28 @@ export function isRelevant(repo) {
   const hasHarnessish = /harness|plugin|skill|cordis/.test(text)
   return (hasDeepSeek || hasDsh) && (hasDeepSeek || hasHarnessish || /\bdsh\b.*plugin/i.test(text))
 }
+
+// 严查: 只有作者在仓库中明确声明兼容 DSH 才算数。
+// "dsh" 缩写与 "DeepSeek Harness" 全称是判定关键, 且必须出现在作者自述的兼容语境
+// (名称/描述中的插件、皮肤、主题、工具、兼容等表述); 仅蹭话题、仅"支持 DeepSeek"的独立项目一律剔除。
+export function isDshQualified(r) {
+  const full = (r.fullName || '').toLowerCase()
+  const name = (r.name || '').toLowerCase()
+  const desc = (r.description || '').toLowerCase()
+  const topics = (r.topics || []).map((t) => String(t).toLowerCase())
+  // 作者自述文本（名称 + 描述, 不含话题标签 —— 话题可被蹭）
+  const authorText = (name + ' ' + desc)
+  // 明确排除同名的其他项目
+  if (/dshell/.test(full)) return false
+  // 0. 官方生态组织仓库直接算数
+  if (full.startsWith('dsh-external/')) return true
+  // 1. 作者自述出现 "DeepSeek Harness" 全称写法
+  if (/deepseek[\s-]*harness/.test(authorText)) return true
+  // 2. 作者自述中 "dsh" 缩写 + 兼容语境表述
+  if (/\bdsh\b/.test(authorText) && /plugin|harness|skin|theme|bundle|cordis|compatib|extension|工具|插件|皮肤|主题|侧边栏|兼容|适配|支持/.test(authorText)) return true
+  // 3. 作者声明 dsh-plugin 话题 + 自述含正确写法（防蹭话题）
+  if (topics.includes('dsh-plugin') && /\bdsh\b|deepseek[\s-]*harness/.test(authorText)) return true
+  // 4. 官方 deepseek-ai 组织的 harness 仓库
+  if (full.startsWith('deepseek-ai/') && /harness|\bdsh\b/.test(authorText)) return true
+  return false
+}
