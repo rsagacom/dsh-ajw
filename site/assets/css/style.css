@@ -27,6 +27,7 @@
 }
 
 * { box-sizing: border-box; }
+a, button, .chip, select, .rank-card { touch-action: manipulation; -webkit-tap-highlight-color: transparent; }
 html { scroll-behavior: smooth; scroll-padding-top: calc(var(--header-h) + 16px); }
 body {
   margin: 0;
@@ -157,8 +158,8 @@ code { font-family: var(--font-pixel); font-size: 0.92em; background: var(--surf
 .hero .container { position: relative; z-index: 1; }
 /* 机库鲸鱼横幅（大图完整展示） */
 .hero-art {
-  margin: 30px auto 0; max-width: 1080px; position: relative;
-  border: 1px solid var(--border-strong); border-radius: var(--radius);
+  width: 100vw; max-width: none; margin: 30px 0 0 calc(50% - 50vw); position: relative;
+  border: 1px solid var(--border-strong); border-left: 0; border-right: 0; border-radius: 0;
   overflow: hidden;
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.6), 0 12px 40px rgba(0, 0, 0, 0.55), 0 0 48px rgba(77, 107, 254, 0.22);
 }
@@ -166,9 +167,19 @@ code { font-family: var(--font-pixel); font-size: 0.92em; background: var(--surf
 .hero-art::before { top: 6px; left: 6px; border-top: 2px solid var(--amber); border-left: 2px solid var(--amber); opacity: .8; }
 .hero-art::after { bottom: 6px; right: 6px; border-bottom: 2px solid var(--amber); border-right: 2px solid var(--amber); opacity: .8; }
 .hero-art img {
-  display: block; width: 100%; height: auto;
+  display: block; width: 100%; height: auto; object-fit: contain; object-position: center;
   filter: brightness(1.55) saturate(1.12);
   image-rendering: auto;
+}
+.hero-art-glass {
+  position: absolute; inset: 0; z-index: 1; pointer-events: none;
+  background:
+    linear-gradient(180deg, rgba(11, 18, 32, 0.10) 0%, rgba(11, 18, 32, 0.16) 56%, rgba(11, 18, 32, 0.36) 100%),
+    linear-gradient(90deg, rgba(11, 18, 32, 0.18) 0%, transparent 18%, transparent 82%, rgba(11, 18, 32, 0.18) 100%),
+    repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.015) 0 1px, transparent 1px 3px);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06), inset 0 -1px 0 rgba(0, 0, 0, 0.55);
+  backdrop-filter: saturate(0.88) contrast(0.96);
+  -webkit-backdrop-filter: saturate(0.88) contrast(0.96);
 }
 .hero-art::marker { display: none; }
 .hero-eyebrow {
@@ -330,7 +341,7 @@ section { padding: 40px 0 8px; }
 /* ===== 部件货架（卡片） ===== */
 .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(305px, 1fr)); gap: 16px; }
 .card {
-  position: relative;
+  position: relative; min-width: 0;
   background: linear-gradient(#151d2c, #111823);
   border: 1px solid var(--border); border-radius: var(--radius);
   padding: 18px; display: flex; flex-direction: column; gap: 12px;
@@ -414,7 +425,7 @@ section { padding: 40px 0 8px; }
 @keyframes shimmer { to { background-position: -200% 0; } }
 
 /* ===== 社群与补给频道 ===== */
-.community-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; }
+.community-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
 .comm-card {
   position: relative;
   background: linear-gradient(#151d2c, #111823);
@@ -523,17 +534,33 @@ section { padding: 40px 0 8px; }
 }
 @media (max-width: 768px) {
   .hide-sm { display: none; }
-  .site-nav { gap: 0; }
-  .site-nav a { padding: 8px 9px; font-size: 13px; }
+  .site-nav { gap: 0; flex: 1; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  .site-nav a { padding: 8px 10px; font-size: 13px; white-space: nowrap; flex: none; }
   .brand-text em { display: none; }
   .hero { padding: 48px 0 28px; }
-  .grid { grid-template-columns: 1fr; }
+  .grid { grid-template-columns: minmax(0, 1fr); }
   .toolbar { flex-direction: column; align-items: stretch; }
   .toolbar-right { justify-content: space-between; }
   .toolbar-right .select-wrap { flex: 1; }
   .toolbar-right select { width: 100%; }
   .manual-banner { flex-wrap: wrap; }
   .manual-banner .btn { flex: 1; }
+  /* 移动端触摸目标 >= 44px */
+  .chip { min-height: 44px; padding: 9px 14px 9px 24px; }
+  .chip::before { left: 10px; }
+  .select-wrap select { min-height: 44px; }
+  .copy-btn { width: 40px; height: 40px; }
+  .card-actions .btn, .btn { min-height: 44px; }
+  .cat-chips { gap: 8px; }
+}
+@media (max-width: 640px) {
+  .header-led { display: none; }
+  .header-gh { display: none; }
+  .brand-mascot { width: 30px; height: 30px; }
+  .brand-mark { padding: 7px 8px; font-size: 13px; }
+  .brand-text strong { font-size: 14.5px; }
+  .hero-stats { gap: 10px; }
+  .stat { padding: 12px 10px 10px; }
 }
 
 /* ===== 减少动态效果 ===== */
