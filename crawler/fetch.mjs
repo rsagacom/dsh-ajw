@@ -7,7 +7,7 @@ import { fileURLToPath } from 'node:url'
 import { dirname, join } from 'node:path'
 import {
   KEYWORDS, CURATED, CATEGORY_RULES, OFFICIAL_ORGS,
-  relevanceScore, isRelevant, MIN_STARS, MIN_SCORE, SEARCH_PER_PAGE, SEARCH_SLEEP_MS,
+  relevanceScore, isRelevant, isDshQualified, MIN_STARS, MIN_SCORE, SEARCH_PER_PAGE, SEARCH_SLEEP_MS,
   AWESOME_SECTION_CATEGORY, installFor,
 } from './config.mjs'
 import { translateDescriptions } from './translate.mjs'
@@ -256,7 +256,7 @@ async function main() {
     }
   }
 
-  // 3) 过滤 + 评分 + 分类 + 排序
+  // 3) 过滤 + 评分 + 分类 + 排序（DSH 资质严查: 仅收录 DeepSeek Harness 生态真项目）
   let projects = [...map.values()]
   const curatedNames = new Set([...curatedSet, ...awesomeLinks])
   projects = projects.filter((p) => {
@@ -264,10 +264,19 @@ async function main() {
     if (p.fork) return false
     const name = p.fullName.toLowerCase()
     if (curatedNames.has(name)) return true
-    return isRelevant(p) && p.stars >= MIN_STARS && p.score >= MIN_SCORE
+    return isDshQualified(p) && p.stars >= MIN_STARS && p.score >= MIN_SCORE
   })
   projects = projects.map((p) => ({ ...p, score: relevanceScore(p, 0) }))
   projects.sort((a, b) => b.stars - a.stars)
+
+  // 最终去重（GitHub 仓库名大小写不敏感, 防止同仓库不同大小写重复收录）
+  const seenNames = new Set()
+  projects = projects.filter((p) => {
+    const k = p.fullName.toLowerCase()
+    if (seenNames.has(k)) return false
+    seenNames.add(k)
+    return true
+  })
 
   // 3.4) 生成一键安装命令
   projects = projects.map((p) => ({ ...p, install: installFor(p) }))
