@@ -137,7 +137,7 @@
 .steps p { margin: 4px 0 0; font-size: 13.5px; }
 
 /* 货架导览 */
-.guide-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 14px; margin: 18px 0; }
+.guide-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 14px; margin: 18px 0; }
 .guide-card {
   display: flex; flex-direction: column; gap: 8px;
   background: linear-gradient(#141b29, #10161f); border: 1px solid var(--border);
@@ -165,5 +165,6 @@
   .manual-sheet { padding: 26px 16px 36px; }
   .cover-stamp { display: none; }
   .steps li { flex-direction: column; gap: 10px; }
-  .guide-grid { grid-template-columns: 1fr; }
+  .guide-grid { grid-template-columns: minmax(0, 1fr); }
+  .cmd-block .copy-btn { width: 40px; height: 40px; }
 }
