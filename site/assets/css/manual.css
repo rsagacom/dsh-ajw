@@ -103,7 +103,7 @@
 .cmd-block .copy-btn { flex: none; width: 36px; height: 36px; }
 
 /* 概念卡 */
-.concept-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; margin: 18px 0; }
+.concept-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(220px, 100%), 1fr)); gap: 14px; margin: 18px 0; }
 .concept-card {
   background: linear-gradient(#141b29, #10161f); border: 1px solid var(--border);
   border-radius: var(--radius-sm); padding: 18px; box-shadow: var(--bevel);
@@ -137,7 +137,7 @@
 .steps p { margin: 4px 0 0; font-size: 13.5px; }
 
 /* 货架导览 */
-.guide-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 14px; margin: 18px 0; }
+.guide-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(260px, 100%), 1fr)); gap: 14px; margin: 18px 0; }
 .guide-card {
   display: flex; flex-direction: column; gap: 8px;
   background: linear-gradient(#141b29, #10161f); border: 1px solid var(--border);
