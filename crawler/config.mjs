@@ -99,11 +99,21 @@ export const AWESOME_SECTION_CATEGORY = {
 }
 
 // 生成可复制的一键安装命令（粘贴给 Agent 即可安装）
+// cn: 国内镜像加速命令（2026-08-17 经 git ls-remote 实测核验可用）
+const CN_PROXY = 'https://ghfast.top/'
+
 export function installFor(p) {
   const full = p.fullName
-  if (full === 'deepseek-ai/deepseek-harness') return { kind: 'npx', cmd: 'npx @deepseek-ai/dsh web', hint: '官方运行时' }
+  if (full === 'deepseek-ai/deepseek-harness') {
+    return { kind: 'npx', cmd: 'npx @deepseek-ai/dsh web', hint: '官方运行时' }
+  }
   if (['awesome', 'ecosystem', 'tool', 'client', 'infra'].includes(p.category.id)) {
-    return { kind: 'clone', cmd: `git clone https://github.com/${full}.git`, hint: '克隆到本地' }
+    return {
+      kind: 'clone',
+      cmd: `git clone https://github.com/${full}.git`,
+      cn: `git clone ${CN_PROXY}https://github.com/${full}.git`,
+      hint: '克隆到本地',
+    }
   }
   return { kind: 'dsh-plugin', cmd: `dsh plugin add "github:${full}"`, hint: '粘贴给 Agent 即可安装' }
 }

@@ -62,10 +62,22 @@
         (p.install && p.install.cmd ? (
           '<div class="card-install">' +
             '<span class="install-label">' + esc(p.install.hint || '一键安装') + '</span>' +
-            '<div class="install-row">' +
-              '<code class="install-cmd">' + esc(p.install.cmd) + '</code>' +
-              '<button class="copy-btn" type="button" data-cmd="' + esc(p.install.cmd) + '" aria-label="复制安装命令">' + icon('copy') + '</button>' +
-            '</div>' +
+            (p.install.cn ? (
+              '<div class="install-tabs" role="tablist">' +
+                '<button class="install-tab active" type="button" role="tab" aria-selected="true">国内源</button>' +
+                '<button class="install-tab" type="button" role="tab" aria-selected="false">海外源</button>' +
+              '</div>'
+            ) : '') +
+            (p.install.cn
+              ? '<div class="install-row" data-cn="' + esc(p.install.cn) + '" data-global="' + esc(p.install.cmd) + '">' +
+                  '<code class="install-cmd">' + esc(p.install.cn) + '</code>' +
+                  '<button class="copy-btn" type="button" data-cmd="' + esc(p.install.cn) + '" aria-label="复制国内源安装命令">' + icon('copy') + '</button>' +
+                '</div>'
+              : '<div class="install-row">' +
+                  '<code class="install-cmd">' + esc(p.install.cmd) + '</code>' +
+                  '<button class="copy-btn" type="button" data-cmd="' + esc(p.install.cmd) + '" aria-label="复制安装命令">' + icon('copy') + '</button>' +
+                '</div>'
+            ) +
           '</div>'
         ) : '') +
         '<div class="card-actions">' +
@@ -183,6 +195,23 @@
       $('#langFilter').value = ''
       renderChips()
       renderGrid()
+    })
+    // 国内源/海外源命令切换
+    $('#grid').addEventListener('click', function (e) {
+      var tab = e.target.closest('.install-tab')
+      if (!tab) return
+      var box = tab.closest('.card-install')
+      var tabs = box.querySelectorAll('.install-tab')
+      tabs.forEach(function (t) { t.classList.remove('active'); t.setAttribute('aria-selected', 'false') })
+      tab.classList.add('active')
+      tab.setAttribute('aria-selected', 'true')
+      var row = box.querySelector('.install-row')
+      var useCn = tabs[0] === tab
+      var cmd = useCn ? row.dataset.cn : row.dataset.global
+      row.querySelector('.install-cmd').textContent = cmd
+      var copyBtn = row.querySelector('.copy-btn')
+      copyBtn.dataset.cmd = cmd
+      copyBtn.setAttribute('aria-label', useCn ? '复制国内源安装命令' : '复制海外源安装命令')
     })
     // 一键复制安装命令
     $('#grid').addEventListener('click', function (e) {

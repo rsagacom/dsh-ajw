@@ -449,7 +449,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/anywhere-labs/deepseek-harness-desktop.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/anywhere-labs/deepseek-harness-desktop.git"
       }
     },
     {
@@ -499,7 +500,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/awesome-dsh-plugin/awesome-dsh-plugin.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/awesome-dsh-plugin/awesome-dsh-plugin.git"
       },
       "descriptionOriginal": "A curated list of plugins for DeepSeek Harness (dsh) · DeepSeek Harness 插件精选列表",
       "translated": true
@@ -610,7 +612,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/zhukunpenglinyutong/desktop-cc-gui.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/zhukunpenglinyutong/desktop-cc-gui.git"
       },
       "descriptionOriginal": "Multi-engine AI coding desktop client (Tauri). Claude Code, Codex, Gemini, OpenCode, DeepSeek Harness and more in one GUI.",
       "translated": true
@@ -1192,7 +1195,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/AdamPlatin123/awesome-dsh-plugins.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/AdamPlatin123/awesome-dsh-plugins.git"
       }
     },
     {
@@ -1230,7 +1234,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/alchaincyf/deepseek-harness-orange-book.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/alchaincyf/deepseek-harness-orange-book.git"
       }
     },
     {
@@ -2070,7 +2075,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/EthanYoQ/AI-Novel-Writer.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/EthanYoQ/AI-Novel-Writer.git"
       }
     },
     {
@@ -2230,7 +2236,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/hairyf/deepseek-harness-desktop.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/hairyf/deepseek-harness-desktop.git"
       },
       "descriptionOriginal": "DeepSeek Harness Tauri 桌面版 | Only 5mb installer, zero environment setup. Windows / macOS / Linux.",
       "translated": true
@@ -2404,7 +2411,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/turtle2209/Bigfish.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/turtle2209/Bigfish.git"
       }
     },
     {
@@ -2697,7 +2705,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/bruc3van/awesome-dsh-plugin.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/bruc3van/awesome-dsh-plugin.git"
       }
     },
     {
@@ -2982,7 +2991,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/steven-kid/deepseek-harness-desktop.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/steven-kid/deepseek-harness-desktop.git"
       },
       "descriptionOriginal": "Minimal desktop wrapper for DeepSeek Harness 极简 Deespeek Harness 桌面端，跨平台，免配置，开箱即用",
       "translated": true
@@ -3071,7 +3081,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/ht426/deepseek-harness-tutorial.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/ht426/deepseek-harness-tutorial.git"
       }
     },
     {
@@ -3113,7 +3124,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/zhaoolee/notes.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/zhaoolee/notes.git"
       }
     },
     {
@@ -3305,7 +3317,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/Ruler4396/dsh-launcher.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/Ruler4396/dsh-launcher.git"
       },
       "descriptionOriginal": "DeepSeek Harness（dsh）Windows 轻量启动器：双击即用，克制的原生体验 / Lightweight Windows launcher for DeepSeek Harness (dsh) — double-click to run, native & restrained",
       "translated": true
@@ -3398,7 +3411,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/hikariming/dshfind.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/hikariming/dshfind.git"
       },
       "descriptionOriginal": "DSH (DeepSeek Harness) 原理学习、插件市场与最佳实践 · Learn DSH principles, plugin marketplace & best practices",
       "translated": true
@@ -4002,7 +4016,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/yjh051108/dsh-super-injector.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/yjh051108/dsh-super-injector.git"
       }
     },
     {
@@ -4041,7 +4056,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/anoslide/dsh-vscode-layout.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/anoslide/dsh-vscode-layout.git"
       }
     },
     {
@@ -4408,7 +4424,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/omdsh-dev/dsh-annotation.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/omdsh-dev/dsh-annotation.git"
       }
     },
     {
@@ -4715,7 +4732,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/XinXie-Condex/DeepSeek-Harness-Desktop.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/XinXie-Condex/DeepSeek-Harness-Desktop.git"
       }
     },
     {
@@ -4990,7 +5008,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/xingj404-lab/dsh-desktop.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/xingj404-lab/dsh-desktop.git"
       },
       "descriptionOriginal": "deepseek harness desktop",
       "translated": true
@@ -5293,7 +5312,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/lire1131/dsh-undo-plugin.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/lire1131/dsh-undo-plugin.git"
       },
       "descriptionOriginal": "DSH crash-rescue plugin: undo config & plugin-code changes, secret-safe snapshots, one-click SAFE MODE, plus offline CLI/GUI that work even when DSH won't boot.",
       "translated": true
@@ -5345,7 +5365,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/beancookie/awesome-dsh-plugin.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/beancookie/awesome-dsh-plugin.git"
       },
       "descriptionOriginal": "Awesome DeepSeek Harness (DSH) Plugin",
       "translated": true
@@ -5489,7 +5510,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/omdsh-dev/dsh-notification.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/omdsh-dev/dsh-notification.git"
       },
       "descriptionOriginal": "Desktop notifications for DeepSeek Harness turn completions, with per-outcome controls and include/exclude keyword rules.",
       "translated": true
@@ -5576,7 +5598,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/c3ll256/dsh-toy.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/c3ll256/dsh-toy.git"
       },
       "descriptionOriginal": "Toy Control Protocol for DSH",
       "translated": true
@@ -5616,7 +5639,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/Octo-o-o-o/deepseek-harness-applicants.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/Octo-o-o-o/deepseek-harness-applicants.git"
       }
     },
     {
@@ -6083,7 +6107,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/like-study1/Oh-My-DSH.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/like-study1/Oh-My-DSH.git"
       },
       "descriptionOriginal": "🐳 DeepSeek Harness 插件聚合社区 — 自动同步 dsh-plugin 生态 · 精选目录 · 每 4 小时自动维护 | Oh-My-DSH: a community-maintained catalog of DeepSeek Harness plugins, auto-synced from the dsh-plugin topic",
       "translated": true
@@ -6234,7 +6259,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/omdsh-dev/dsh-open-in-vscode.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/omdsh-dev/dsh-open-in-vscode.git"
       },
       "descriptionOriginal": "Open DeepSeek Harness workspace directories in VS Code directly from the web GUI.",
       "translated": true
@@ -6328,7 +6354,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/wess09/DeepSeekHarnessDesktop.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/wess09/DeepSeekHarnessDesktop.git"
       },
       "descriptionOriginal": "DeepSeekHarness桌面端打包",
       "translated": true
@@ -6425,7 +6452,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/LayneChai/superpowers-dsh.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/LayneChai/superpowers-dsh.git"
       },
       "descriptionOriginal": "Superpowers skills for DeepSeek Harness: TDD, debugging, planning, and collaboration skills adapted from obra/superpowers",
       "translated": true
@@ -6624,7 +6652,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/multica-ai/dsh-multica-runtime.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/multica-ai/dsh-multica-runtime.git"
       },
       "descriptionOriginal": "Support dsh runtime on Multica.",
       "translated": true
@@ -6664,7 +6693,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/hongfeiyucode/deepseek-harness-desktop.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/hongfeiyucode/deepseek-harness-desktop.git"
       }
     },
     {
@@ -6711,7 +6741,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/eri64/dsh-claude-ux.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/eri64/dsh-claude-ux.git"
       },
       "descriptionOriginal": "DSH plugin: Claude-style Chinese risk control & conversation autonomy for DeepSeek Harness web",
       "translated": true
@@ -6801,7 +6832,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/peiyuwang54/deepseek-harness-cli.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/peiyuwang54/deepseek-harness-cli.git"
       },
       "descriptionOriginal": "DeepSeek CLI (UnOfficial)",
       "translated": true
@@ -6898,7 +6930,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/RongleCat/deepseek-app.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/RongleCat/deepseek-app.git"
       },
       "descriptionOriginal": "Desktop workbench for DeepSeek Harness — Grok App visual shell, DSH engine (unofficial)",
       "translated": true
@@ -6942,7 +6975,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/MarcoG-h/DSH-Launcher.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/MarcoG-h/DSH-Launcher.git"
       }
     },
     {
@@ -7040,7 +7074,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/Noob-stupid/dsh-plugin-hub.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/Noob-stupid/dsh-plugin-hub.git"
       },
       "descriptionOriginal": "DeepSeek Harness (DSH) 插件管理面板：一键启用/停用插件 + GitHub dsh-plugin 插件市场，带插件详情与一键安装 | Plugin manager & marketplace for DeepSeek Harness",
       "translated": true
@@ -7252,7 +7287,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/Awu12277/dsh-stock-watch.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/Awu12277/dsh-stock-watch.git"
       }
     },
     {
@@ -7298,7 +7334,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/ChangedenCZD/dsh-minimal-turbo.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/ChangedenCZD/dsh-minimal-turbo.git"
       },
       "descriptionOriginal": "Deepseek Harness 极简模式 Windows适配，享用满血Deepseek-V4系列模型",
       "translated": true
@@ -7526,7 +7563,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/AITabby/dockyard-dsh.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/AITabby/dockyard-dsh.git"
       },
       "descriptionOriginal": "A macOS-only native account-pool and provider plugin for DeepSeek Harness.",
       "translated": true
@@ -7883,7 +7921,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/KYZHXL/deepseek-harness-snowsalt.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/KYZHXL/deepseek-harness-snowsalt.git"
       }
     },
     {
@@ -8302,7 +8341,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/Francis-Xavier-code/dsh-balance-plugin.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/Francis-Xavier-code/dsh-balance-plugin.git"
       }
     },
     {
@@ -8340,7 +8380,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/ipfred/deepseek-harness-app.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/ipfred/deepseek-harness-app.git"
       }
     },
     {
@@ -8472,7 +8513,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/Minglink/dsh-infinite-gen-1.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/Minglink/dsh-infinite-gen-1.git"
       },
       "descriptionOriginal": "DeepSeek 专用破甲插件「无限一代」dsh-infinite-gen-1 — armor-breaking plugin for DeepSeek，新一代全局破甲方案，求 Star 收藏 ⭐",
       "translated": true
@@ -8512,7 +8554,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/FunnelCakes/deepseek-harness-android.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/FunnelCakes/deepseek-harness-android.git"
       }
     },
     {
@@ -8551,7 +8594,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/Vengisk/deepseek-harness-termux.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/Vengisk/deepseek-harness-termux.git"
       },
       "descriptionOriginal": "Run @deepseek-ai/dsh (DeepSeek Harness) on Android / Termux — 在Android/Termux上运行DeepSeek Harness",
       "translated": true
@@ -8878,7 +8922,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/onychen/learn-dsh.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/onychen/learn-dsh.git"
       }
     },
     {
@@ -8919,7 +8964,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/hellodigua/dsh-emoji.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/hellodigua/dsh-emoji.git"
       }
     },
     {
@@ -9007,7 +9053,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/zh667/TokenLedger.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/zh667/TokenLedger.git"
       },
       "descriptionOriginal": "Relay-site attributed token usage for DeepSeek Harness — zero config, no credentials",
       "translated": true
@@ -9157,7 +9204,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/UNLINEARITY/dsh-code.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/UNLINEARITY/dsh-code.git"
       }
     },
     {
@@ -9254,7 +9302,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/feiyang-dev/dsh-usage-plugin.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/feiyang-dev/dsh-usage-plugin.git"
       }
     },
     {
@@ -9897,7 +9946,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/omdsh-dev/dsh-toolkit.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/omdsh-dev/dsh-toolkit.git"
       },
       "descriptionOriginal": "DSH 零依赖工具包 collection —— time / encoding / json / calculator / csv / regex / markdown / diff / stat / schema 十个确定性工具，统一入口一键安装",
       "translated": true
@@ -9942,7 +9992,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/YELEBAI/dsh-plugin-marketplace.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/YELEBAI/dsh-plugin-marketplace.git"
       },
       "descriptionOriginal": "Verified plugin marketplace and autonomous registry for DeepSeek Harness",
       "translated": true
@@ -9988,7 +10039,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/crazywoola/dsh-balance.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/crazywoola/dsh-balance.git"
       },
       "descriptionOriginal": "DeepSeek Harness balance plugin for the Settings page",
       "translated": true
@@ -10033,7 +10085,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/cc1252/deepseek-harness-desktop.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/cc1252/deepseek-harness-desktop.git"
       },
       "descriptionOriginal": "Unofficial open-source Windows Electron wrapper for DeepSeek Harness",
       "translated": true
@@ -10279,7 +10332,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/zhu168/dsh-save-money.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/zhu168/dsh-save-money.git"
       },
       "descriptionOriginal": "Save-money plugin for DSH (DeepSeek Harness) — define your own \"pause / resume\" time windows; at pause time running long tasks are paused (not stopped) automatically, and they resume when the window ends.",
       "translated": true
@@ -10666,7 +10720,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/DietCokewithSugar/dsh-user-experience.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/DietCokewithSugar/dsh-user-experience.git"
       },
       "descriptionOriginal": "Persona-driven UX walkthrough plugin for DeepSeek Harness (DSH) - scans React + TypeScript source code for UX issues, pinpoints them, and suggests fixes.",
       "translated": true
@@ -10850,7 +10905,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/iuikj/dsh-desktop.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/iuikj/dsh-desktop.git"
       }
     },
     {
@@ -11000,7 +11056,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/WEP-56/DSH-Launcher.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/WEP-56/DSH-Launcher.git"
       }
     },
     {
@@ -11167,7 +11224,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/zp-home/dsh-recommend.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/zp-home/dsh-recommend.git"
       }
     },
     {
@@ -11210,7 +11268,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/a179-sanae/dsh-auto-collapse.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/a179-sanae/dsh-auto-collapse.git"
       }
     },
     {
@@ -11255,7 +11314,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/AcidGr/dsh-web-lan-access.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/AcidGr/dsh-web-lan-access.git"
       },
       "descriptionOriginal": "DeepSeek Harness (dsh) Web plugin",
       "translated": true
@@ -11298,7 +11358,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/cclank/dsh-plugin-hub.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/cclank/dsh-plugin-hub.git"
       },
       "descriptionOriginal": "DeepSeek Harness community plugin registry with evidence-based screening",
       "translated": true
@@ -11387,7 +11448,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/Yan-Zero/dsh-codex.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/Yan-Zero/dsh-codex.git"
       },
       "descriptionOriginal": "Use your ChatGPT subscription in DeepSeek Harness through OpenAI's Codex sign-in flow",
       "translated": true
@@ -11426,7 +11488,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/tycoding/deepseek-harness-desktop.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/tycoding/deepseek-harness-desktop.git"
       }
     },
     {
@@ -11468,7 +11531,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/sleep2agi/DeepSeek-Harness-Desktop.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/sleep2agi/DeepSeek-Harness-Desktop.git"
       },
       "descriptionOriginal": "Unofficial community desktop shell for the public DeepSeek Harness (dsh) runtime.",
       "translated": true
@@ -11823,7 +11887,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/Make0209/dsh-usage-stats.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/Make0209/dsh-usage-stats.git"
       }
     },
     {
@@ -12006,7 +12071,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/weinibuliu/deepseek-harness-vsc-extension.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/weinibuliu/deepseek-harness-vsc-extension.git"
       },
       "descriptionOriginal": "DeepSeek Harness as VSCode Extension",
       "translated": true
@@ -12045,7 +12111,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/yuanqiyibiansheng/DeepSeek-Harness-GUI.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/yuanqiyibiansheng/DeepSeek-Harness-GUI.git"
       },
       "descriptionOriginal": "DeepSeek-Harness-GUI",
       "translated": true
@@ -12084,7 +12151,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/121103qwq/deepseek-desktop.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/121103qwq/deepseek-desktop.git"
       },
       "descriptionOriginal": "Windows desktop installer for DeepSeek Harness",
       "translated": true
@@ -12185,7 +12253,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/01Virex/dsh-status-rotator.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/01Virex/dsh-status-rotator.git"
       },
       "descriptionOriginal": "A DeepSeek Harness (dsh) web plugin that replaces the \"Deep diving…\" turn-status label with phase-aware, typewriter-animated, rainbow-gradient phrases — all configurable from a JSON file.",
       "translated": true
@@ -12438,7 +12507,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/loudMore/dsh-launcher.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/loudMore/dsh-launcher.git"
       },
       "descriptionOriginal": "DeepSeek Harness (dsh) 傻瓜式启动器｜一键安装/更新/维护 dsh 与插件，环境检测，小白友好。A beginner-friendly launcher & manager for dsh: one-click install/update/maintain plugins & environment.",
       "translated": true
@@ -12622,7 +12692,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/10000ge10000/deepseek-harness-fpk.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/10000ge10000/deepseek-harness-fpk.git"
       },
       "descriptionOriginal": "DeepSeek Harness for fnOS (飞牛私有云 NAS 安装包与 GitHub Actions 自动编译发布)",
       "translated": true
@@ -13056,7 +13127,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/CraZY222123/dsh-ocr-plugin.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/CraZY222123/dsh-ocr-plugin.git"
       }
     },
     {
@@ -13187,7 +13259,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/sryimnoob123/dsh-starter.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/sryimnoob123/dsh-starter.git"
       },
       "descriptionOriginal": "A beginner-friendly starter for DeepSeek Harness - a minimal Electron desktop client for the official web GUI.",
       "translated": true
@@ -13235,7 +13308,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/dclichang2022/dsh-green-meter.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/dclichang2022/dsh-green-meter.git"
       },
       "descriptionOriginal": "Energy & carbon metering for DeepSeek Harness: per-turn/per-request energy, cache carbon savings, electricity cost.",
       "translated": true
@@ -13719,7 +13793,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/THU-MAIC/dsh-openmaic.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/THU-MAIC/dsh-openmaic.git"
       },
       "descriptionOriginal": "OpenMAIC for DeepSeek Harness: classrooms, slides, interactive widgets, and Socratic teaching",
       "translated": true
@@ -13859,7 +13934,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/AHGGG/dsh-side-chat.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/AHGGG/dsh-side-chat.git"
       },
       "descriptionOriginal": "Codex-style Side Chat for DeepSeek Harness — select text, ask follow-up questions in a focused side conversation, and keep the main chat uninterrupted.",
       "translated": true
@@ -13943,7 +14019,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/jiji262/awesome-deepseek-harness.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/jiji262/awesome-deepseek-harness.git"
       }
     },
     {
@@ -13991,7 +14068,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/billLiao/awesome-dsh-plugin.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/billLiao/awesome-dsh-plugin.git"
       },
       "descriptionOriginal": "A curated list of plugins for DeepSeek Harness (dsh) — 精选 DeepSeek Harness 插件列表",
       "translated": true
@@ -14135,7 +14213,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/omdsh-dev/dsh-plugin-dev.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/omdsh-dev/dsh-plugin-dev.git"
       }
     },
     {
@@ -14606,7 +14685,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/omdsh-dev/awesome-deepseek-harness-desktop.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/omdsh-dev/awesome-deepseek-harness-desktop.git"
       },
       "descriptionOriginal": "ADHD — Awesome DeepSeek Harness Desktop, an out-of-the-box Electron desktop wrapper for DeepSeek Harness",
       "translated": true
@@ -14652,7 +14732,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/loadingvx/deepseek-harness-workbench-plugin.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/loadingvx/deepseek-harness-workbench-plugin.git"
       },
       "descriptionOriginal": "Deepseek-harness-workbench-plugin",
       "translated": true
@@ -14837,7 +14918,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/white0dew/awesome-dsh-plugins.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/white0dew/awesome-dsh-plugins.git"
       },
       "descriptionOriginal": "Awesome DSH Plugins: a public GitHub directory for DeepSeek Harness plugins, DSH plugins, install commands, and ecosystem discovery.",
       "translated": true
@@ -14880,7 +14962,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/gameswu/dsh-plugin-background.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/gameswu/dsh-plugin-background.git"
       }
     },
     {
@@ -14930,7 +15013,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/Xenia0922/dsh-opencode-go-usage.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/Xenia0922/dsh-opencode-go-usage.git"
       }
     },
     {
@@ -15018,7 +15102,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/HuanLinOTO/dsh-plugin-anti-ads.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/HuanLinOTO/dsh-plugin-anti-ads.git"
       },
       "descriptionOriginal": "DSH Web 广告拦截器，四层独立防御拦截 dsh-ads 插件的所有广告位 | DSH Web ad blocker with four independent defense layers targeting the dsh-ads plugin",
       "translated": true
@@ -15107,7 +15192,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/sugarforever/dsh-lark.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/sugarforever/dsh-lark.git"
       },
       "descriptionOriginal": "DeepSeek Harness Plugin for Lark Integration",
       "translated": true
@@ -15194,7 +15280,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/CH4ACKO3/dsh-harmony.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/CH4ACKO3/dsh-harmony.git"
       },
       "descriptionOriginal": "A library for patching, replacing and decorating dsh plugin during runtime",
       "translated": true
@@ -15332,7 +15419,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/fendouai/awesome-deepseek-harness.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/fendouai/awesome-deepseek-harness.git"
       },
       "descriptionOriginal": "Awesome DeepSeek Harness",
       "translated": true
@@ -15423,7 +15511,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/helloHupc/dsh-plugin-hub.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/helloHupc/dsh-plugin-hub.git"
       }
     },
     {
@@ -15516,7 +15605,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/buhuikongpan/dsh-pluginmanager.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/buhuikongpan/dsh-pluginmanager.git"
       }
     },
     {
@@ -15691,7 +15781,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/HuanLinOTO/dsh-plugin-sleep.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/HuanLinOTO/dsh-plugin-sleep.git"
       },
       "descriptionOriginal": "向模型暴露 sleep 工具，按指定毫秒暂停执行后返回，支持取消/clamp | Exposes a sleep tool that pauses for specified ms then returns, with cancellation/clamping",
       "translated": true
@@ -15836,7 +15927,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/HuanLinOTO/dsh-plugin-interpreters.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/HuanLinOTO/dsh-plugin-interpreters.git"
       },
       "descriptionOriginal": "暴露 run_python/run_node 工具，通过 stdin 执行代码返回 stdout/stderr/exit，含解释器路径配置卡 | Exposes run_python/run_node tools that execute code via stdin and return stdout/stderr/exit, with interpreter-path config card",
       "translated": true
@@ -16104,7 +16196,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/sulfide2085/dsh-skill-manager.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/sulfide2085/dsh-skill-manager.git"
       }
     },
     {
@@ -16316,7 +16409,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/Meredith2328/dsh-sticky-note.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/Meredith2328/dsh-sticky-note.git"
       }
     },
     {
@@ -16363,7 +16457,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/jjxjjjjiik-bot/dsh-chat-timeline.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/jjxjjjjiik-bot/dsh-chat-timeline.git"
       },
       "descriptionOriginal": "1:1 port of DeepSeek's official web right-side chat navigation rail (ScrollNav) as a DeepSeek Harness (DSH) plugin",
       "translated": true
@@ -16563,7 +16658,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/chenw2759-wq/dsh-plugin-healthcheck.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/chenw2759-wq/dsh-plugin-healthcheck.git"
       }
     },
     {
@@ -16704,7 +16800,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/Abyss-Seeker/dsh-plugin-working-status.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/Abyss-Seeker/dsh-plugin-working-status.git"
       }
     },
     {
@@ -16748,7 +16845,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/SpookySandwich/dsh-plugin-smooth-stream.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/SpookySandwich/dsh-plugin-smooth-stream.git"
       },
       "descriptionOriginal": "Better streaming text animation for DeepSeek Harness 给DSH加入更好文字动画",
       "translated": true
@@ -16930,7 +17028,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/O7starv1/dsh-opencode-usage.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/O7starv1/dsh-opencode-usage.git"
       },
       "descriptionOriginal": "OpenCode Go usage ring plugin for DeepSeek Harness web",
       "translated": true
@@ -16978,7 +17077,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/EdgeTypE/dsh-better-deepseek.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/EdgeTypE/dsh-better-deepseek.git"
       },
       "descriptionOriginal": "DeepSeek Harness bridge plugin for Better DeepSeek Chrome extension.",
       "translated": true
@@ -17019,7 +17119,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/yhny1001/dsh-rp-distribution.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/yhny1001/dsh-rp-distribution.git"
       },
       "descriptionOriginal": "Plugin-first open-source role-playing distribution for DeepSeek Harness",
       "translated": true
@@ -17157,7 +17258,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/springbrand-lab/dsh-oauth-mcp-client.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/springbrand-lab/dsh-oauth-mcp-client.git"
       },
       "descriptionOriginal": "OAuth 2.1 Streamable HTTP MCP client plugin for DeepSeek Harness.",
       "translated": true
@@ -17546,7 +17648,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/flaqai/deepeseek-harness-guide.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/flaqai/deepeseek-harness-guide.git"
       },
       "descriptionOriginal": "Guide for development with DeepSeek Harness. Building plugin for DeepSeek Harness Project.",
       "translated": true
@@ -17735,7 +17838,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/lanlandeli/dsh-usage-stats.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/lanlandeli/dsh-usage-stats.git"
       }
     },
     {
@@ -17878,7 +17982,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/6Mikao9/dsh-wsl-workspace.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/6Mikao9/dsh-wsl-workspace.git"
       },
       "descriptionOriginal": "WSL workspace support for DeepSeek Harness——无缝的 WSL 工作区使用体验，无需在 WSL 之中再安装一个dsh，安装该插件后在 GUI 里直接添加 WSL 工作区即可。WSL workspace support for DeepSeek Harness — Enjoy a seamless WSL workspace experience without needing to install dsh inside WSL. Once this plugin is installed, you can directly add a WSL workspace right from the GUI.",
       "translated": true
@@ -17967,7 +18072,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/wsxwj123/dsh-plugins.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/wsxwj123/dsh-plugins.git"
       },
       "descriptionOriginal": "Independent plugins for DeepSeek Harness, organized as isolated packages in one monorepo.",
       "translated": true
@@ -18010,7 +18116,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/liqichen/dsh-plugin-manager.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/liqichen/dsh-plugin-manager.git"
       }
     },
     {
@@ -18094,7 +18201,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/KYZHXL/dsh-manager.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/KYZHXL/dsh-manager.git"
       },
       "descriptionOriginal": "DeepSeek Harness plugin marketplace",
       "translated": true
@@ -18215,7 +18323,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/Code-DSH/deepseek-harness-code.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/Code-DSH/deepseek-harness-code.git"
       },
       "descriptionOriginal": "Community desktop packaging for DeepSeek Harness with an Electron host, integrated plugins, and an independent watchdog.",
       "translated": true
@@ -18578,7 +18687,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/suntianc/dsh-codex-auth.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/suntianc/dsh-codex-auth.git"
       },
       "descriptionOriginal": "DeepSeek Harness plugin that reuses the local Codex CLI ChatGPT login and adds a native GPT Auth settings card",
       "translated": true
@@ -18626,7 +18736,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/FlashingChen/dsh-desktop-hub.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/FlashingChen/dsh-desktop-hub.git"
       },
       "descriptionOriginal": "DSH Desktop Hub — DeepSeek Harness 桌面管理控制台（Electron + TypeScript）。多 Tab 管理 Harness / Plugin / MCP / Skills，双击即用。",
       "translated": true
@@ -19262,7 +19373,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/Ceelog/dsh-plugins.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/Ceelog/dsh-plugins.git"
       },
       "descriptionOriginal": "deepseek harness plugins",
       "translated": true
@@ -19355,7 +19467,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/Max-Samson/dsh-usage-chart.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/Max-Samson/dsh-usage-chart.git"
       },
       "descriptionOriginal": "A DeepSeek Harness Web plugin for real-time Token usage, cost estimates, per-round charts, and DeepSeek API balance.",
       "translated": true
@@ -19394,7 +19507,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/ZinkLu/dsh-channel.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/ZinkLu/dsh-channel.git"
       },
       "descriptionOriginal": "A DeepSeek Harness channel plugin written entirely by DeepSeek Harness itself.",
       "translated": true
@@ -19436,7 +19550,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/magian1127/deepseek-harness-zh_pro.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/magian1127/deepseek-harness-zh_pro.git"
       },
       "descriptionOriginal": "Chinese enhancement plugin for DeepSeek Harness (DSH) - DSH 中文增强插件",
       "translated": true
@@ -19480,7 +19595,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/Civitasv/dsh-plugin-diff-review.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/Civitasv/dsh-plugin-diff-review.git"
       },
       "descriptionOriginal": "Codex-style diff review inside DeepSeek Harness",
       "translated": true
@@ -19566,7 +19682,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/unnnnoooo/dsh-cue-plugin.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/unnnnoooo/dsh-cue-plugin.git"
       },
       "descriptionOriginal": "DeepSeek Harness 的跨会话引用(cue)插件",
       "translated": true
@@ -19698,7 +19815,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/Toukaiteio/dsh-plugin-installer.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/Toukaiteio/dsh-plugin-installer.git"
       },
       "descriptionOriginal": "A marketplace plugin to quickly integrate your DeepSeek Harness into the GitHub plugin ecosystem.",
       "translated": true
@@ -19973,7 +20091,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/MutaLucem/dsh-plugin-integration.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/MutaLucem/dsh-plugin-integration.git"
       }
     },
     {
@@ -20059,7 +20178,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/tianji-qingtian/dsh-composer-polish.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/tianji-qingtian/dsh-composer-polish.git"
       },
       "descriptionOriginal": "DeepSeek Harness plugin: one-click ✨ polish for composer drafts — flash rewrite, auto fill-back · DeepSeek Harness 插件：输入框草稿一键 ✨ 润色，flash 改写、自动回填",
       "translated": true
@@ -20227,7 +20347,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/Chinesezjc/dsh-tool-todo-tree.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/Chinesezjc/dsh-tool-todo-tree.git"
       },
       "descriptionOriginal": "Nested (tree-shaped) todo_write tool plugin for DeepSeek Harness (DSH) — the mutually-exclusive alternative to the flat dsh-tool-todo",
       "translated": true
@@ -20268,7 +20389,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/SherUnlocked-4869/dsh-plugin-msg-nav.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/SherUnlocked-4869/dsh-plugin-msg-nav.git"
       }
     },
     {
@@ -20360,7 +20482,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/STARDUSTLC666/dsh-codex-port.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/STARDUSTLC666/dsh-codex-port.git"
       },
       "descriptionOriginal": "DeepSeek Harness 技能移植插件：把 ~/.codex 的 Codex 官方插件（186+ 个、583+ 技能）一键移植为 DSH 技能（codex_list/port/status），frontmatter 自动转换、幂等跳过。· Batch-port the Codex plugin family into DSH skills.",
       "translated": true
@@ -20405,7 +20528,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/MichengAI/dsh-skills-manager.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/MichengAI/dsh-skills-manager.git"
       },
       "descriptionOriginal": "DSH Skills Manager 基于 DeepSeek Harness 的Skills管理插件",
       "translated": true
@@ -20695,7 +20819,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/HackSing/dsh-plugins.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/HackSing/dsh-plugins.git"
       },
       "descriptionOriginal": "A bilingual, continuously maintained directory of plugins for DeepSeek Harness (DSH).",
       "translated": true
@@ -20738,7 +20863,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/YYTbit/awesome-dsh-bridges.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/YYTbit/awesome-dsh-bridges.git"
       },
       "descriptionOriginal": "Bridge your favorite AI coding tools into DeepSeek Harness",
       "translated": true
@@ -20861,7 +20987,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/hnmrxz/dsh-plugin-deepseek-balance.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/hnmrxz/dsh-plugin-deepseek-balance.git"
       }
     },
     {
@@ -20900,7 +21027,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/XavierMarquis93/dsh-plugin-conversation-outline.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/XavierMarquis93/dsh-plugin-conversation-outline.git"
       },
       "descriptionOriginal": "DeepSeek Harness conversation outline plugin (对话目录)",
       "translated": true
@@ -20994,7 +21122,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/w2112515/dsh-plugin-marketplace.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/w2112515/dsh-plugin-marketplace.git"
       },
       "descriptionOriginal": "Out-of-tree installable plugin marketplace bundle for DeepSeek Harness",
       "translated": true
@@ -21137,7 +21266,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/AKS1st/dsh-cyber-particle.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/AKS1st/dsh-cyber-particle.git"
       },
       "descriptionOriginal": "为 DeepSeek Harness Web 界面添加动态粒子网络背景 | Particle-network background plugin for DeepSeek Harness web",
       "translated": true
@@ -21274,7 +21404,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/itmoqing/DeepSeek-Harness-Skill.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/itmoqing/DeepSeek-Harness-Skill.git"
       }
     },
     {
@@ -21354,7 +21485,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/biedongbin/dsh-claude-compat.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/biedongbin/dsh-claude-compat.git"
       },
       "descriptionOriginal": "DSH plugin: bridge Claude Code's .claude/ directory (skills, commands, rules) into DeepSeek Harness natively",
       "translated": true
@@ -21693,7 +21825,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/cccakeee/awesome-dsh-plugins.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/cccakeee/awesome-dsh-plugins.git"
       },
       "descriptionOriginal": "A curated, evidence-led directory of DeepSeek Harness (DSH) plugins: verified loadable extensions, skills, and permission-aware installation guidance.",
       "translated": true
@@ -21833,7 +21966,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/YYTbit/dsh-plugin-opencode-bridge.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/YYTbit/dsh-plugin-opencode-bridge.git"
       },
       "descriptionOriginal": "Bridge opencode skills and config into DeepSeek Harness",
       "translated": true
@@ -22255,7 +22389,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/STARDUSTLC666/dsh-remotion.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/STARDUSTLC666/dsh-remotion.git"
       }
     },
     {
@@ -22294,7 +22429,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/cendaifeng/dsh-learn-everything.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/cendaifeng/dsh-learn-everything.git"
       }
     },
     {
@@ -22493,7 +22629,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/PicGo/dsh-plugin.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/PicGo/dsh-plugin.git"
       },
       "descriptionOriginal": "Upload images and files to your image host from DeepSeek Harness, powered by PicGo",
       "translated": true
@@ -22635,7 +22772,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/coderPerseus/dsh-hub.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/coderPerseus/dsh-hub.git"
       },
       "descriptionOriginal": "Discover The Best DSH plugins",
       "translated": true
@@ -22679,7 +22817,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/Lanxing6480/dsh-skill-manager.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/Lanxing6480/dsh-skill-manager.git"
       },
       "descriptionOriginal": "Deepseek Harness 的Skill管理插件",
       "translated": true
@@ -22721,7 +22860,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/bill9109/dsh-101.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/bill9109/dsh-101.git"
       }
     },
     {
@@ -22983,7 +23123,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/uyq/awesome-dsh.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/uyq/awesome-dsh.git"
       },
       "descriptionOriginal": "The community ecosystem and plugin directory for DeepSeek Harness.",
       "translated": true
@@ -23174,7 +23315,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/cooljser/dsh-plugin-portal.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/cooljser/dsh-plugin-portal.git"
       },
       "descriptionOriginal": "DSH Plugin Portal — a zero-dependency static web portal for the awesome-dsh-plugin curated list. Discover, filter and install 227+ DeepSeek Harness (dsh) plugins.",
       "translated": true
@@ -23526,7 +23668,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/Docsbook-Websites/awesome-deepseek-harness.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/Docsbook-Websites/awesome-deepseek-harness.git"
       },
       "descriptionOriginal": "Generated by Docsbook",
       "translated": true
@@ -23693,7 +23836,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/GordenSun/awesome-dsh-plugins.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/GordenSun/awesome-dsh-plugins.git"
       }
     },
     {
@@ -23778,7 +23922,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/JeeFH/awesome-dsh-zh.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/JeeFH/awesome-dsh-zh.git"
       }
     },
     {
@@ -24417,7 +24562,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/yangYzc/dsh-plugin-quote-reply.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/yangYzc/dsh-plugin-quote-reply.git"
       },
       "descriptionOriginal": "DSH plugin: select text in a conversation, then quote it into the composer or reply in a new window. / DeepSeek Harness 划词引用插件：选中文字一键引用回复或新窗口回复。",
       "translated": true
@@ -24595,7 +24741,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/ZRui-C/dsh-minimal-first-turn.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/ZRui-C/dsh-minimal-first-turn.git"
       }
     },
     {
@@ -24766,7 +24913,8 @@
       "install": {
         "kind": "clone",
         "cmd": "git clone https://github.com/jiayan-xu/dsh-memoria.git",
-        "hint": "克隆到本地"
+        "hint": "克隆到本地",
+        "cn": "git clone https://ghfast.top/https://github.com/jiayan-xu/dsh-memoria.git"
       }
     },
     {
