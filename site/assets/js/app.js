@@ -213,14 +213,15 @@
       copyBtn.dataset.cmd = cmd
       copyBtn.setAttribute('aria-label', useCn ? '复制国内源安装命令' : '复制海外源安装命令')
     })
-    // 一键复制安装命令
-    $('#grid').addEventListener('click', function (e) {
+    // 一键复制安装命令（document 级委托：覆盖卡片与「国内加速」配置区块的 .copy-btn）
+    document.addEventListener('click', function (e) {
       var btn = e.target.closest('.copy-btn')
       if (!btn) return
+      var origLabel = btn.getAttribute('aria-label') || '复制命令'
       var done = function () {
         btn.classList.add('copied')
         btn.setAttribute('aria-label', '已复制')
-        setTimeout(function () { btn.classList.remove('copied'); btn.setAttribute('aria-label', '复制安装命令') }, 1600)
+        setTimeout(function () { btn.classList.remove('copied'); btn.setAttribute('aria-label', origLabel) }, 1600)
       }
       var fallbackCopy = function (text) {
         var ta = document.createElement('textarea')
