@@ -2,232 +2,230 @@
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>DS安甲网 · 为你的 DeepSeek Harness 机器人 安装上所需功能的装甲吧</title>
-  <meta name="description" content="DS安甲网 (ds.ajw.cn) — 每日聚合 GitHub 上 DeepSeek Harness / DSH 插件相关的开源项目：插件、主题皮肤、工具、Skill 与 Awesome 列表，一站式逛超市。">
-  <meta name="theme-color" content="#0b1220">
-  <meta property="og:title" content="DS安甲网 · 为你的 DeepSeek Harness 机器人 安装上所需功能的装甲吧">
-  <meta property="og:description" content="每日聚合 GitHub 上 DeepSeek Harness / DSH 插件开源项目，数据每日自动更新。">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>DSH 安甲网 · 机库控制台</title>
+  <meta name="description" content="DS安甲网 (ds.ajw.cn) — 每日聚合 GitHub 上 DeepSeek Harness / DSH 插件相关的开源项目，按需求分类陈列在机库里，每件装甲都带一键复制的安装命令。">
+  <meta name="theme-color" content="#12150f">
+  <meta property="og:title" content="DSH 安甲网 · 机库控制台">
+  <meta property="og:description" content="为你的 DeepSeek Harness 机器人 安装上所需功能的装甲吧。数据每日自动抓取更新。">
   <meta property="og:type" content="website">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%234d6bfe'/%3E%3Ctext x='16' y='23' font-size='17' font-weight='700' text-anchor='middle' fill='white' font-family='sans-serif'%3E%E7%94%B2%3C/text%3E%3C/svg%3E">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%2312150f'/%3E%3Cpath d='M16 6l7 10-7 10-7-10z' fill='%23f5a524'/%3E%3C/svg%3E">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
+<body class="theme-hangar">
   <a class="skip-link" href="#main">跳到主要内容</a>
 
-  <svg class="icon-defs" aria-hidden="true" focusable="false">
-    <defs>
-      <symbol id="i-github" viewBox="0 0 24 24"><path d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2.17c-3.2.7-3.87-1.36-3.87-1.36-.53-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.78 0c2.2-1.49 3.16-1.18 3.16-1.18.63 1.59.24 2.76.12 3.05.74.81 1.19 1.83 1.19 3.09 0 4.42-2.69 5.39-5.25 5.67.41.35.78 1.05.78 2.12v3.14c0 .31.2.67.8.56A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5Z"/></symbol>
-      <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 2.5l2.95 5.98 6.6.96-4.78 4.66 1.13 6.58L12 17.57l-5.9 3.1 1.13-6.57L2.45 9.44l6.6-.96L12 2.5Z"/></symbol>
-      <symbol id="i-fork" viewBox="0 0 24 24"><path d="M6 3a3 3 0 1 1 3 3c-.65 0-1.26-.2-1.75-.55L9.5 7a3 3 0 0 0 3 3h2a4 4 0 0 1 4 4v1.55A3 3 0 1 1 16.5 17V14a2 2 0 0 0-2-2h-2a5 5 0 0 1-5-5V5.45A3 3 0 0 1 6 3Z"/></symbol>
-      <symbol id="i-ext" viewBox="0 0 24 24"><path d="M14 4h6v6h-2V7.41l-8.3 8.3 1.42 1.42-8.3 8.3H7v2H1v-6h2v3.59l8.3-8.3-1.42-1.42 8.3-8.3H14V4Z"/></symbol>
-      <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></symbol>
-      <symbol id="i-cal" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4M16 3v4M3 10h18"/></symbol>
-      <symbol id="i-refresh" viewBox="0 0 24 24"><path d="M21 12a9 9 0 1 1-2.64-6.36M21 3v6h-6"/></symbol>
-      <symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 2l1.8 5.7L19.5 9.5l-5.7 1.8L12 17l-1.8-5.7L4.5 9.5l5.7-1.8L12 2ZM19 15l.9 2.6 2.6.9-2.6.9L19 22l-.9-2.6-2.6-.9 2.6-.9L19 15Z"/></symbol>
-      <symbol id="i-puzzle" viewBox="0 0 24 24"><path d="M9 3a3 3 0 0 1 3 3h4a2 2 0 0 1 2 2v3a3 3 0 1 0 0 6v3a2 2 0 0 1-2 2h-3a3 3 0 1 1-6 0H5a2 2 0 0 1-2-2v-3a3 3 0 1 0 0-6V9a2 2 0 0 1 2-2h1a3 3 0 0 1 3-4Z"/></symbol>
-      <symbol id="i-palette" viewBox="0 0 24 24"><path d="M12 3a9 9 0 1 0 0 18h1.5a1.5 1.5 0 0 0 0-3H12a1.5 1.5 0 0 1 0-3h1.5a3 3 0 0 0 0-6H12Zm-4.5 6a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Zm3 4.5a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Zm6-4.5a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Z"/></symbol>
-      <symbol id="i-wrench" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76Z"/></symbol>
-      <symbol id="i-box" viewBox="0 0 24 24"><path d="M21 8l-9-5-9 5v8l9 5 9-5V8ZM3 8.5l9 5 9-5M12 13.5V21M7.5 5.8L16.5 11"/></symbol>
-      <symbol id="i-list" viewBox="0 0 24 24"><path d="M8 6h13M8 12h13M8 18h13M3.5 6h.01M3.5 12h.01M3.5 18h.01"/></symbol>
-      <symbol id="i-badge" viewBox="0 0 24 24"><path d="M12 1l2.4 1.8 3-.2 1.2 2.7 2.9.7-.1 3 2 2.3-1.5 2.6.6 3-2.8 1.1-.8 2.9-2.9-.8-2.4 1.8L12 23l-2.4-1.8-3 .2-1.2-2.7-2.9-.7.1-3-2-2.3L2 10l-.6-3 2.8-1.1.8-2.9 2.9.8L9.6 2 12 1Z"/><path d="m8.5 12 2.5 2.5 5-5"/></symbol>
-      <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 21s-7.5-4.9-10-9.3C.5 8.4 2.4 4.5 6.2 4.5c2 0 3.6 1 4.6 2.6L12 9l1.2-1.9c1-1.6 2.6-2.6 4.6-2.6 3.8 0 5.7 3.9 4.2 7.2C19.5 16.1 12 21 12 21Z"/></symbol>
-      <symbol id="i-new" viewBox="0 0 24 24"><path d="M5 4h14a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1Z"/><path d="M12 8v8M8 12h8"/></symbol>
-      <symbol id="i-copy" viewBox="0 0 24 24"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></symbol>
-      <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9S14.5 18.3 12 21c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3Z"/></symbol>
-      <symbol id="i-cpu" viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/><rect x="9.5" y="9.5" width="5" height="5"/><path d="M9 3v3M15 3v3M9 18v3M15 18v3M3 9h3M3 15h3M18 9h3M18 15h3"/></symbol>
-      <symbol id="i-git" viewBox="0 0 24 24"><circle cx="6" cy="6" r="2.5"/><circle cx="6" cy="18" r="2.5"/><circle cx="18" cy="8" r="2.5"/><path d="M6 8.5v7M18 10.5c0 3-2 4-4 4H8"/></symbol>
-      <symbol id="i-bell" viewBox="0 0 24 24"><path d="M18 9a6 6 0 1 0-12 0c0 5-2 6-2 6h16s-2-1-2-6"/><path d="M10 20a2 2 0 0 0 4 0"/></symbol>
-      <symbol id="i-monitor" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M9 20h6M12 16v4"/></symbol>
-      <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c.8-3.3 3.4-5 6.5-5s5.7 1.7 6.5 5"/><circle cx="17" cy="9" r="2.5"/><path d="M17 14.5c2.7.4 4.6 1.9 5.3 4.5"/></symbol>
-      <symbol id="i-pen" viewBox="0 0 24 24"><path d="M4 20l4.5-1 10-10a2.1 2.1 0 0 0-3-3l-10 10L4 20Z"/><path d="M13.5 6.5l3 3"/></symbol>
-      <symbol id="i-book" viewBox="0 0 24 24"><path d="M4 5a2 2 0 0 1 2-2h13v18H6a2 2 0 0 1-2-2V5Z"/><path d="M4 17h15M9 7h6"/></symbol>
-      <symbol id="i-game" viewBox="0 0 24 24"><path d="M6 11h4M8 9v4"/><circle cx="15" cy="10" r=".5"/><circle cx="17" cy="13" r=".5"/><path d="M6 8h9a5 5 0 0 1 5 5v2a3 3 0 0 1-3 3h-2l-2-2H9l-2 2H5a3 3 0 0 1-3-3v-2a5 5 0 0 1 5-5Z"/></symbol>
-      <symbol id="i-qr" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><path d="M14 14h3v3h-3zM20 14h1M14 20h1M18 18h3v3"/></symbol>
-      <symbol id="i-chat" viewBox="0 0 24 24"><path d="M21 12a8 8 0 0 1-8 8H4l2.5-3.1A8 8 0 1 1 21 12Z"/><path d="M8.5 11h.01M12 11h.01M15.5 11h.01"/></symbol>
-      <symbol id="i-warn" viewBox="0 0 24 24"><path d="M12 3 2.5 20h19L12 3Z"/><path d="M12 10v5M12 17.5h.01"/></symbol>
-      <symbol id="i-check" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m8.5 12 2.5 2.5 5-5"/></symbol>
-    </defs>
-  </svg>
+  <!-- 背景层：全部 z-index:0，pointer-events:none -->
+  <div class="bg-fx fx-grid" aria-hidden="true"></div>
+  <div class="bg-fx fx-scan" aria-hidden="true"></div>
+  <div class="bg-fx fx-vig" aria-hidden="true"></div>
 
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="#top" aria-label="DS安甲网 首页">
-        <img class="brand-mascot" src="assets/img/mascot.png" alt="DS安甲网 吉祥物" width="36" height="36" onerror="this.style.display='none'">
-        <span class="brand-mark" aria-hidden="true">DS甲</span>
-        <span class="brand-text">
-          <strong>DS安甲网</strong>
-          <em>ds.ajw.cn</em>
-        </span>
-      </a>
-      <span class="header-led" aria-hidden="true">ONLINE</span>
-      <nav class="site-nav" aria-label="主导航">
-        <a href="#top">首页</a>
-        <a href="#ranking">机库榜</a>
-        <a href="#all">部件货架</a>
-        <a href="manual.html" target="_blank" rel="noopener">手册</a>
-        <a href="#community">社区</a>
-        <a href="#about">关于</a>
-      </nav>
-      <a class="btn btn-ghost header-gh" href="https://github.com/search?q=deepseek-harness&type=repositories" target="_blank" rel="noopener">
-        <svg class="icon" aria-hidden="true"><use href="#i-github"/></svg>
-        <span class="hide-sm">GitHub</span>
-      </a>
-    </div>
-  </header>
+  <div class="shell">
 
-  <main id="main">
-    <section class="hero" id="top">
-      <div class="container">
-        <p class="hero-eyebrow">
-          <svg class="icon" aria-hidden="true"><use href="#i-refresh"/></svg>
-          机库状态 · 每日补给 · GitHub 聚合
-        </p>
-        <h1 class="hero-title">为你的 Agent<br><span class="accent-glow">组装升级的部件工场</span></h1>
-        <p class="hero-tagline">为你的 DeepSeek Harness 机器人 安装上所需功能的装甲吧</p>
-        <p class="hero-sub">像在机库挑选机甲部件一样逛遍 GitHub 上 DeepSeek Harness / DSH 生态：按「界面美化、上下文记忆、模型推理、通知渠道」等需求分类陈列，每件部件都带组装指令 —— 机库每天进货，一键复制粘贴给 Agent 即可完成装配。</p>
-
-        <div class="hero-search" role="search">
-          <svg class="icon search-ico" aria-hidden="true"><use href="#i-search"/></svg>
-          <input id="search" type="search" placeholder="精确检索项目名… 例如：dsh-web-ui、modlens" autocomplete="off" aria-label="按项目名称精确检索">
-        </div>
-
-        <dl class="hero-stats" id="heroStats">
-          <div class="stat"><dt>部件总数</dt><dd id="statProjects">—</dd></div>
-          <div class="stat"><dt>星标总量</dt><dd id="statStars">—</dd></div>
-          <div class="stat"><dt>分类货架</dt><dd id="statCats">—</dd></div>
-          <div class="stat"><dt>补给日期</dt><dd id="statDate" class="stat-date">—</dd></div>
-        </dl>
-
-      </div>
-
-      <figure class="hero-art" aria-hidden="true">
-        <img src="assets/img/hero-hangar.png" alt="" width="1920" height="640" loading="eager">
-        <span class="hero-art-glass" aria-hidden="true"></span>
-      </figure>
-
-      <div class="container">
-        <div class="manual-banner">
-          <svg class="icon banner-ico" aria-hidden="true"><use href="#i-book"/></svg>
-          <span class="banner-text">
-            <strong>新手机师手册</strong>
-            <em>什么是 DeepSeek Harness？装甲怎么装？3 分钟看懂（新窗口打开）</em>
+    <header class="top">
+      <div class="top__in">
+        <a class="brand" href="index.html" aria-label="DS安甲网 机库首页">
+          <span class="brand__txt">
+            <span class="brand__name">DSH <i>安甲网</i></span>
+            <span class="brand__sub">Hangar Console</span>
           </span>
-          <a class="btn" href="manual.html" target="_blank" rel="noopener">打开手册<svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a>
+        </a>
+        <nav class="nav" aria-label="主导航">
+          <a href="index.html" data-nav="hangar" aria-current="page">机库</a>
+          <a href="manual.html" data-nav="manual">新手机师手册</a>
+          <a href="#community" data-nav="community">机师社群</a>
+        </nav>
+        <span class="top__badge">ONLINE</span>
+        <div class="seg" role="group" aria-label="视图模式">
+          <button type="button" id="modeHangar" aria-pressed="true">控制台</button>
+          <button type="button" id="modeDoc" aria-pressed="false">文档</button>
         </div>
       </div>
+    </header>
 
-      <div class="container">
-        <div class="cn-mirror" id="cnMirror">
-          <div class="cn-mirror-head">
-            <svg class="icon cn-mirror-ico" aria-hidden="true"><use href="#i-globe"/></svg>
-            <div class="cn-mirror-text">
-              <strong>🇨🇳 国内加速一键配置</strong>
-              <em>配一次 · 全站安装命令自动经 ghfast.top 镜像拉取</em>
+    <!-- 设计说明条：默认折叠 -->
+    <section class="dnote" id="dnote" data-open="0">
+      <button class="dnote__bar" type="button" id="dnoteBar" aria-expanded="false" aria-controls="dnoteBody">
+        <span class="dnote__chev" aria-hidden="true">&gt;</span>
+        <span class="dnote__t">设计说明 · 这套界面怎么从「DSH 安甲网」的主题推导出来</span>
+      </button>
+      <div class="dnote__body" id="dnoteBody">
+        <div class="dnote__grid">
+          <div class="dnote__row"><span class="dnote__k">项目本质</span><span class="dnote__v">用户每天来<b>扫一眼新补给，然后复制一条命令粘给 Agent</b>。首要动作是扫视与复制，不是阅读，所以首页做「控制台」不做「信息流」。</span></div>
+          <div class="dnote__row"><span class="dnote__k">气质</span><span class="dnote__v">个性表达 + 工业硬核。机库 / 机甲 / 机师这套社区语言必须有个性，但数据密度是硬需求，于是走硬件面板而不是插画风。</span></div>
+          <div class="dnote__row"><span class="dnote__k">材质</span><span class="dnote__v">SFC 前线任务机库。深墨绿炭黑底 <b>#12150f</b>，四角铆钉、蓝图网格、舱门式分割线，圆角收到 6px。</span></div>
+          <div class="dnote__row"><span class="dnote__k">签名元素</span><span class="dnote__v">鲸形飞艇横幅 + 一排<b>机库控制台 HUD 读数</b>：等宽数字 + 细刻度条 + 状态灯；分类徽章做成切角<b>机甲铭牌</b>；安装命令一律终端块。</span></div>
+          <div class="dnote__row"><span class="dnote__k">修正 · 首屏</span><span class="dnote__v">插画当主角 → 换回 1920×640 鲸鱼横幅做签名元素，<b>最大的一行交给 HUD 读数条</b>：收录总数、今日新增、30 天新增、分类货架、一键命令，每格都来自当天的真实快照。</span></div>
+          <div class="dnote__row"><span class="dnote__k">修正 · 密度</span><span class="dnote__v">全库卡片一次性纵向堆叠 → <b>每页 18 条 + 加载更多</b>；许可证、命中来源、完整元数据收进详情页，卡片只留挑装甲要用的字段。</span></div>
+          <div class="dnote__row"><span class="dnote__k">修正 · 搜索</span><span class="dnote__v">只做全等匹配、输入 dsh 得 0 结果 → 改为<b>子串 + 分类 + 语言 + 标签</b>四路模糊命中，命中处高亮，0 结果时给形近项目与热门词。</span></div>
+          <div class="dnote__row"><span class="dnote__k">修正 · 装饰</span><span class="dnote__v">CRT 扫描线与椭圆暗角常驻压在正文上 → 全部下沉为 <b>z-index:0 背景层，opacity .06</b>，正文不再发灰。</span></div>
+          <div class="dnote__row"><span class="dnote__k">修正 · 移动</span><span class="dnote__v">Top10 榜靠横向滚动展示 → 改为<b>纵向紧凑名次行</b>；卡片、命令块、表格都给 min-width:0 与换行兜底，390px 下不出现横向滚动条。</span></div>
+          <div class="dnote__row"><span class="dnote__k">明暗双模</span><span class="dnote__v">同一套 token 换掉背景与文字色：<b>控制台模式</b>是机库，<b>文档模式</b>是米白纸面 + 衬线标题。手册页默认文档模式，顶栏可随时切换，选择会记住。</span></div>
+        </div>
+      </div>
+    </section>
+
+    <main id="main">
+
+      <!-- ================================================================
+           ① 机库首页
+           ================================================================ -->
+      <div class="view is-on" id="v-hangar" aria-hidden="false">
+
+        <figure class="heroart">
+          <img class="heroart__img" src="assets/img/hero-hangar.png" alt="机库主视觉：像素画鲸形飞艇停泊在龙门吊与塔架之间" width="1920" height="640" decoding="async" fetchpriority="high">
+          <span class="heroart__glass" aria-hidden="true"></span>
+          <figcaption class="heroart__cap">
+            <span>
+              <span class="heroart__t">HANGAR&nbsp;B-07</span>
+              <span class="heroart__s">鲸级运输体 · 常驻机库 · 每日 GitHub 补给待入库</span>
+            </span>
+            <span class="heroart__tag">ds.ajw.cn</span>
+          </figcaption>
+        </figure>
+
+        <div class="wrap">
+
+          <!-- 机库控制台 HUD -->
+          <section class="console metal-tex" aria-labelledby="hudTitle">
+            <div class="console__head">
+              <span class="plate">HUD<span class="plate__sep" aria-hidden="true">·</span><span class="plate__c">01</span></span>
+              <h1 class="console__ttl" id="hudTitle">机库控制台读数</h1>
+              <span class="console__stamp" id="stamp">快照载入中…</span>
+            </div>
+            <div class="hud" id="hud"></div>
+            <div class="console__foot" id="consoleFoot"></div>
+          </section>
+
+          <!-- 扫描台：检索与筛选 -->
+          <section class="scan" id="scan" aria-label="检索与筛选">
+            <div class="scan__top">
+              <div class="search">
+                <span class="search__i" aria-hidden="true">&gt;</span>
+                <label class="sr" for="q">模糊检索</label>
+                <input id="q" type="search" autocomplete="off" spellcheck="false"
+                       placeholder="模糊检索：项目名 / 分类 / 语言 / 标签，例如 mcp、记忆、飞书、rust">
+                <button class="search__clear" type="button" id="qClear" aria-label="清空检索词">✕</button>
+              </div>
+              <div class="selects">
+                <span class="sel">
+                  <label class="sr" for="fLang">按语言筛选</label>
+                  <select id="fLang"><option value="">全部语言</option></select>
+                </span>
+                <span class="sel">
+                  <label class="sr" for="fSort">排序方式</label>
+                  <select id="fSort">
+                    <option value="rel">相关度</option>
+                    <option value="star">星标数</option>
+                    <option value="upd">最近更新</option>
+                    <option value="new">30 天新增</option>
+                  </select>
+                </span>
+                <label class="toggle" title="按仓库创建时间：快照日期前 30 天内新建的仓库"><input type="checkbox" id="fNew"><span class="toggle__box" aria-hidden="true"></span>仅看 30 天新增</label>
+              </div>
+            </div>
+            <div class="cats">
+              <span class="cats__lab" id="catLab">机甲分类</span>
+              <div class="cats__row" id="cats" role="group" aria-labelledby="catLab"></div>
+            </div>
+          </section>
+
+          <!-- 国内加速一键配置 -->
+          <div class="cnmirror">
+            <svg class="cnmirror__ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+              <circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 2.5 15.4 0 18M12 3c-2.5 2.6-2.5 15.4 0 18"/>
+            </svg>
+            <div class="cnmirror__body">
+              <strong class="cnmirror__t">国内加速一键配置</strong>
+              <span class="cnmirror__d">配一次 · 全站安装命令自动经 ghfast.top 镜像拉取</span>
+              <div class="cnmirror__cmd" id="cnMirrorCmd"></div>
             </div>
           </div>
-          <div class="install-row cn-mirror-body">
-            <code class="install-cmd">git config --global url."https://ghfast.top/https://github.com/".insteadOf "https://github.com/"</code>
-            <button class="copy-btn" type="button" data-cmd='git config --global url."https://ghfast.top/https://github.com/".insteadOf "https://github.com/"' aria-label="复制国内加速配置命令"><svg class="icon" aria-hidden="true"><use href="#i-copy"/></svg></button>
+
+          <!-- 货架 + Top10 -->
+          <div class="hangar">
+            <div class="hangar__main">
+              <section class="panel" aria-label="机库货架">
+                <div class="shelf__head">
+                  <span class="panel__ttl">机库货架</span>
+                  <span class="shelf__count" id="resCount">载入中…</span>
+                </div>
+                <div id="shelf"></div>
+              </section>
+            </div>
+
+            <aside class="hangar__aside">
+              <section class="panel" aria-label="星标 Top 10">
+                <div class="panel__head">
+                  <span class="plate plate--sm">TOP<span class="plate__sep" aria-hidden="true">·</span><span class="plate__c">10</span></span>
+                  <span class="panel__n">按星标火力</span>
+                </div>
+                <ol class="rank" id="rank"></ol>
+                <p class="rank__note" id="rankNote"></p>
+              </section>
+            </aside>
           </div>
-          <p class="cn-mirror-tip">运行一次写入 ~/.gitconfig 永久生效，下方所有 <code>dsh plugin add</code> 与 <code>git clone</code> 命令自动加速。</p>
+
+          <!-- 机师社群 -->
+          <section class="sec" id="community" aria-labelledby="communityTitle">
+            <div class="sec__h">
+              <h2 class="sec__t" id="communityTitle">机师补给频道</h2>
+              <span class="sec__d" id="communityNote"></span>
+            </div>
+            <div class="chans" id="communityGrid"></div>
+          </section>
+
+          <!-- 关于 -->
+          <section class="sec" id="about" aria-labelledby="aboutTitle">
+            <div class="sec__h">
+              <h2 class="sec__t" id="aboutTitle">关于 DS安甲网</h2>
+            </div>
+            <div class="chans">
+              <div class="chan">
+                <div class="chan__t"><span class="lamp lamp--ok"><i class="lamp__d" aria-hidden="true"></i></span><span class="chan__n">数据从哪里来</span></div>
+                <p class="chan__d">每天通过 GitHub 官方搜索接口，围绕 <code>deepseek-harness</code>、<code>topic:dsh-plugin</code>、<code>dsh plugin</code>、<code>deepseek skill</code> 等 9 组关键词聚合仓库，融合 <a href="https://github.com/0xsline/awesome-deepseek-harness" target="_blank" rel="noopener">awesome-deepseek-harness</a> 等精选列表与 14 个精选种子，按相关度评分、去重后上架。所有外文项目介绍均已自动翻译为中文，悬停简介可查看原文。</p>
+              </div>
+              <div class="chan">
+                <div class="chan__t"><span class="lamp lamp--ok"><i class="lamp__d" aria-hidden="true"></i></span><span class="chan__n">按需求逛货架</span></div>
+                <p class="chan__d">分类以「用户需求」为纲：<b>原厂核心</b>、<b>编队协作</b>、<b>驾驶舱与涂装</b>、<b>记忆与检索</b>、<b>动力与感知核心</b>、<b>通讯与广播</b>、<b>兵工厂车间</b>……想解决什么问题，就逛什么货架。每张卡片都带一键复制的安装命令，粘贴给 Agent 即可装好插件。</p>
+              </div>
+              <div class="chan">
+                <div class="chan__t"><span class="lamp lamp--ok"><i class="lamp__d" aria-hidden="true"></i></span><span class="chan__n">每日更新</span></div>
+                <p class="chan__d">抓取任务每天 10:30（UTC+8）自动运行，数据快照存留最近 30 天，「今日新增」角标表示该项目昨天还没有上架。</p>
+              </div>
+              <div class="chan">
+                <div class="chan__t"><span class="lamp lamp--ok"><i class="lamp__d" aria-hidden="true"></i></span><span class="chan__n">发现好项目？</span></div>
+                <p class="chan__d">本站本身也是开源的。想把你的 DSH 插件摆上货架，欢迎提交 Issue 或 PR —— 精选种子会第一时间收录。</p>
+              </div>
+            </div>
+          </section>
         </div>
       </div>
-    </section>
 
-    <section class="ranking" id="ranking" aria-labelledby="ranking-title">
-      <div class="container">
-        <div class="section-head">
-          <h2 id="ranking-title"><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg> 机库榜 · 星标 Top 10</h2>
-          <span class="section-note">按星标火力排序</span>
-        </div>
-        <div class="rank-strip" id="rankStrip" role="list" aria-label="星标榜项目列表"></div>
+      <!-- ================================================================
+           ② 项目详情（#/p/<owner>/<name>）
+           ================================================================ -->
+      <div class="view" id="v-detail" aria-hidden="true">
+        <div class="wrap" id="detail"></div>
       </div>
-    </section>
 
-    <section class="catalog" id="all" aria-labelledby="all-title">
-      <div class="container">
-        <div class="section-head">
-          <h2 id="all-title"><svg class="icon" aria-hidden="true"><use href="#i-box"/></svg> 部件货架</h2>
-          <span class="section-note" id="resultCount"></span>
-        </div>
+    </main>
 
-        <div class="toolbar">
-          <div class="cat-chips" id="catChips" role="group" aria-label="分类筛选"></div>
-          <div class="toolbar-right">
-            <label class="select-wrap" for="langFilter">
-              <span class="visually-hidden">按语言筛选</span>
-              <select id="langFilter"><option value="">全部语言</option></select>
-            </label>
-            <label class="select-wrap" for="sortBy">
-              <span class="visually-hidden">排序方式</span>
-              <select id="sortBy">
-                <option value="stars">星数最多</option>
-                <option value="pushed">最近更新</option>
-                <option value="created">最新收录</option>
-              </select>
-            </label>
-          </div>
-        </div>
-
-        <div class="grid" id="grid" role="list"></div>
-        <div class="empty" id="empty" hidden>
-          <p>没有找到匹配的项目</p>
-          <button class="btn" id="resetFilters" type="button">清除筛选条件</button>
-        </div>
+    <footer class="foot">
+      <div class="foot__in">
+        <span class="foot__n">DSH 安甲网 · 深墨绿炭黑 #12150f / 琥珀 #f5a524 / 青 #4ecdc4</span>
+        <span>数据来自 GitHub 公开 API，每日自动抓取 · 社区项目，与 DeepSeek 官方无关</span>
+        <a class="foot__note" href="https://beian.miit.gov.cn/" target="_blank" rel="noopener">备案号占位</a>
       </div>
-    </section>
+    </footer>
+  </div>
 
-    <section class="community" id="community" aria-labelledby="community-title">
-      <div class="container">
-        <div class="section-head">
-          <h2 id="community-title"><svg class="icon" aria-hidden="true"><use href="#i-users"/></svg> 社群与补给频道</h2>
-          <span class="section-note">机师交流 · 入口筹备中</span>
-        </div>
-        <div class="community-grid" id="communityGrid"></div>
-      </div>
-    </section>
-
-    <section class="about" id="about" aria-labelledby="about-title">
-      <div class="container">
-        <div class="section-head">
-          <h2 id="about-title"><svg class="icon" aria-hidden="true"><use href="#i-heart"/></svg> 关于 DS安甲网</h2>
-        </div>
-        <div class="about-grid">
-          <div class="about-card">
-            <h3>数据从哪里来</h3>
-            <p>每天通过 GitHub 官方搜索接口，围绕 <code>deepseek-harness</code>、<code>topic:dsh-plugin</code>、<code>dsh plugin</code>、<code>deepseek skill</code> 等关键词聚合仓库，并融合 <a href="https://github.com/0xsline/awesome-deepseek-harness" target="_blank" rel="noopener">awesome-deepseek-harness</a> 等精选列表，按相关度评分、去重后上架。所有外文项目介绍均已自动翻译为中文，鼠标悬停简介可查看原文。</p>
-          </div>
-          <div class="about-card">
-            <h3>按需求逛货架</h3>
-            <p>分类以「用户需求」为纲：<b>官方核心</b>、<b>界面与体验</b>、<b>上下文与记忆</b>、<b>输入与编辑</b>、<b>浏览器与远程</b>、<b>模型与推理</b>、<b>通知与渠道</b>、<b>趣味与生活</b>、<b>基建与开发</b>……想解决什么问题，就逛什么货架。每张卡片都带一键复制的安装命令，粘贴给 Agent 即可装好插件。</p>
-          </div>
-          <div class="about-card">
-            <h3>每日更新</h3>
-            <p>抓取任务每天 10:30（UTC+8）自动运行，数据快照存留最近 30 天，「新增」角标表示该项目昨天还没有上架。</p>
-          </div>
-          <div class="about-card">
-            <h3>发现好项目？</h3>
-            <p>本站本身也是开源的。想把你的 DSH 插件摆上货架，欢迎提交 Issue 或 PR —— 精选种子会第一时间收录。</p>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p><strong>DS安甲网</strong> · ds.ajw.cn · 为你的 DeepSeek Harness 机器人 安装上所需功能的装甲吧</p>
-      <p class="footer-meta">数据来自 GitHub 公开 API，每日自动抓取 · 本站为社区项目，与 DeepSeek 官方无关 · <span id="footerTime"></span></p>
-      <p class="footer-meta"><a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener">备案号占位</a></p>
-    </div>
-  </footer>
+  <p class="sr" id="live" role="status" aria-live="polite"></p>
 
   <script src="data/projects.data.js"></script>
   <script src="community-config.js"></script>
+  <script src="assets/js/theme.js" defer></script>
+  <script src="assets/js/channels.js" defer></script>
   <script src="assets/js/app.js" defer></script>
 </body>
 </html>

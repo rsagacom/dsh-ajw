@@ -2,18 +2,15 @@
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>新手机师手册 · DS安甲网</title>
-  <meta name="description" content="DS安甲网新手机师手册：3 分钟看懂什么是 DeepSeek Harness，装甲（插件）怎么装，以及如何用 DS安甲网为自己的 Agent 机器人挑选功能装甲。">
-  <meta name="theme-color" content="#0b1220">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%234d6bfe'/%3E%3Ctext x='16' y='23' font-size='17' font-weight='700' text-anchor='middle' fill='white' font-family='sans-serif'%3E%E7%94%B2%3C/text%3E%3C/svg%3E">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <meta name="description" content="DS安甲网新手机师手册：3 分钟看懂什么是 DeepSeek Harness，装甲（插件）怎么装，三条安装路径怎么选，以及如何用 DS安甲网为自己的 Agent 机器人挑选功能装甲。">
+  <meta name="theme-color" content="#f4f2ea">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23f4f2ea'/%3E%3Cpath d='M16 6l7 10-7 10-7-10z' fill='%238a5a00'/%3E%3C/svg%3E">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/manual.css">
 </head>
-<body>
+<body class="theme-doc">
   <a class="skip-link" href="#main">跳到主要内容</a>
 
   <svg class="icon-defs" aria-hidden="true" focusable="false">
@@ -44,199 +41,253 @@
     </defs>
   </svg>
 
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="index.html" aria-label="DS安甲网 首页">
-        <img class="brand-mascot" src="assets/img/mascot.png" alt="DS安甲网 吉祥物" width="36" height="36" onerror="this.style.display='none'">
-        <span class="brand-mark" aria-hidden="true">DS甲</span>
-        <span class="brand-text">
-          <strong>DS安甲网</strong>
-          <em>ds.ajw.cn</em>
-        </span>
-      </a>
-      <span class="header-led" aria-hidden="true">MANUAL</span>
-      <nav class="site-nav" aria-label="主导航">
-        <a href="index.html">机库首页</a>
-        <a href="#concepts">基础概念</a>
-        <a href="#install">安装手册</a>
-        <a href="#catalog">货架导览</a>
-      </nav>
-      <a class="btn btn-ghost header-gh" href="index.html"><svg class="icon" aria-hidden="true"><use href="#i-back"/></svg><span class="hide-sm">返回机库</span></a>
-    </div>
-  </header>
+  <div class="bg-fx fx-grid" aria-hidden="true"></div>
+  <div class="bg-fx fx-scan" aria-hidden="true"></div>
+  <div class="bg-fx fx-vig" aria-hidden="true"></div>
 
-  <main id="main" class="manual">
-    <div class="container manual-sheet">
+  <div class="shell">
 
-      <!-- 封面 -->
-      <section class="manual-cover">
-        <div class="cover-stamp" aria-hidden="true">DS-AJ<br>MANUAL<br>NO.01</div>
-        <p class="cover-kicker">DEEPSEEK HARNESS · 机甲整备手册</p>
-        <h1 class="cover-title">新手机师手册</h1>
-        <p class="cover-sub">为你的 DeepSeek Harness 机器人<br>安装上所需功能的装甲吧</p>
-        <p class="cover-meta">本手册依据 <a href="https://github.com/deepseek-ai/deepseek-harness" target="_blank" rel="noopener">deepseek-ai/deepseek-harness</a> 官方项目介绍编写 · 3 分钟读懂</p>
-        <div class="cover-rule" aria-hidden="true"></div>
-      </section>
-
-      <!-- 目录 -->
-      <nav class="manual-toc" aria-label="手册目录">
-        <h2>目录 CONTENTS</h2>
-        <ol>
-          <li><a href="#what">第 1 章 · 什么是 DeepSeek Harness —— 你的机器人在哪</a></li>
-          <li><a href="#concepts">第 2 章 · 四个核心概念：本体、装甲、技能、整备</a></li>
-          <li><a href="#install">第 3 章 · 把机器人跑起来：官方安装手册</a></li>
-          <li><a href="#armor">第 4 章 · 装甲是怎么装上去的</a></li>
-          <li><a href="#usage">第 5 章 · DS安甲网使用说明：检索与装配三步走</a></li>
-          <li><a href="#catalog">第 6 章 · 货架导览（分类图鉴）</a></li>
-          <li><a href="#notes">附录 · 注意事项与警示</a></li>
-        </ol>
-      </nav>
-
-      <!-- 第 1 章 -->
-      <section class="manual-chapter" id="what">
-        <h2><span class="ch-num">01</span> 什么是 DeepSeek Harness —— 你的机器人在哪</h2>
-        <p>如果你用过 ChatGPT、DeepSeek 或各种 AI 助手，可以把它们想象成<b>一台机器人</b>：它会思考、会执行任务，但「裸机」状态下的它，能力是固定的 —— 就像一台没有装甲、没有武器、没有雷达的机甲骨架。</p>
-        <p><b>DeepSeek Harness</b>（简称 <code>dsh</code>）就是 DeepSeek 官方开源的一副<b>机器人底盘（agent harness）</b>：骨架、神经、供能、工具接口全部就绪，官方口号只有一句话 —— <b class="hl">Everything is a Plugin（一切皆插件）</b>。你想让它会什么，就给它装什么：</p>
-        <ul class="bullet">
-          <li>装「视觉装甲」→ 机器人能看图、能识别界面；</li>
-          <li>装「记忆装甲」→ 机器人跨会话记住你、随时检索过去；</li>
-          <li>装「通讯装甲」→ 任务一完成，飞书微信立刻向你汇报。</li>
-        </ul>
-        <div class="note note-info">
-          <svg class="icon" aria-hidden="true"><use href="#i-book"/></svg>
-          <div><b>官方事实小抄</b>：DeepSeek Harness 由 DeepSeek AI 开发、开源（MIT 协议），底层由 <a href="https://github.com/cordiverse/cordis" target="_blank" rel="noopener">Cordis</a> 框架驱动（论文《A Programming Paradigm for Spatiotemporal Composability》）；当前处于<b>开发者预览（developer preview）</b>阶段，迭代很快，可能有兼容性破坏的更新。</div>
+    <header class="top">
+      <div class="top__in">
+        <a class="brand" href="index.html" aria-label="DS安甲网 机库首页">
+          <span class="brand__txt">
+            <span class="brand__name">DSH <i>安甲网</i></span>
+            <span class="brand__sub">Pilot Handbook</span>
+          </span>
+        </a>
+        <nav class="nav" aria-label="主导航">
+          <a href="index.html" data-nav="hangar">机库</a>
+          <a href="manual.html" data-nav="manual" aria-current="page">新手机师手册</a>
+          <a href="index.html#community" data-nav="community">机师社群</a>
+        </nav>
+        <span class="top__badge">MANUAL</span>
+        <div class="seg" role="group" aria-label="视图模式">
+          <button type="button" id="modeHangar" aria-pressed="false">控制台</button>
+          <button type="button" id="modeDoc" aria-pressed="true">文档</button>
         </div>
-        <p>而 <b>DS安甲网（ds.ajw.cn）</b>，就是这台机器人的<b>装甲超市与整备机库</b>：每天把 GitHub 上 DeepSeek Harness 生态的插件（装甲）搜罗上架、按你的需求分类陈列、附上一键复制的组装指令 —— 你负责挑选，粘贴给 Agent 就能装上。</p>
+      </div>
+    </header>
+
+    <!-- 设计说明条：默认折叠 -->
+    <section class="dnote" id="dnote" data-open="0">
+      <button class="dnote__bar" type="button" id="dnoteBar" aria-expanded="false" aria-controls="dnoteBody">
+        <span class="dnote__chev" aria-hidden="true">&gt;</span>
+        <span class="dnote__t">设计说明 · 手册页为什么用明亮文档模式，而不是延续机库的深色控制台</span>
+      </button>
+      <div class="dnote__body" id="dnoteBody">
+        <div class="dnote__grid">
+          <div class="dnote__row"><span class="dnote__k">两种用途</span><span class="dnote__v">机库是给<b>扫货</b>用的：一眼看过去，挑一件，复制命令。手册是给<b>读完装好</b>用的：需要坐下来读完再动手。两种用途不该共用一套界面。</span></div>
+          <div class="dnote__row"><span class="dnote__k">材质</span><span class="dnote__v">同一套 token 换掉背景与文字色：纸面米白 <b>#f4f2ea</b>、正文墨色 <b>#1a1d14</b>、强调赭石 <b>#8a5a00</b>，切角铭牌换成虚线框，正文行宽锁在 70ch 以内。</span></div>
+          <div class="dnote__row"><span class="dnote__k">排版</span><span class="dnote__v">章节标题用<b>衬线体</b>（宋体族），正文与命令用<b>等宽体</b>，与机库控制台的全等宽形成对照；参数与命令一眼能认出是「要抄的」还是「要读的」。</span></div>
+          <div class="dnote__row"><span class="dnote__k">命令块</span><span class="dnote__v">与机库共用同一个终端组件 <code class="inl">.term</code>，同一条命令在两页长得一模一样，复制按钮的反馈也一致。</span></div>
+          <div class="dnote__row"><span class="dnote__k">与机库的关系</span><span class="dnote__v">货架导览由 <b>manual.js</b> 读同一份 <code class="inl">data/projects.data.js</code> 渲染，每张分类卡都带回首页的链接；数据每天自动更新，本页不会过期。</span></div>
+          <div class="dnote__row"><span class="dnote__k">双模切换</span><span class="dnote__v">顶栏「控制台 / 文档」可随时在两种模式间切换，选择记在 localStorage。手册页首次访问默认文档模式。</span></div>
+        </div>
+      </div>
+    </section>
+
+    <main id="main" class="wrap doc">
+
+      <header class="doc__hero">
+        <span class="doc__stamp" aria-hidden="true">DS-AJ<br>MANUAL<br>NO.01</span>
+        <p class="doc__kicker">New Pilot Handbook / 依据官方项目介绍编写</p>
+        <h1 class="doc__h1">新手机师手册：把装甲装进你的 DSH</h1>
+        <p class="doc__sub">为你的 DeepSeek Harness 机器人 安装上所需功能的装甲吧</p>
+        <p class="doc__lede">这是安甲网的手册页，刻意做成明亮的文档模式——控制台是给「扫货」用的，手册是给「读完装好」用的。全文九章，读完大约六分钟。</p>
+        <p class="doc__meta">本手册依据 <a href="https://github.com/deepseek-ai/deepseek-harness" target="_blank" rel="noopener">deepseek-ai/deepseek-harness</a> 官方项目介绍编写 · 3 分钟读懂 · 货架数据每日更新</p>
+        <nav class="doc__toc" aria-label="手册目录">
+          <a href="#what">01 这台机器是什么</a>
+          <a href="#concepts">02 四个核心概念</a>
+          <a href="#install">03 把机器人跑起来</a>
+          <a href="#armor">04 装甲怎么装上去</a>
+          <a href="#usage">05 检索与装配三步走</a>
+          <a href="#catalog">06 货架导览（分类图鉴）</a>
+          <a href="#paths">07 三条安装路径与国内加速</a>
+          <a href="#community">08 机师社群与收录流程</a>
+          <a href="#trouble">09 装不上怎么办</a>
+        </nav>
+      </header>
+
+      <section class="doc__sec" id="what">
+        <h2><span class="n">01</span>这台机器是什么</h2>
+        <p>如果你用过 ChatGPT、DeepSeek 或各种 AI 助手，可以把它们想象成<b>一台机器人</b>：它会思考、会执行任务，但「裸机」状态下的它，能力是固定的 —— 就像一台没有装甲、没有武器、没有雷达的机甲骨架。</p>
+        <p><b>DeepSeek Harness</b>（简称 <code class="inl">dsh</code>）就是 DeepSeek 官方开源的一副<b>机器人底盘（agent harness）</b>：骨架、神经、供能、工具接口全部就绪，官方口号只有一句话 —— <b class="hl">Everything is a Plugin（一切皆插件）</b>。你想让它会什么，就给它装什么：装「视觉装甲」它就能看图，装「记忆装甲」它就能跨会话记住你，装「通讯装甲」任务一完成飞书微信立刻向你汇报。</p>
+        <p>而 <b>DS安甲网（ds.ajw.cn）</b>，就是这台机器人的<b>装甲超市与整备机库</b>：每天把 GitHub 上 DeepSeek Harness 生态的插件搜罗上架、按你的需求分类陈列、附上一键复制的组装指令 —— 你负责挑选，粘贴给 Agent 就能装上。</p>
+        <ul class="d">
+          <li><b>收录范围</b>关键词检索 + awesome 列表巡检 + 精选种子三条腿走路。同一个仓库被多条腿抓到只算一次。</li>
+          <li><b>去重规则</b>fork 一律剔除、已归档剔除、README 与 DSH 无关剔除、相关度低于阈值 5 剔除。</li>
+          <li><b>分类</b>15 类机甲分类，覆盖插件在 DSH 里可能待着的所有位置。分类是关键词规则 + awesome 章节映射的组合，不是模型瞎猜。</li>
+          <li><b>时间</b>每天 10:30（UTC+8）抓一次，快照保留 30 天。新入库的会在卡片上挂一个「今日新增」或「30 天新增」角标。</li>
+        </ul>
+        <div class="note"><b>一个提醒：</b>星标高不等于适合你。先看分类和语言，再看最近更新时间——超过半年没推的插件，接口大概率已经漂了。</div>
       </section>
 
-      <!-- 第 2 章 -->
-      <section class="manual-chapter" id="concepts">
-        <h2><span class="ch-num">02</span> 四个核心概念：本体、装甲、技能、整备</h2>
+      <section class="doc__sec" id="concepts">
+        <h2><span class="n">02</span>四个核心概念</h2>
+        <p>本体、装甲、技能、整备 —— 这四个词覆盖了官方文档里最常用的说法，看懂它们就能看懂整个生态。</p>
         <div class="concept-grid">
           <div class="concept-card">
-            <div class="concept-ico blue"><svg class="icon" aria-hidden="true"><use href="#i-cpu"/></svg></div>
+            <div class="concept-ico" aria-hidden="true">A</div>
             <h3>Agent · 机器人本体</h3>
             <p>会思考、会调用工具、会执行任务的 AI 智能体 —— 你的机器人。DSH 就是为它提供身体的框架。</p>
           </div>
           <div class="concept-card">
-            <div class="concept-ico amber"><svg class="icon" aria-hidden="true"><use href="#i-puzzle"/></svg></div>
+            <div class="concept-ico" aria-hidden="true">P</div>
             <h3>Plugin · 功能装甲</h3>
             <p>给机器人加装的能力模块。官方原则「一切皆插件」：界面、工具、模型桥接……全是插件。本站货架上的主要商品。</p>
           </div>
           <div class="concept-card">
-            <div class="concept-ico green"><svg class="icon" aria-hidden="true"><use href="#i-spark"/></svg></div>
+            <div class="concept-ico" aria-hidden="true">S</div>
             <h3>Skill · 技能芯片</h3>
             <p>教机器人「怎么做一件事」的说明书式技能，也是生态里活跃的开源品类 —— 货架上有专门的一格。</p>
           </div>
           <div class="concept-card">
-            <div class="concept-ico red"><svg class="icon" aria-hidden="true"><use href="#i-wrench"/></svg></div>
-            <h3>Profile · 整备方案</h3>
-            <p>一组装甲的成套搭配（bundle）。像机甲整备方案一样，一次装上一整套，重启后整机状态焕然一新。</p>
+            <div class="concept-ico" aria-hidden="true">B</div>
+            <h3>Bundle · 整备方案</h3>
+            <p>一组装甲的成套搭配。像机甲整备方案一样，一次装上一整套，重启后整机状态焕然一新。</p>
           </div>
         </div>
-        <div class="note note-info">
-          <svg class="icon" aria-hidden="true"><use href="#i-book"/></svg>
-          <div><b>一句话总结</b>：DSH 提供<b>身体</b>，插件提供<b>装甲</b>，你负责<b>挑选和装配</b> —— 机器人强不强，看你给它装了什么。</div>
-        </div>
+        <div class="note"><b>官方事实小抄：</b>DeepSeek Harness 由 DeepSeek AI 开发、开源，底层由 <a href="https://github.com/cordiverse/cordis" target="_blank" rel="noopener">Cordis</a> 框架驱动；当前处于<b>开发者预览</b>阶段，迭代很快，可能有兼容性破坏的更新。</div>
       </section>
 
-      <!-- 第 3 章 -->
-      <section class="manual-chapter" id="install">
-        <h2><span class="ch-num">03</span> 把机器人跑起来：官方安装手册</h2>
+      <section class="doc__sec" id="install">
+        <h2><span class="n">03</span>把机器人跑起来</h2>
         <h3>方式一 · 一条命令启动（官方推荐）</h3>
         <p>先安装 <a href="https://nodejs.org/" target="_blank" rel="noopener">Node.js</a>，然后在终端执行：</p>
-        <div class="cmd-block">
-          <code>npx @deepseek-ai/dsh web</code>
-          <button class="copy-btn" type="button" data-cmd="npx @deepseek-ai/dsh web" aria-label="复制命令"><svg class="icon" aria-hidden="true"><use href="#i-copy"/></svg></button>
+        <div class="term">
+          <span class="term__txt"><b aria-hidden="true">$</b><code>npx @deepseek-ai/dsh web</code></span>
+          <button class="copy" type="button" data-copy="npx @deepseek-ai/dsh web">复制命令</button>
         </div>
-        <p>命令会启动 Web UI，默认地址 <code>http://127.0.0.1:3080</code> —— 机器人在你本机睁开眼睛。</p>
+        <p>命令会启动 Web UI，默认地址 <code class="inl">http://127.0.0.1:3080</code> —— 机器人在你本机睁开眼睛。</p>
         <h3>方式二 · 从源码整机自造</h3>
-        <div class="cmd-block">
-          <code>git clone https://github.com/deepseek-ai/deepseek-harness.git &amp;&amp; cd deepseek-harness &amp;&amp; pnpm install &amp;&amp; pnpm run build &amp;&amp; pnpm dsh web</code>
-          <button class="copy-btn" type="button" data-cmd="git clone https://github.com/deepseek-ai/deepseek-harness.git && cd deepseek-harness && pnpm install && pnpm run build && pnpm dsh web" aria-label="复制命令"><svg class="icon" aria-hidden="true"><use href="#i-copy"/></svg></button>
+        <div class="term">
+          <span class="term__txt"><b aria-hidden="true">$</b><code>git clone https://github.com/deepseek-ai/deepseek-harness.git &amp;&amp; cd deepseek-harness &amp;&amp; pnpm install &amp;&amp; pnpm run build &amp;&amp; pnpm dsh web</code></span>
+          <button class="copy" type="button" data-copy="git clone https://github.com/deepseek-ai/deepseek-harness.git &amp;&amp; cd deepseek-harness &amp;&amp; pnpm install &amp;&amp; pnpm run build &amp;&amp; pnpm dsh web">复制命令</button>
         </div>
-        <div class="note note-warn">
-          <svg class="icon" aria-hidden="true"><use href="#i-warn"/></svg>
-          <div><b>注意</b>：项目处于开发者预览阶段，官方明确提示「THERE WILL BE COMPATIBILITY-BREAKING CHANGES（会有破坏兼容性的变更）」—— 日常使用建议以官方最新文档为准，升级前先看更新说明。</div>
-        </div>
+        <div class="note note--warn"><b>注意：</b>项目处于开发者预览阶段，官方明确提示「THERE WILL BE COMPATIBILITY-BREAKING CHANGES（会有破坏兼容性的变更）」—— 日常使用建议以官方最新文档为准，升级前先看更新说明。</div>
       </section>
 
-      <!-- 第 4 章 -->
-      <section class="manual-chapter" id="armor">
-        <h2><span class="ch-num">04</span> 装甲是怎么装上去的</h2>
+      <section class="doc__sec" id="armor">
+        <h2><span class="n">04</span>装甲是怎么装上去的</h2>
         <p>DSH 的插件安装命令直通包管理器，在货架上看到任何一件装甲，都可以这样装：</p>
-        <div class="cmd-block">
-          <code>dsh plugin add "github:owner/repo"</code>
-          <button class="copy-btn" type="button" data-cmd='dsh plugin add "github:owner/repo"' aria-label="复制命令"><svg class="icon" aria-hidden="true"><use href="#i-copy"/></svg></button>
+        <div class="term">
+          <span class="term__txt"><b aria-hidden="true">$</b><code>dsh plugin add "github:owner/repo"</code></span>
+          <button class="copy" type="button" data-copy='dsh plugin add "github:owner/repo"'>复制命令</button>
         </div>
-        <ul class="bullet">
-          <li><code>dsh plugin</code> 会把安装操作转交给包管理器，支持 npm 包、GitHub 仓库、本地路径等来源；</li>
-          <li>安装/更新后重启 <code>dsh</code> 生效；</li>
-          <li>管理面板：<b>Settings → Plugins</b>，像机库控制台一样统一查看与维护；</li>
-          <li>官方建议插件仓库打上 <code>dsh-plugin</code> 话题标签，方便被社区发现（本站每天都会扫这个话题）。</li>
+        <ul class="d">
+          <li><b>包管理器负责解析</b><code class="inl">dsh plugin</code> 会把安装操作转交给包管理器，支持 npm 包、GitHub 仓库、本地路径等来源。</li>
+          <li><b>重启才生效</b>安装或更新后重启 <code class="inl">dsh</code> 生效。</li>
+          <li><b>统一管理</b>管理面板在 <b>Settings → Plugins</b>，像机库控制台一样统一查看与维护。</li>
+          <li><b>打标签能被更快收录</b>官方建议插件仓库打上 <code class="inl">dsh-plugin</code> 话题标签，这是本站 9 组关键词里命中效率最高的一组 —— 本站每天都会扫这个话题。</li>
         </ul>
         <p>想和社区交流？官方有 <a href="https://github.com/deepseek-ai/deepseek-harness/discussions" target="_blank" rel="noopener">GitHub Discussions</a> 与 <a href="https://discord.gg/Ycq5dCaS4" target="_blank" rel="noopener">Discord 社区</a>，反馈问题、晒你的整机配置都行。</p>
       </section>
 
-      <!-- 第 5 章 -->
-      <section class="manual-chapter" id="usage">
-        <h2><span class="ch-num">05</span> DS安甲网使用说明：检索与装配三步走</h2>
+      <section class="doc__sec" id="usage">
+        <h2><span class="n">05</span>检索与装配三步走</h2>
         <ol class="steps">
           <li>
-            <span class="step-num">①</span>
-            <div><b>逛货架 · 检索装甲</b><p>在首页顶部搜索框输入<b>项目名称</b>即可<b>精确检索</b>（支持项目名或「所有者/项目名」，不区分大小写，如 <code>dsh-web-ui</code>、<code>liustack/modlens</code>）；再用分类货架、语言筛选缩小范围，按星标、最近更新、最新收录排序。</p></div>
+            <span class="step-num" aria-hidden="true">1</span>
+            <div><b>逛机库 · 检索装甲</b><p>在机库页顶部搜索框输入<b>关键词</b>即可<b>模糊检索</b>：项目名、分类名、语言、标签四路同时命中，命中处会高亮。再用分类芯片、语言下拉缩小范围，按相关度 / 星标数 / 最近更新 / 30 天新增排序，或勾选「仅看 30 天新增」只看新货。</p></div>
           </li>
           <li>
-            <span class="step-num">②</span>
-            <div><b>看中文简介 · 复制组装指令</b><p>每件装甲都配有<b>中文介绍</b>（外文介绍已自动翻译，悬停可看原文）、星标与更新时间等参数读数，卡片底部就是它的<b>组装指令</b>，点复制按钮一键拷贝。</p></div>
+            <span class="step-num" aria-hidden="true">2</span>
+            <div><b>看读数 · 复制组装指令</b><p>每件装甲都配有<b>中文介绍</b>（外文介绍已自动翻译，悬停可看原文）、星标 / Fork / 相关度 / 语言 / 许可证 / 最近更新读数，卡片底部就是它的<b>组装指令</b>，点「复制」一键拷贝。</p></div>
           </li>
           <li>
-            <span class="step-num">③</span>
-            <div><b>粘贴给 Agent · 完成装配</b><p>把指令粘贴给终端或你的 Agent，插件就装好了；跳转 GitHub 仓库还能查看文档、Issue 与更新记录。</p></div>
+            <span class="step-num" aria-hidden="true">3</span>
+            <div><b>看详情 · 粘贴给 Agent</b><p>点「查看详情」可以切换国内源 / 海外源、看清全量元数据与命中来源。命令粘贴给终端或你的 Agent，插件就装好了；详情页的 GitHub 链接能继续查看文档、Issue 与更新记录。</p></div>
           </li>
         </ol>
-        <div class="note note-info">
-          <svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>
-          <div><b>机库每日补给</b>：数据每天 10:30（UTC+8）自动抓取更新，保留最近 30 天快照 —— 带「新增」角标的装甲是昨天还没有的新货。</div>
-        </div>
+        <div class="note"><b>机库每日补给：</b>数据每天 10:30（UTC+8）自动抓取更新，保留最近 30 天快照 —— 带「今日新增」角标的装甲是昨天还没有的新货。</div>
       </section>
 
-      <!-- 第 6 章 -->
-      <section class="manual-chapter" id="catalog">
-        <h2><span class="ch-num">06</span> 货架导览（分类图鉴）</h2>
-        <p>货架按「你想解决的问题」分类陈列，共 <b id="guideCount">—</b> 个货架。点任意货架卡片直达对应分类：</p>
+      <section class="doc__sec" id="catalog">
+        <h2><span class="n">06</span>货架导览（分类图鉴）</h2>
+        <p>货架按「你想解决的问题」分类陈列，共 <b id="guideCount">—</b> 个货架。点任意货架卡片直达机库对应分类：</p>
         <div class="guide-grid" id="guideGrid" role="list"></div>
       </section>
 
-      <!-- 附录 -->
-      <section class="manual-chapter" id="notes">
-        <h2><span class="ch-num">A</span> 附录 · 注意事项与警示</h2>
-        <div class="note note-warn">
-          <svg class="icon" aria-hidden="true"><use href="#i-warn"/></svg>
-          <div><b>社区项目声明</b>：DS安甲网是社区聚合站，与 DeepSeek 官方无关；项目元数据来自 GitHub 公开接口，版权归原作者。</div>
+      <section class="doc__sec" id="paths">
+        <h2><span class="n">07</span>三条安装路径与国内加速</h2>
+        <p>每张卡片默认给你一条最合适的命令，但三种方式你随时可以换。详情页的「下载源」开关能切换国内源 / 海外源。</p>
+        <ul class="d">
+          <li><b><code class="inl">dsh plugin add</code> · 最省事</b>由 DSH 自己解析依赖、注册、写入配置。生态里的首选，能交给 Agent 执行的也是这一条。</li>
+          <li><b><code class="inl">git clone …</code> · 要改源码时用</b>拿到完整仓库，可以直接打 patch。国内源会把域名改写成经 ghfast.top 镜像的地址。</li>
+          <li><b><code class="inl">npx @deepseek-ai/dsh web</code> · 启动机器人本体</b>不是装插件，是把官方运行时跑起来。机库里「原厂核心」那一格就是它。</li>
+        </ul>
+        <p>国内源改写规则：只替换下载域名，不改变命令语义。要给整台机器配一次镜像，跑下面这条就够了 —— 它写进 <code class="inl">~/.gitconfig</code>，之后所有 <code class="inl">git clone</code> 与 <code class="inl">dsh plugin add</code> 都自动走镜像。</p>
+        <div class="cnmirror">
+          <svg class="cnmirror__ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+            <circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 2.5 15.4 0 18M12 3c-2.5 2.6-2.5 15.4 0 18"/>
+          </svg>
+          <div class="cnmirror__body">
+            <strong class="cnmirror__t">国内加速一键配置</strong>
+            <span class="cnmirror__d">配一次 · 全站安装命令自动经 ghfast.top 镜像拉取</span>
+            <div class="cnmirror__cmd">
+              <div class="term">
+                <span class="term__txt"><b aria-hidden="true">$</b><code>git config --global url."https://ghfast.top/https://github.com/".insteadOf "https://github.com/"</code></span>
+                <button class="copy" type="button" data-copy='git config --global url."https://ghfast.top/https://github.com/".insteadOf "https://github.com/"'>复制命令</button>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="note note-warn">
-          <svg class="icon" aria-hidden="true"><use href="#i-warn"/></svg>
-          <div><b>权限与可达性</b>：部分 dsh-external 组织仓库需要组织访问权限（公开接口 404），不会出现在货架上；请以 GitHub 页面实际可见为准。</div>
-        </div>
-        <div class="note note-info">
-          <svg class="icon" aria-hidden="true"><use href="#i-book"/></svg>
-          <div><b>翻译说明</b>：外文简介由机器翻译为中文，悬停可查看原文；发现翻译不妥欢迎反馈。</div>
-        </div>
-        <div class="note note-info">
-          <svg class="icon" aria-hidden="true"><use href="#i-globe"/></svg>
-          <div><b>发现好装甲？</b> 本站开源 —— 提交 Issue/PR 把仓库加进精选种子，下一次补给即可上架。</div>
-        </div>
+        <div class="note"><b>想回退怎么办：</b>删掉 <code class="inl">~/.gitconfig</code> 里那条 <code class="inl">insteadOf</code> 即可，或者在机库详情页把「下载源」切到「海外源」再执行命令。</div>
+      </section>
+
+      <section class="doc__sec" id="community">
+        <h2><span class="n">08</span>机师社群与收录流程</h2>
+        <p>安甲网背后是几个频道。这里既是求助的地方，也是提交插件的地方 —— 收录规则、分类口径、关键词巡检计划都公开讨论。当前已开通 <b id="communityCount">—</b> 个频道，频道状态由 <code class="inl">community-config.js</code> 驱动。</p>
+        <div class="chans" id="communityChannels"></div>
+        <h3>收录流程</h3>
+        <ul class="d">
+          <li><b>提交</b>在 Discussions 开一个收录请求，或让群友直接发 PR 到 awesome 索引仓库。</li>
+          <li><b>入队</b>每天 10:30（UTC+8）的巡检会把它抓进候选池，fork 与归档在这一步就被剔掉。</li>
+          <li><b>评分</b>自动译中 + 相关度评分。低于阈值 5 的会被挡在门外，5–8 分的需要人工看一眼。</li>
+          <li><b>分类</b>人工确认机甲分类。这一步不做的话，搜索和筛选会失灵，所以宁可慢一天。</li>
+          <li><b>上架</b>进入机库快照，30 天后如果没有更新会淡出「30 天新增」角标。</li>
+        </ul>
+        <h3>维护节奏</h3>
+        <ul class="d">
+          <li><b>每日 10:30</b>9 组关键词 + awesome 列表巡检，生成快照。</li>
+          <li><b>每周一</b>清理低相关条目，必要时下调阈值。</li>
+          <li><b>每季度</b>公开一次去重数据：剔了多少 fork、多少归档、多少低相关。</li>
+        </ul>
+        <div class="note"><b>本站只做索引。</b>我们不托管任何插件代码，也不替插件做安全背书。装之前请自己看一眼它要什么权限。</div>
+      </section>
+
+      <section class="doc__sec" id="trouble">
+        <h2><span class="n">09</span>装不上怎么办 · 附录</h2>
+        <ul class="d">
+          <li><b>命令跑了没反应</b>先确认走的是哪条路径。只想装不想改代码就用 <code class="inl">dsh plugin add</code>；需要打 patch 才用 <code class="inl">git clone</code>。装完记得重启 <code class="inl">dsh</code>。</li>
+          <li><b>拉取超时</b>八成是源的问题。在详情页把「下载源」切到国内源，命令会立刻改写；或者跑一次上面那条 <code class="inl">insteadOf</code> 全局配置。</li>
+          <li><b>插件要权限</b>护盾类插件（沙箱、出网、审计）会申请较高权限。装之前看一眼详情页的元数据面板，它会写明这个仓库的关键词命中来源与分类释义。</li>
+          <li><b>仓库没出现在货架上</b>可能是 fork、已归档、相关度低于阈值 5，或者需要组织访问权限（公开接口 404）。打上 <code class="inl">dsh-plugin</code> 话题标签能显著提高收录速度。</li>
+        </ul>
+        <div class="note note--warn"><b>社区项目声明：</b>DS安甲网是社区聚合站，与 DeepSeek 官方无关；项目元数据来自 GitHub 公开接口，版权归原作者。外文简介由机器翻译为中文，悬停可查看原文。</div>
       </section>
 
       <footer class="manual-footer">
-        <a class="btn" href="index.html"><svg class="icon" aria-hidden="true"><use href="#i-back"/></svg> 返回机库挑装甲</a>
+        <a class="btn" href="index.html">← 返回机库挑装甲</a>
         <p>DS-AJ-MANUAL-01 · DS安甲网 · ds.ajw.cn · 依据官方项目介绍编写 · 数据每日更新</p>
       </footer>
-    </div>
-  </main>
+    </main>
+
+    <footer class="foot">
+      <div class="foot__in">
+        <span class="foot__n">DSH 安甲网 · 文档模式 #f4f2ea / 赭石 #8a5a00 / 墨 #1a1d14</span>
+        <span>数据来自 GitHub 公开 API，每日自动抓取 · 社区项目，与 DeepSeek 官方无关</span>
+        <a class="foot__note" href="https://beian.miit.gov.cn/" target="_blank" rel="noopener">备案号占位</a>
+      </div>
+    </footer>
+  </div>
+
+  <p class="sr" id="live" role="status" aria-live="polite"></p>
 
   <script src="data/projects.data.js"></script>
+  <script src="community-config.js"></script>
+  <script src="assets/js/theme.js" defer></script>
+  <script src="assets/js/channels.js" defer></script>
   <script src="assets/js/manual.js" defer></script>
 </body>
 </html>
