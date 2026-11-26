@@ -53,6 +53,19 @@ jobs:
         with:
           path: site
 
+      - name: 等待 Pages artifact 可查询
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          for i in $(seq 1 30); do
+            count=$(gh api "repos/${{ github.repository }}/actions/runs/${{ github.run_id }}/artifacts" --jq '[.artifacts[] | select(.name=="github-pages")] | length')
+            echo "attempt $i: github-pages artifacts=$count"
+            if [ "$count" -ge 1 ]; then exit 0; fi
+            sleep 5
+          done
+          echo "github-pages artifact not visible after 150s" >&2
+          exit 1
+
       - name: 部署到 GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
